@@ -1,0 +1,18 @@
+Source: mauna-update
+Section: admin
+Priority: optional
+Maintainer: Mauna Linux <dev@maunalinux.top>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.6.1
+Homepage: https://github.com/maunalinux/mauna-update
+
+Package: mauna-update
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         gir1.2-ayatanaappindicator3-0.1,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         python3-apt
+Description: Mauna Update.
+ Mauna Update application

@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Mauna Linux <support@maunalinux.top>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mauna-update\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-25 14:37-0300\n"
+"PO-Revision-Date: 2023-09-28 18:50-0300\n"
+"Last-Translator: \n"
+"Language-Team: Mauna Linux <dev@maunalinux.top>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: ui/MainWindow.glade:12
+msgid "Mauna Update Application"
+msgstr "تطبيق تحديث مونا"
+
+#: ui/MainWindow.glade:55 ui/MainWindow.glade:1976 src/MainWindow.py:73
+#: src/MainWindow.py:285
+msgid "Mauna Update"
+msgstr "تحديث ماونا"
+
+#: ui/MainWindow.glade:79
+msgid "No"
+msgstr "في ال"
+
+#: ui/MainWindow.glade:96 ui/MainWindow.glade:1450
+msgid "Yes"
+msgstr "نعم"
+
+#: ui/MainWindow.glade:124
+msgid ""
+"The upgrade process is in progress. Are you sure you want to close the "
+"application?"
+msgstr "عملية الترقية جارية. هل أنت متأكد أنك تريد إغلاق التطبيق؟"
+
+#: ui/MainWindow.glade:228
+msgid "Package manager cache is updating"
+msgstr "يتم تحديث ذاكرة التخزين المؤقت لمدير الحزم"
+
+#: ui/MainWindow.glade:317
+msgid "Upgraded"
+msgstr "ترقية"
+
+#: ui/MainWindow.glade:343
+msgid "Newly Installed"
+msgstr "المثبتة حديثا"
+
+#: ui/MainWindow.glade:370
+msgid "To Remove"
+msgstr "لازالة"
+
+#: ui/MainWindow.glade:397
+msgid "Not Upgraded"
+msgstr "لم تتم ترقيته"
+
+#: ui/MainWindow.glade:445
+msgid "Download size:"
+msgstr "حجم التنزيل:"
+
+#: ui/MainWindow.glade:500
+msgid "Required disk size:"
+msgstr "حجم القرص المطلوب:"
+
+#: ui/MainWindow.glade:555
+msgid "Upgraded:"
+msgstr "ترقية:"
+
+#: ui/MainWindow.glade:610
+msgid "Newly installed:"
+msgstr "المثبتة حديثا:"
+
+#: ui/MainWindow.glade:665
+msgid "To remove:"
+msgstr "لازالة:"
+
+#: ui/MainWindow.glade:720
+msgid "Not upgraded:"
+msgstr "لم تتم ترقيته:"
+
+#: ui/MainWindow.glade:772
+msgid "Version Upgrade"
+msgstr "ترقية الإصدار"
+
+#: ui/MainWindow.glade:795
+msgid "Upgrade"
+msgstr "يرقي"
+
+#: ui/MainWindow.glade:854
+msgid "Exit"
+msgstr "مخرج"
+
+#: ui/MainWindow.glade:867 ui/MainWindow.glade:1368
+msgid "Try Fix"
+msgstr "حاول الإصلاح"
+
+#: ui/MainWindow.glade:880
+msgid "Refresh"
+msgstr "ينعش"
+
+#: ui/MainWindow.glade:954
+msgid "Back"
+msgstr "خلف"
+
+#: ui/MainWindow.glade:969
+msgid "Ok"
+msgstr "نعم"
+
+#: ui/MainWindow.glade:1030
+msgid "Your system is up to date."
+msgstr "النظام الخاص بك محدث."
+
+#: ui/MainWindow.glade:1050 src/MainWindow.py:289
+msgid "Check Updates"
+msgstr "تفقد التحديث"
+
+#: ui/MainWindow.glade:1098
+msgid "Update Check Frequency:"
+msgstr "تحديث التحقق من التردد:"
+
+#: ui/MainWindow.glade:1116
+msgid "Hourly"
+msgstr "ساعيا"
+
+#: ui/MainWindow.glade:1117
+msgid "Daily"
+msgstr "يوميًا"
+
+#: ui/MainWindow.glade:1118
+msgid "Weekly"
+msgstr "أسبوعي"
+
+#: ui/MainWindow.glade:1119
+msgid "Never"
+msgstr "أبداً"
+
+#: ui/MainWindow.glade:1136 ui/MainWindow.glade:1153
+msgid "seconds"
+msgstr "ثواني"
+
+#: ui/MainWindow.glade:1192
+msgid "Last Update Check Date:"
+msgstr "تاريخ التحقق من التحديث الأخير:"
+
+#: ui/MainWindow.glade:1230
+msgid "Launch at Startup:"
+msgstr "ابدأ عند بدء التشغيل"
+
+#: ui/MainWindow.glade:1299 ui/MainWindow.glade:1895 src/MainWindow.py:360
+#: src/MainWindow.py:519
+msgid "Home Page"
+msgstr "الصفحة الرئيسية"
+
+#: ui/MainWindow.glade:1345
+msgid ""
+"Your system sources list that used by package manager seems broken or your "
+"system has broken dependencies."
+msgstr ""
+"تبدو قائمة مصادر النظام التي يستخدمها مدير الحزم معطلة أو أن نظامك قد عطل "
+"التبعيات."
+
+#: ui/MainWindow.glade:1410
+msgid ""
+"This operation;\n"
+"will remove all sources.list and sources.list.d entries and create "
+"defaults,\n"
+"will run \"apt update\" command,\n"
+"will run \"apt install --fix-broken\" command,\n"
+"will run \"dpkg --configure -a\".\n"
+"\n"
+"Use with caution. Are you sure you want to continue?"
+msgstr ""
+"هذه العملية؛\n"
+"سيؤدي إلى إزالة جميع إدخالات Sources.list وsources.list.d وإنشاء الإعدادات "
+"الافتراضية،\n"
+"سيتم تشغيل أمر \"apt update\"،\n"
+"سيتم تشغيل الأمر \"apt install --fix-broken\"،\n"
+"سيتم تشغيل \"dpkg --configure -a\".\n"
+"\n"
+"استخدم بحذر. هل أنت متأكد أنك تريد الاستمرار؟"
+
+#: ui/MainWindow.glade:1433
+msgid "Cancel"
+msgstr "يلغي"
+
+#: ui/MainWindow.glade:1499
+msgid "Operation completed."
+msgstr "اكتملت العملية."
+
+#: ui/MainWindow.glade:1539
+msgid "Go to Home Page"
+msgstr "انتقل إلى الصفحة الرئيسية"
+
+#: ui/MainWindow.glade:1570
+msgid "You can check the terminal output below."
+msgstr "يمكنك التحقق من إخراج المحطة أدناه."
+
+#: ui/MainWindow.glade:1599
+msgid "The error in the package manager could not be fixed."
+msgstr "لا يمكن إصلاح الخطأ في مدير الحزم."
+
+#: ui/MainWindow.glade:1617
+msgid ""
+"You can follow the instructions by looking at the terminal output below."
+msgstr "يمكنك اتباع التعليمات من خلال النظر إلى مخرجات المحطة أدناه."
+
+#: ui/MainWindow.glade:1629
+msgid "You can ask for help about your problem through Mauna help channels."
+msgstr "يمكنك طلب المساعدة بشأن مشكلتك من خلال قنوات مساعدة مونا."
+
+#: ui/MainWindow.glade:1737
+msgid "List of automatically removable all unused packages"
+msgstr "قائمة بالحزم غير المستخدمة القابلة للإزالة تلقائيًا"
+
+#: ui/MainWindow.glade:1738
+msgid "Autoremovable Packages"
+msgstr "الحزم القابلة للإزالة تلقائيًا"
+
+#: ui/MainWindow.glade:1774 ui/MainWindow.glade:1840
+msgid "Remove"
+msgstr "يزيل"
+
+#: ui/MainWindow.glade:1803
+msgid "List of unnecessary packages with residual config files"
+msgstr "قائمة الحزم غير الضرورية مع ملفات التكوين المتبقية"
+
+#: ui/MainWindow.glade:1804
+msgid "Residual Packages"
+msgstr "الحزم المتبقية"
+
+#: ui/MainWindow.glade:2058 src/MainWindow.py:309 src/MainWindow.py:387
+#: src/MainWindow.py:499 src/MainWindow.py:515 src/MainWindow.py:554
+msgid "Settings"
+msgstr "إعدادات"
+
+#: ui/MainWindow.glade:2114
+msgid "About"
+msgstr "عن"
+
+#: ui/MainWindow.glade:2166
+msgid "Package configuration files"
+msgstr "ملفات تكوين الحزمة"
+
+#: ui/MainWindow.glade:2185
+msgid "Use new configuration files"
+msgstr "استخدم ملفات التكوين الجديدة"
+
+#: ui/MainWindow.glade:2201
+msgid "Use old configuration files"
+msgstr "استخدم ملفات التكوين القديمة"
+
+#: ui/MainWindow.glade:2217
+msgid "Ask me what to do"
+msgstr "اسألني ماذا أفعل"
+
+#: ui/MainWindow.glade:2243
+msgid "Interaction"
+msgstr "تفاعل"
+
+#: ui/MainWindow.glade:2262
+msgid "Start process (with -yq option)"
+msgstr "بدء العملية (مع خيار -yq)"
+
+#: ui/MainWindow.glade:2278
+msgid "Ask me before starting the process (without -yq)"
+msgstr "اسألني قبل بدء العملية (بدون -yq)"
+
+#: ui/MainWindow.glade:2329
+msgid "Restore Defaults"
+msgstr "استعادة الضبط الافتراضي"
+
+#: src/MainWindow.py:300
+msgid "Quit"
+msgstr "لإغلاق"
+
+#: src/MainWindow.py:305 src/MainWindow.py:841
+msgid "Last Check"
+msgstr "اخر فحص"
+
+#: src/MainWindow.py:313 src/MainWindow.py:897
+msgid "System is Up to Date"
+msgstr "النظام محدث"
+
+#: src/MainWindow.py:335 src/MainWindow.py:352 src/MainWindow.py:379
+#: src/MainWindow.py:391
+msgid "Hide App"
+msgstr "التطبيق اخفاء"
+
+#: src/MainWindow.py:337 src/MainWindow.py:349 src/MainWindow.py:656
+msgid "Show App"
+msgstr "عرض التطبيق"
+
+#: src/MainWindow.py:453 src/MainWindow.py:472 src/MainWindow.py:492
+msgid "Package manager is busy, try again later."
+msgstr "مدير الحزم مشغول، حاول مرة أخرى لاحقاً."
+
+#: src/MainWindow.py:854
+msgid "System is Broken"
+msgstr "النظام مكسور"
+
+#: src/MainWindow.py:866 src/MainWindow.py:872
+msgid "Software Update"
+msgstr "تحديث النظام"
+
+#: src/MainWindow.py:867
+msgid "There are {} software updates available."
+msgstr "هناك {} تحديثات متاحة للبرامج."
+
+#: src/MainWindow.py:873
+msgid "There is {} software update available."
+msgstr "يتوفر تحديث برنامج {}."
+
+#: src/MainWindow.py:886
+msgid "You have removable residual packages."
+msgstr "لديك الحزم المتبقية القابلة للإزالة."
+
+#: src/MainWindow.py:900
+msgid "{} Updates Pending"
+msgstr "{} التحديثات معلقة"
+
+#: src/MainWindow.py:902
+msgid "{} Update Pending"
+msgstr "{} التحديث معلق"
+
+#: src/MainWindow.py:975 src/MainWindow.py:1051
+msgid "Copy selected text"
+msgstr "نسخ النص المحددلإغلاق"
+
+#: src/MainWindow.py:1025
+msgid "Process completed."
+msgstr "اكتملت العملية."
+
+#: src/MainWindow.py:1123
+msgid "Update"
+msgstr "تحديث"

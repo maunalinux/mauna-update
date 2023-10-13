@@ -1,0 +1,338 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Mauna Linux <support@maunalinux.top>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mauna-update\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-25 14:37-0300\n"
+"PO-Revision-Date: 2023-10-04 19:29-0300\n"
+"Last-Translator: \n"
+"Language-Team: Mauna Linux <dev@maunalinux.top>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: ui/MainWindow.glade:12
+msgid "Mauna Update Application"
+msgstr "莫纳 更新应用程序"
+
+#: ui/MainWindow.glade:55 ui/MainWindow.glade:1976 src/MainWindow.py:73
+#: src/MainWindow.py:285
+msgid "Mauna Update"
+msgstr "莫纳更新"
+
+#: ui/MainWindow.glade:79
+msgid "No"
+msgstr "不"
+
+#: ui/MainWindow.glade:96 ui/MainWindow.glade:1450
+msgid "Yes"
+msgstr "是的"
+
+#: ui/MainWindow.glade:124
+msgid ""
+"The upgrade process is in progress. Are you sure you want to close the "
+"application?"
+msgstr "升级过程正在进行中。 您确定要关闭该应用程序吗？"
+
+#: ui/MainWindow.glade:228
+msgid "Package manager cache is updating"
+msgstr "包管理器缓存正在更新"
+
+#: ui/MainWindow.glade:317
+msgid "Upgraded"
+msgstr "升级版"
+
+#: ui/MainWindow.glade:343
+msgid "Newly Installed"
+msgstr "新安装"
+
+#: ui/MainWindow.glade:370
+msgid "To Remove"
+msgstr "去除"
+
+#: ui/MainWindow.glade:397
+msgid "Not Upgraded"
+msgstr "未升级"
+
+#: ui/MainWindow.glade:445
+msgid "Download size:"
+msgstr "下载大小："
+
+#: ui/MainWindow.glade:500
+msgid "Required disk size:"
+msgstr "所需磁盘大小："
+
+#: ui/MainWindow.glade:555
+msgid "Upgraded:"
+msgstr "升级后："
+
+#: ui/MainWindow.glade:610
+msgid "Newly installed:"
+msgstr "新安装："
+
+#: ui/MainWindow.glade:665
+msgid "To remove:"
+msgstr "去除："
+
+#: ui/MainWindow.glade:720
+msgid "Not upgraded:"
+msgstr "未升级："
+
+#: ui/MainWindow.glade:772
+msgid "Version Upgrade"
+msgstr "版本升级"
+
+#: ui/MainWindow.glade:795
+msgid "Upgrade"
+msgstr "升级"
+
+#: ui/MainWindow.glade:854
+msgid "Exit"
+msgstr "出口"
+
+#: ui/MainWindow.glade:867 ui/MainWindow.glade:1368
+msgid "Try Fix"
+msgstr "尝试修复"
+
+#: ui/MainWindow.glade:880
+msgid "Refresh"
+msgstr "刷新"
+
+#: ui/MainWindow.glade:954
+msgid "Back"
+msgstr "后退"
+
+#: ui/MainWindow.glade:969
+msgid "Ok"
+msgstr "好的"
+
+#: ui/MainWindow.glade:1030
+msgid "Your system is up to date."
+msgstr "您的系统是最新的。"
+
+#: ui/MainWindow.glade:1050 src/MainWindow.py:289
+msgid "Check Updates"
+msgstr "检查更新"
+
+#: ui/MainWindow.glade:1098
+msgid "Update Check Frequency:"
+msgstr "更新检查频率："
+
+#: ui/MainWindow.glade:1116
+msgid "Hourly"
+msgstr "每小时"
+
+#: ui/MainWindow.glade:1117
+msgid "Daily"
+msgstr "日常的"
+
+#: ui/MainWindow.glade:1118
+msgid "Weekly"
+msgstr "每周"
+
+#: ui/MainWindow.glade:1119
+msgid "Never"
+msgstr "绝不"
+
+#: ui/MainWindow.glade:1136 ui/MainWindow.glade:1153
+msgid "seconds"
+msgstr "秒"
+
+#: ui/MainWindow.glade:1192
+msgid "Last Update Check Date:"
+msgstr "最后更新检查日期："
+
+#: ui/MainWindow.glade:1230
+msgid "Launch at Startup:"
+msgstr "启动时启动："
+
+#: ui/MainWindow.glade:1299 ui/MainWindow.glade:1895 src/MainWindow.py:360
+#: src/MainWindow.py:519
+msgid "Home Page"
+msgstr "主页"
+
+#: ui/MainWindow.glade:1345
+msgid ""
+"Your system sources list that used by package manager seems broken or your "
+"system has broken dependencies."
+msgstr "包管理器使用的系统源列表似乎已损坏，或者您的系统已损坏依赖项。"
+
+#: ui/MainWindow.glade:1410
+msgid ""
+"This operation;\n"
+"will remove all sources.list and sources.list.d entries and create "
+"defaults,\n"
+"will run \"apt update\" command,\n"
+"will run \"apt install --fix-broken\" command,\n"
+"will run \"dpkg --configure -a\".\n"
+"\n"
+"Use with caution. Are you sure you want to continue?"
+msgstr ""
+"这个操作；\n"
+"将删除所有sources.list和sources.list.d条目并创建默认值，\n"
+"将运行“apt update”命令，\n"
+"将运行“apt install --fix-broken”命令，\n"
+"将运行“dpkg --configure -a”。\n"
+"\n"
+"谨慎使用。 你确定你要继续吗？"
+
+#: ui/MainWindow.glade:1433
+msgid "Cancel"
+msgstr "取消"
+
+#: ui/MainWindow.glade:1499
+msgid "Operation completed."
+msgstr "操作完成。"
+
+#: ui/MainWindow.glade:1539
+msgid "Go to Home Page"
+msgstr "去首页"
+
+#: ui/MainWindow.glade:1570
+msgid "You can check the terminal output below."
+msgstr "您可以检查下面的终端输出。"
+
+#: ui/MainWindow.glade:1599
+msgid "The error in the package manager could not be fixed."
+msgstr "无法修复包管理器中的错误。"
+
+#: ui/MainWindow.glade:1617
+msgid ""
+"You can follow the instructions by looking at the terminal output below."
+msgstr "您可以通过查看下面的终端输出来按照说明进行操作。"
+
+#: ui/MainWindow.glade:1629
+msgid "You can ask for help about your problem through Mauna help channels."
+msgstr "您可以通过莫纳帮助渠道寻求有关问题的帮助。"
+
+#: ui/MainWindow.glade:1737
+msgid "List of automatically removable all unused packages"
+msgstr "自动删除所有未使用的软件包的列表"
+
+#: ui/MainWindow.glade:1738
+msgid "Autoremovable Packages"
+msgstr "自动移除包"
+
+#: ui/MainWindow.glade:1774 ui/MainWindow.glade:1840
+msgid "Remove"
+msgstr "消除"
+
+#: ui/MainWindow.glade:1803
+msgid "List of unnecessary packages with residual config files"
+msgstr "带有残留配置文件的不必要的包列表"
+
+#: ui/MainWindow.glade:1804
+msgid "Residual Packages"
+msgstr "剩余套餐"
+
+#: ui/MainWindow.glade:2058 src/MainWindow.py:309 src/MainWindow.py:387
+#: src/MainWindow.py:499 src/MainWindow.py:515 src/MainWindow.py:554
+msgid "Settings"
+msgstr "设置"
+
+#: ui/MainWindow.glade:2114
+msgid "About"
+msgstr "关于"
+
+#: ui/MainWindow.glade:2166
+msgid "Package configuration files"
+msgstr "包配置文件"
+
+#: ui/MainWindow.glade:2185
+msgid "Use new configuration files"
+msgstr "使用新的配置文件"
+
+#: ui/MainWindow.glade:2201
+msgid "Use old configuration files"
+msgstr "使用旧的配置文件"
+
+#: ui/MainWindow.glade:2217
+msgid "Ask me what to do"
+msgstr "问我该怎么办"
+
+#: ui/MainWindow.glade:2243
+msgid "Interaction"
+msgstr "相互作用"
+
+#: ui/MainWindow.glade:2262
+msgid "Start process (with -yq option)"
+msgstr "启动进程（使用 -yq 选项）"
+
+#: ui/MainWindow.glade:2278
+msgid "Ask me before starting the process (without -yq)"
+msgstr "在开始该过程之前询问我（不带 -yq）"
+
+#: ui/MainWindow.glade:2329
+msgid "Restore Defaults"
+msgstr "恢复默认值"
+
+#: src/MainWindow.py:300
+msgid "Quit"
+msgstr "辞职"
+
+#: src/MainWindow.py:305 src/MainWindow.py:841
+msgid "Last Check"
+msgstr "最后检查"
+
+#: src/MainWindow.py:313 src/MainWindow.py:897
+msgid "System is Up to Date"
+msgstr "系统是最新的"
+
+#: src/MainWindow.py:335 src/MainWindow.py:352 src/MainWindow.py:379
+#: src/MainWindow.py:391
+msgid "Hide App"
+msgstr "隐藏应用程序"
+
+#: src/MainWindow.py:337 src/MainWindow.py:349 src/MainWindow.py:656
+msgid "Show App"
+msgstr "显示应用程序"
+
+#: src/MainWindow.py:453 src/MainWindow.py:472 src/MainWindow.py:492
+msgid "Package manager is busy, try again later."
+msgstr "包管理器正忙，请稍后重试。"
+
+#: src/MainWindow.py:854
+msgid "System is Broken"
+msgstr "系统损坏"
+
+#: src/MainWindow.py:866 src/MainWindow.py:872
+msgid "Software Update"
+msgstr "软件更新"
+
+#: src/MainWindow.py:867
+msgid "There are {} software updates available."
+msgstr "有 {} 个可用软件更新。"
+
+#: src/MainWindow.py:873
+msgid "There is {} software update available."
+msgstr "有 {} 个可用软件更新。"
+
+#: src/MainWindow.py:886
+msgid "You have removable residual packages."
+msgstr "您有可移动的残留软件包。"
+
+#: src/MainWindow.py:900
+msgid "{} Updates Pending"
+msgstr "{} 更新待定"
+
+#: src/MainWindow.py:902
+msgid "{} Update Pending"
+msgstr "{} 更新待定"
+
+#: src/MainWindow.py:975 src/MainWindow.py:1051
+msgid "Copy selected text"
+msgstr "复制选定的文本"
+
+#: src/MainWindow.py:1025
+msgid "Process completed."
+msgstr "流程完成。"
+
+#: src/MainWindow.py:1123
+msgid "Update"
+msgstr "更新"
