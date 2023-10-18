@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: mauna-update\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 14:37-0300\n"
-"PO-Revision-Date: 2023-09-28 19:58-0300\n"
+"PO-Revision-Date: 2023-10-18 15:49-0300\n"
 "Last-Translator: \n"
 "Language-Team: Mauna Linux <dev@maunalinux.top>\n"
 "Language: haw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4\n"
 
 #: ui/MainWindow.glade:12
 msgid "Mauna Update Application"
 msgstr "Mauna Hoʻohou i ka palapala noi"
 
-#: ui/MainWindow.glade:55 ui/MainWindow.glade:1976 src/MainWindow.py:73
-#: src/MainWindow.py:285
+#: ui/MainWindow.glade:55 ui/MainWindow.glade:3635 src/MainWindow.py:75
+#: src/MainWindow.py:428
 msgid "Mauna Update"
 msgstr "Mauna Hou"
 
@@ -30,7 +30,7 @@ msgstr "Mauna Hou"
 msgid "No"
 msgstr "ʻAʻole"
 
-#: ui/MainWindow.glade:96 ui/MainWindow.glade:1450
+#: ui/MainWindow.glade:96 ui/MainWindow.glade:1705
 msgid "Yes"
 msgstr "ʻAe"
 
@@ -41,124 +41,147 @@ msgid ""
 msgstr ""
 "Ke holomua nei ka hana hoʻonui. Makemake ʻoe e pani i ka palapala noi?"
 
-#: ui/MainWindow.glade:228
+#: ui/MainWindow.glade:174 ui/MainWindow.glade:3881
+msgid "Package configuration files"
+msgstr "pūʻolo waihona hoʻonohonoho"
+
+#: ui/MainWindow.glade:193 ui/MainWindow.glade:3900
+msgid "Use new configuration files"
+msgstr "E hoʻohana i nā faila hoʻonohonoho hou"
+
+#: ui/MainWindow.glade:209 ui/MainWindow.glade:3916
+msgid "Use old configuration files"
+msgstr "E hoʻohana i nā faila hoʻonohonoho kahiko"
+
+#: ui/MainWindow.glade:260 ui/MainWindow.glade:4044
+msgid "Restore Defaults"
+msgstr "Hoʻihoʻi i nā paʻamau"
+
+#: ui/MainWindow.glade:371
 msgid "Package manager cache is updating"
 msgstr "Ke hoʻohou nei ka waihona mālama pūʻulu"
 
-#: ui/MainWindow.glade:317
+#: ui/MainWindow.glade:460 ui/MainWindow.glade:2519
 msgid "Upgraded"
 msgstr "Hoʻonui ʻia"
 
-#: ui/MainWindow.glade:343
+#: ui/MainWindow.glade:486 ui/MainWindow.glade:2545
 msgid "Newly Installed"
 msgstr "Hoʻokomo hou ʻia"
 
-#: ui/MainWindow.glade:370
+#: ui/MainWindow.glade:513 ui/MainWindow.glade:2572
 msgid "To Remove"
 msgstr "E Wehe"
 
-#: ui/MainWindow.glade:397
+#: ui/MainWindow.glade:540 ui/MainWindow.glade:2599
 msgid "Not Upgraded"
 msgstr "ʻAʻole i hoʻonui ʻia"
 
-#: ui/MainWindow.glade:445
+#: ui/MainWindow.glade:588 ui/MainWindow.glade:2647
 msgid "Download size:"
 msgstr "Nui download:"
 
-#: ui/MainWindow.glade:500
+#: ui/MainWindow.glade:643 ui/MainWindow.glade:2703
 msgid "Required disk size:"
 msgstr "Ka nui o ka disk i makemake ʻia:"
 
-#: ui/MainWindow.glade:555
+#: ui/MainWindow.glade:698 ui/MainWindow.glade:2759
 msgid "Upgraded:"
 msgstr "Hoʻonui ʻia:"
 
-#: ui/MainWindow.glade:610
+#: ui/MainWindow.glade:753 ui/MainWindow.glade:2815
 msgid "Newly installed:"
 msgstr "Hoʻokomo hou ʻia:"
 
-#: ui/MainWindow.glade:665
+#: ui/MainWindow.glade:808 ui/MainWindow.glade:2871
 msgid "To remove:"
 msgstr "No ka wehe ʻana:"
 
-#: ui/MainWindow.glade:720
+#: ui/MainWindow.glade:863 ui/MainWindow.glade:2927
 msgid "Not upgraded:"
 msgstr "ʻAʻole i hoʻonui ʻia:"
 
-#: ui/MainWindow.glade:772
+#: ui/MainWindow.glade:915 ui/MainWindow.glade:3773 src/MainWindow.py:509
+#: src/MainWindow.py:537 src/MainWindow.py:546 src/MainWindow.py:779
+#: src/MainWindow.py:806 src/MainWindow.py:836 src/MainWindow.py:872
 msgid "Version Upgrade"
 msgstr "Hoʻonui i ka mana"
 
-#: ui/MainWindow.glade:795
+#: ui/MainWindow.glade:938
 msgid "Upgrade"
 msgstr "Hoʻonui"
 
-#: ui/MainWindow.glade:854
+#: ui/MainWindow.glade:997
 msgid "Exit"
 msgstr "Puka"
 
-#: ui/MainWindow.glade:867 ui/MainWindow.glade:1368
+#: ui/MainWindow.glade:1010 ui/MainWindow.glade:1623
 msgid "Try Fix"
 msgstr "E ho'āʻo e hoʻoponopono"
 
-#: ui/MainWindow.glade:880
+#: ui/MainWindow.glade:1023
 msgid "Refresh"
 msgstr "Hōʻano hou"
 
-#: ui/MainWindow.glade:954
+#: ui/MainWindow.glade:1097
 msgid "Back"
 msgstr "Ke kua"
 
-#: ui/MainWindow.glade:969
+#: ui/MainWindow.glade:1112
 msgid "Ok"
 msgstr "ʻAe"
 
-#: ui/MainWindow.glade:1030
+#: ui/MainWindow.glade:1172
 msgid "Your system is up to date."
 msgstr "Ua paʻa kāu ʻōnaehana."
 
-#: ui/MainWindow.glade:1050 src/MainWindow.py:289
+#: ui/MainWindow.glade:1213 src/MainWindow.py:432
 msgid "Check Updates"
 msgstr "E nānā i nā mea hou"
 
-#: ui/MainWindow.glade:1098
+#: ui/MainWindow.glade:1259
+msgid "Mauna new version is available."
+msgstr "Loaʻa ka mana hou o Mauna."
+
+#: ui/MainWindow.glade:1353
 msgid "Update Check Frequency:"
 msgstr "Hōʻano hou i ka ʻike pinepine:"
 
-#: ui/MainWindow.glade:1116
+#: ui/MainWindow.glade:1371
 msgid "Hourly"
 msgstr "I kēlā me kēia hola"
 
-#: ui/MainWindow.glade:1117
+#: ui/MainWindow.glade:1372
 msgid "Daily"
 msgstr "I kēlā me kēia lā"
 
-#: ui/MainWindow.glade:1118
+#: ui/MainWindow.glade:1373
 msgid "Weekly"
 msgstr "ʻO kēlā me kēia pule"
 
-#: ui/MainWindow.glade:1119
+#: ui/MainWindow.glade:1374
 msgid "Never"
 msgstr "ʻAʻole loa"
 
-#: ui/MainWindow.glade:1136 ui/MainWindow.glade:1153
+#: ui/MainWindow.glade:1391 ui/MainWindow.glade:1408
 msgid "seconds"
 msgstr "kekona"
 
-#: ui/MainWindow.glade:1192
+#: ui/MainWindow.glade:1447
 msgid "Last Update Check Date:"
 msgstr "Lā hōʻoia hou hope:"
 
-#: ui/MainWindow.glade:1230
+#: ui/MainWindow.glade:1485
 msgid "Launch at Startup:"
 msgstr "Hoʻomaka ma ka hoʻomaka:"
 
-#: ui/MainWindow.glade:1299 ui/MainWindow.glade:1895 src/MainWindow.py:360
-#: src/MainWindow.py:519
+#: ui/MainWindow.glade:1554 ui/MainWindow.glade:2150 ui/MainWindow.glade:2433
+#: src/MainWindow.py:505 src/MainWindow.py:656 src/MainWindow.py:801
+#: src/MainWindow.py:844
 msgid "Home Page"
 msgstr "ʻAoʻao Home"
 
-#: ui/MainWindow.glade:1345
+#: ui/MainWindow.glade:1600
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
@@ -166,7 +189,7 @@ msgstr ""
 "ʻO ka papa inoa o kāu ʻōnaehana i hoʻohana ʻia e ka luna pūʻolo me he mea "
 "lā ua haki a haki paha kāu ʻōnaehana i nā hilinaʻi."
 
-#: ui/MainWindow.glade:1410
+#: ui/MainWindow.glade:1665
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create "
@@ -178,171 +201,232 @@ msgid ""
 "Use with caution. Are you sure you want to continue?"
 msgstr ""
 "ʻO kēia hana;\n"
-"e wehe i nā kumu sources.list a me sources.list.d a hana i nā mea "
-"paʻamau,\n"
+"e wehe i nā kumu sources.list a me sources.list.d a hana i nā mea paʻamau,\n"
 "e holo i ke kauoha \"apt update\",\n"
 "e holo \"apt install --fix-broken\" kauoha,\n"
 "e holo \"dpkg --configure -a\".\n"
 "\n"
 "E hoʻohana me ka akahele. Makemake ʻoe e hoʻomau?"
 
-#: ui/MainWindow.glade:1433
+#: ui/MainWindow.glade:1688 ui/MainWindow.glade:2975 ui/MainWindow.glade:3426
 msgid "Cancel"
 msgstr "Hoʻopau"
 
-#: ui/MainWindow.glade:1499
+#: ui/MainWindow.glade:1754
 msgid "Operation completed."
 msgstr "Ua pau ka hana."
 
-#: ui/MainWindow.glade:1539
+#: ui/MainWindow.glade:1794
 msgid "Go to Home Page"
 msgstr "E hele i ka ʻAoʻao Home"
 
-#: ui/MainWindow.glade:1570
+#: ui/MainWindow.glade:1825
 msgid "You can check the terminal output below."
 msgstr "Hiki iā ʻoe ke nānā i ka hopena terminal ma lalo nei."
 
-#: ui/MainWindow.glade:1599
+#: ui/MainWindow.glade:1854
 msgid "The error in the package manager could not be fixed."
 msgstr "ʻAʻole hiki ke hoʻoponopono ʻia ka hewa i loko o ka pūʻolo."
 
-#: ui/MainWindow.glade:1617
+#: ui/MainWindow.glade:1872
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
 msgstr ""
 "Hiki iā ʻoe ke hahai i nā ʻōlelo aʻoaʻo ma ka nānā ʻana i ka hopena "
 "terminal ma lalo nei."
 
-#: ui/MainWindow.glade:1629
+#: ui/MainWindow.glade:1884
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr ""
 "Hiki iā ʻoe ke noi i ke kōkua e pili ana i kou pilikia ma o nā ala kōkua o "
 "Mauna."
 
-#: ui/MainWindow.glade:1737
+#: ui/MainWindow.glade:1992
 msgid "List of automatically removable all unused packages"
 msgstr "Papa inoa o nā pūʻolo i hoʻohana ʻole ʻia"
 
-#: ui/MainWindow.glade:1738
+#: ui/MainWindow.glade:1993
 msgid "Autoremovable Packages"
 msgstr "Nā pūʻolo hiki ke wehe ʻia"
 
-#: ui/MainWindow.glade:1774 ui/MainWindow.glade:1840
+#: ui/MainWindow.glade:2029 ui/MainWindow.glade:2095
 msgid "Remove"
 msgstr "Wehe"
 
-#: ui/MainWindow.glade:1803
+#: ui/MainWindow.glade:2058
 msgid "List of unnecessary packages with residual config files"
 msgstr "Ka papa inoa o nā pūʻolo pono ʻole me nā faila hoʻonohonoho koena"
 
-#: ui/MainWindow.glade:1804
+#: ui/MainWindow.glade:2059
 msgid "Residual Packages"
 msgstr "Nā Pākē Koena"
 
-#: ui/MainWindow.glade:2058 src/MainWindow.py:309 src/MainWindow.py:387
-#: src/MainWindow.py:499 src/MainWindow.py:515 src/MainWindow.py:554
+#: ui/MainWindow.glade:2205
+msgid "Your Current Version:"
+msgstr "ʻO kāu mana o kēia manawa:"
+
+#: ui/MainWindow.glade:2249
+msgid "Upgradable Version:"
+msgstr "Mea hiki ke hoʻonui ʻia:"
+
+#: ui/MainWindow.glade:2332
+msgid "Your system is not up to date. Firstly, install the available updates."
+msgstr ""
+"ʻAʻole paʻa kāu ʻōnaehana. ʻO ka mea mua, e hoʻokomo i nā mea hou i loaʻa."
+
+#: ui/MainWindow.glade:2347
+msgid "Go to Updates"
+msgstr "E hele i nā mea hou"
+
+#: ui/MainWindow.glade:3110
+msgid "Root"
+msgstr "Root"
+
+#: ui/MainWindow.glade:3186
+msgid "is free of"
+msgstr "kaawale o"
+
+#: ui/MainWindow.glade:3226 ui/MainWindow.glade:3343
+msgid "Retry"
+msgstr "E hoao hou"
+
+#: ui/MainWindow.glade:3296 src/MainWindow.py:717
+msgid "Packages are downloading, please wait."
+msgstr "Ke hoʻoiho nei nā pūʻolo, e kali."
+
+#: ui/MainWindow.glade:3324
+msgid "Continue"
+msgstr "E hoʻomau"
+
+#: ui/MainWindow.glade:3387
+msgid "Your system will reboot and updates will be installed during startup."
+msgstr ""
+"E hoʻomaka hou kāu ʻōnaehana a hoʻokomo ʻia nā mea hou i ka wā hoʻomaka."
+
+#: ui/MainWindow.glade:3405
+msgid "Please do not turn off the machine while updates are installing."
+msgstr "Mai hoʻopau i ka mīkini i ka wā e kau ana nā mea hou."
+
+#: ui/MainWindow.glade:3452
+msgid "Reboot"
+msgstr "Hoʻomaka hou"
+
+#: ui/MainWindow.glade:3516
+msgid "The last changes are processing."
+msgstr "Ke hana nei nā hoʻololi hope."
+
+#: ui/MainWindow.glade:3532
+msgid "Your system will reboot. Please wait..."
+msgstr "E hoʻomaka hou kāu ʻōnaehana. E ʻoluʻolu e kali..."
+
+#: ui/MainWindow.glade:3717 src/MainWindow.py:452 src/MainWindow.py:535
+#: src/MainWindow.py:659 src/MainWindow.py:777 src/MainWindow.py:797
+#: src/MainWindow.py:849 src/MainWindow.py:869
 msgid "Settings"
 msgstr "Nā hoʻonohonoho"
 
-#: ui/MainWindow.glade:2114
+#: ui/MainWindow.glade:3829
 msgid "About"
 msgstr "E pili ana"
 
-#: ui/MainWindow.glade:2166
-msgid "Package configuration files"
-msgstr "pūʻolo waihona hoʻonohonoho"
-
-#: ui/MainWindow.glade:2185
-msgid "Use new configuration files"
-msgstr "E hoʻohana i nā faila hoʻonohonoho hou"
-
-#: ui/MainWindow.glade:2201
-msgid "Use old configuration files"
-msgstr "E hoʻohana i nā faila hoʻonohonoho kahiko"
-
-#: ui/MainWindow.glade:2217
+#: ui/MainWindow.glade:3932
 msgid "Ask me what to do"
 msgstr "E nīnau mai iaʻu i ka mea e hana ai"
 
-#: ui/MainWindow.glade:2243
+#: ui/MainWindow.glade:3958
 msgid "Interaction"
 msgstr "Ka launa pū"
 
-#: ui/MainWindow.glade:2262
+#: ui/MainWindow.glade:3977
 msgid "Start process (with -yq option)"
 msgstr "E hoʻomaka i ke kaʻina hana (me ke koho -yq)"
 
-#: ui/MainWindow.glade:2278
+#: ui/MainWindow.glade:3993
 msgid "Ask me before starting the process (without -yq)"
 msgstr ""
-"E nīnau mai iaʻu ma mua o ka hoʻomaka ʻana i ke kaʻina hana (me ka ʻole -"
-"yq)"
+"E nīnau mai iaʻu ma mua o ka hoʻomaka ʻana i ke kaʻina hana (me ka ʻole -yq)"
 
-#: ui/MainWindow.glade:2329
-msgid "Restore Defaults"
-msgstr "Hoʻihoʻi i nā paʻamau"
+#: src/MainWindow.py:156 src/MainWindow.py:157
+msgid "Start {} Upgrade"
+msgstr "Hoʻomaka {} Hoʻonui"
 
-#: src/MainWindow.py:300
+#: src/MainWindow.py:443
 msgid "Quit"
 msgstr "Haʻalele"
 
-#: src/MainWindow.py:305 src/MainWindow.py:841
+#: src/MainWindow.py:448 src/MainWindow.py:1160
 msgid "Last Check"
 msgstr "Nānā hope"
 
-#: src/MainWindow.py:313 src/MainWindow.py:897
+#: src/MainWindow.py:456 src/MainWindow.py:1217
 msgid "System is Up to Date"
 msgstr "ʻO ka Pūnaewele i kēia lā"
 
-#: src/MainWindow.py:335 src/MainWindow.py:352 src/MainWindow.py:379
-#: src/MainWindow.py:391
+#: src/MainWindow.py:478 src/MainWindow.py:495 src/MainWindow.py:527
+#: src/MainWindow.py:541
 msgid "Hide App"
 msgstr "Hūnā App"
 
-#: src/MainWindow.py:337 src/MainWindow.py:349 src/MainWindow.py:656
+#: src/MainWindow.py:480 src/MainWindow.py:492 src/MainWindow.py:974
 msgid "Show App"
 msgstr "Hōʻike App"
 
-#: src/MainWindow.py:453 src/MainWindow.py:472 src/MainWindow.py:492
+#: src/MainWindow.py:607 src/MainWindow.py:626 src/MainWindow.py:646
 msgid "Package manager is busy, try again later."
 msgstr "Paʻa ka luna pūʻolo, e hoʻāʻo hou ma hope."
 
-#: src/MainWindow.py:854
+#: src/MainWindow.py:1173
 msgid "System is Broken"
 msgstr "Haʻihaʻi ka Pūnaehana"
 
-#: src/MainWindow.py:866 src/MainWindow.py:872
+#: src/MainWindow.py:1185 src/MainWindow.py:1191
 msgid "Software Update"
 msgstr "Hoʻohou polokalamu"
 
-#: src/MainWindow.py:867
+#: src/MainWindow.py:1186
 msgid "There are {} software updates available."
 msgstr "Loaʻa nā mea hou {} lako polokalamu."
 
-#: src/MainWindow.py:873
+#: src/MainWindow.py:1192
 msgid "There is {} software update available."
 msgstr "Loaʻa iā {} ka hoʻonui polokalamu."
 
-#: src/MainWindow.py:886
+#: src/MainWindow.py:1206
 msgid "You have removable residual packages."
 msgstr "Loaʻa iā ʻoe nā pūʻolo koena hiki ke wehe."
 
-#: src/MainWindow.py:900
+#: src/MainWindow.py:1220
 msgid "{} Updates Pending"
 msgstr "{} Nā mea hou e kali ana"
 
-#: src/MainWindow.py:902
+#: src/MainWindow.py:1222
 msgid "{} Update Pending"
 msgstr "{} Hōʻano hou e kali ana"
 
-#: src/MainWindow.py:975 src/MainWindow.py:1051
+#: src/MainWindow.py:1261
+msgid "Upgrade to {}"
+msgstr "Hoʻonui i {}"
+
+#: src/MainWindow.py:1402
+msgid "Total Required Size"
+msgstr "Ka nui i makemakeia"
+
+#: src/MainWindow.py:1532 src/MainWindow.py:1608 src/MainWindow.py:1684
 msgid "Copy selected text"
 msgstr "E kope i ka kikokikona i koho ʻia"
 
-#: src/MainWindow.py:1025
+#: src/MainWindow.py:1582
 msgid "Process completed."
 msgstr "Ua pau ka hana."
 
-#: src/MainWindow.py:1123
+#: src/MainWindow.py:1732
+msgid "The download is complete. You can continue."
+msgstr "Ua pau ka hoʻoiho ʻana. Hiki iā ʻoe ke hoʻomau."
+
+#: src/MainWindow.py:1745
+msgid "The download is not completed. Try again."
+msgstr "ʻAʻole i pau ka hoʻoiho ʻana. Hana hou."
+
+#: src/MainWindow.py:1773
 msgid "Update"
 msgstr "Hoʻohou"

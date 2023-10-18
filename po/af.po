@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: mauna-update\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 14:37-0300\n"
-"PO-Revision-Date: 2023-10-05 18:52-0300\n"
+"PO-Revision-Date: 2023-10-18 12:53-0300\n"
 "Last-Translator: \n"
 "Language-Team: Mauna Linux <dev@maunalinux.top>\n"
 "Language: af\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4\n"
 
 #: ui/MainWindow.glade:12
 msgid "Mauna Update Application"
 msgstr "Mauna dateer aansoek op"
 
-#: ui/MainWindow.glade:55 ui/MainWindow.glade:1976 src/MainWindow.py:73
-#: src/MainWindow.py:285
+#: ui/MainWindow.glade:55 ui/MainWindow.glade:3635 src/MainWindow.py:75
+#: src/MainWindow.py:428
 msgid "Mauna Update"
 msgstr "Mauna-opdatering"
 
@@ -30,7 +30,7 @@ msgstr "Mauna-opdatering"
 msgid "No"
 msgstr "Geen"
 
-#: ui/MainWindow.glade:96 ui/MainWindow.glade:1450
+#: ui/MainWindow.glade:96 ui/MainWindow.glade:1705
 msgid "Yes"
 msgstr "Ja"
 
@@ -42,124 +42,147 @@ msgstr ""
 "Die opgraderingsproses is aan die gang. Is u seker dat u die aansoek wil "
 "sluit?"
 
-#: ui/MainWindow.glade:228
+#: ui/MainWindow.glade:174 ui/MainWindow.glade:3881
+msgid "Package configuration files"
+msgstr "Pakket konfigurasie lêers"
+
+#: ui/MainWindow.glade:193 ui/MainWindow.glade:3900
+msgid "Use new configuration files"
+msgstr "Pakket konfigurasie lêers"
+
+#: ui/MainWindow.glade:209 ui/MainWindow.glade:3916
+msgid "Use old configuration files"
+msgstr "Gebruik ou konfigurasielêers"
+
+#: ui/MainWindow.glade:260 ui/MainWindow.glade:4044
+msgid "Restore Defaults"
+msgstr "Herstel standaard"
+
+#: ui/MainWindow.glade:371
 msgid "Package manager cache is updating"
 msgstr "Pakketbestuurder-kas word opgedateer"
 
-#: ui/MainWindow.glade:317
+#: ui/MainWindow.glade:460 ui/MainWindow.glade:2519
 msgid "Upgraded"
 msgstr "Opgegradeer"
 
-#: ui/MainWindow.glade:343
+#: ui/MainWindow.glade:486 ui/MainWindow.glade:2545
 msgid "Newly Installed"
 msgstr "Nuut geïnstalleer"
 
-#: ui/MainWindow.glade:370
+#: ui/MainWindow.glade:513 ui/MainWindow.glade:2572
 msgid "To Remove"
 msgstr "Om te verwyder"
 
-#: ui/MainWindow.glade:397
+#: ui/MainWindow.glade:540 ui/MainWindow.glade:2599
 msgid "Not Upgraded"
 msgstr "Nie opgegradeer nie"
 
-#: ui/MainWindow.glade:445
+#: ui/MainWindow.glade:588 ui/MainWindow.glade:2647
 msgid "Download size:"
 msgstr "Aflaai grootte:"
 
-#: ui/MainWindow.glade:500
+#: ui/MainWindow.glade:643 ui/MainWindow.glade:2703
 msgid "Required disk size:"
 msgstr "Vereiste skyfgrootte:"
 
-#: ui/MainWindow.glade:555
+#: ui/MainWindow.glade:698 ui/MainWindow.glade:2759
 msgid "Upgraded:"
 msgstr "Opgegradeer:"
 
-#: ui/MainWindow.glade:610
+#: ui/MainWindow.glade:753 ui/MainWindow.glade:2815
 msgid "Newly installed:"
 msgstr "Nuut geïnstalleer:"
 
-#: ui/MainWindow.glade:665
+#: ui/MainWindow.glade:808 ui/MainWindow.glade:2871
 msgid "To remove:"
 msgstr "Om te verwyder:"
 
-#: ui/MainWindow.glade:720
+#: ui/MainWindow.glade:863 ui/MainWindow.glade:2927
 msgid "Not upgraded:"
 msgstr "Nie opgegradeer nie:"
 
-#: ui/MainWindow.glade:772
+#: ui/MainWindow.glade:915 ui/MainWindow.glade:3773 src/MainWindow.py:509
+#: src/MainWindow.py:537 src/MainWindow.py:546 src/MainWindow.py:779
+#: src/MainWindow.py:806 src/MainWindow.py:836 src/MainWindow.py:872
 msgid "Version Upgrade"
 msgstr "Weergawe opgradering"
 
-#: ui/MainWindow.glade:795
+#: ui/MainWindow.glade:938
 msgid "Upgrade"
 msgstr "Opgradering"
 
-#: ui/MainWindow.glade:854
+#: ui/MainWindow.glade:997
 msgid "Exit"
 msgstr "Verlaat"
 
-#: ui/MainWindow.glade:867 ui/MainWindow.glade:1368
+#: ui/MainWindow.glade:1010 ui/MainWindow.glade:1623
 msgid "Try Fix"
 msgstr "Probeer regmaak"
 
-#: ui/MainWindow.glade:880
+#: ui/MainWindow.glade:1023
 msgid "Refresh"
 msgstr "Verfris"
 
-#: ui/MainWindow.glade:954
+#: ui/MainWindow.glade:1097
 msgid "Back"
 msgstr "Terug"
 
-#: ui/MainWindow.glade:969
+#: ui/MainWindow.glade:1112
 msgid "Ok"
 msgstr "OK"
 
-#: ui/MainWindow.glade:1030
+#: ui/MainWindow.glade:1172
 msgid "Your system is up to date."
 msgstr "Jou stelsel is op datum."
 
-#: ui/MainWindow.glade:1050 src/MainWindow.py:289
+#: ui/MainWindow.glade:1213 src/MainWindow.py:432
 msgid "Check Updates"
 msgstr "Gaan opdaterings na"
 
-#: ui/MainWindow.glade:1098
+#: ui/MainWindow.glade:1259
+msgid "Mauna new version is available."
+msgstr "Mauna nuwe weergawe is beskikbaar."
+
+#: ui/MainWindow.glade:1353
 msgid "Update Check Frequency:"
 msgstr "Dateer tjekfrekwensie op:"
 
-#: ui/MainWindow.glade:1116
+#: ui/MainWindow.glade:1371
 msgid "Hourly"
 msgstr "Uurlikse"
 
-#: ui/MainWindow.glade:1117
+#: ui/MainWindow.glade:1372
 msgid "Daily"
 msgstr "Daaglikse"
 
-#: ui/MainWindow.glade:1118
+#: ui/MainWindow.glade:1373
 msgid "Weekly"
 msgstr "Weeklikse"
 
-#: ui/MainWindow.glade:1119
+#: ui/MainWindow.glade:1374
 msgid "Never"
 msgstr "Nooit"
 
-#: ui/MainWindow.glade:1136 ui/MainWindow.glade:1153
+#: ui/MainWindow.glade:1391 ui/MainWindow.glade:1408
 msgid "seconds"
 msgstr "sekondes"
 
-#: ui/MainWindow.glade:1192
+#: ui/MainWindow.glade:1447
 msgid "Last Update Check Date:"
 msgstr "Laaste opdateringskontroledatum:"
 
-#: ui/MainWindow.glade:1230
+#: ui/MainWindow.glade:1485
 msgid "Launch at Startup:"
-msgstr "Begin by Opstart:"
+msgstr "Hardloop by opstart:"
 
-#: ui/MainWindow.glade:1299 ui/MainWindow.glade:1895 src/MainWindow.py:360
-#: src/MainWindow.py:519
+#: ui/MainWindow.glade:1554 ui/MainWindow.glade:2150 ui/MainWindow.glade:2433
+#: src/MainWindow.py:505 src/MainWindow.py:656 src/MainWindow.py:801
+#: src/MainWindow.py:844
 msgid "Home Page"
 msgstr "Tuisblad"
 
-#: ui/MainWindow.glade:1345
+#: ui/MainWindow.glade:1600
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
@@ -167,7 +190,7 @@ msgstr ""
 "U lys van stelselbronne wat deur pakketbestuurder gebruik word, lyk "
 "stukkend of u stelsel het afhanklikhede verbreek."
 
-#: ui/MainWindow.glade:1410
+#: ui/MainWindow.glade:1665
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create "
@@ -187,158 +210,224 @@ msgstr ""
 "\n"
 "Gebruik versigtig. Is jy seker jy wil voortgaan?"
 
-#: ui/MainWindow.glade:1433
+#: ui/MainWindow.glade:1688 ui/MainWindow.glade:2975 ui/MainWindow.glade:3426
 msgid "Cancel"
 msgstr "Kanselleer"
 
-#: ui/MainWindow.glade:1499
+#: ui/MainWindow.glade:1754
 msgid "Operation completed."
 msgstr "Operasie voltooi."
 
-#: ui/MainWindow.glade:1539
+#: ui/MainWindow.glade:1794
 msgid "Go to Home Page"
 msgstr "Gaan na die tuisblad"
 
-#: ui/MainWindow.glade:1570
+#: ui/MainWindow.glade:1825
 msgid "You can check the terminal output below."
 msgstr "U kan die terminale uitvoer hieronder nagaan."
 
-#: ui/MainWindow.glade:1599
+#: ui/MainWindow.glade:1854
 msgid "The error in the package manager could not be fixed."
 msgstr "Die fout in die pakketbestuurder kon nie reggestel word nie."
 
-#: ui/MainWindow.glade:1617
+#: ui/MainWindow.glade:1872
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
 msgstr ""
 "U kan die instruksies volg deur na die terminale uitvoer hieronder te kyk."
 
-#: ui/MainWindow.glade:1629
+#: ui/MainWindow.glade:1884
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr "U kan hulp vra oor u probleem deur Mauna-hulpkanale."
 
-#: ui/MainWindow.glade:1737
+#: ui/MainWindow.glade:1992
 msgid "List of automatically removable all unused packages"
 msgstr "Lys van outomaties verwyderbare alle ongebruikte pakkette"
 
-#: ui/MainWindow.glade:1738
+#: ui/MainWindow.glade:1993
 msgid "Autoremovable Packages"
 msgstr "Outo-verwyderbare pakkette"
 
-#: ui/MainWindow.glade:1774 ui/MainWindow.glade:1840
+#: ui/MainWindow.glade:2029 ui/MainWindow.glade:2095
 msgid "Remove"
 msgstr "Verwyder"
 
-#: ui/MainWindow.glade:1803
+#: ui/MainWindow.glade:2058
 msgid "List of unnecessary packages with residual config files"
 msgstr "Lys van onnodige pakkette met oorblywende konfigurasielêers"
 
-#: ui/MainWindow.glade:1804
+#: ui/MainWindow.glade:2059
 msgid "Residual Packages"
 msgstr "Residuele pakkette"
 
-#: ui/MainWindow.glade:2058 src/MainWindow.py:309 src/MainWindow.py:387
-#: src/MainWindow.py:499 src/MainWindow.py:515 src/MainWindow.py:554
+#: ui/MainWindow.glade:2205
+msgid "Your Current Version:"
+msgstr "Jou huidige weergawe:"
+
+#: ui/MainWindow.glade:2249
+msgid "Upgradable Version:"
+msgstr "Opgradeerbare weergawe:"
+
+#: ui/MainWindow.glade:2332
+msgid "Your system is not up to date. Firstly, install the available updates."
+msgstr ""
+"Jou stelsel is nie op datum nie. Installeer eerstens die beskikbare "
+"opdaterings."
+
+#: ui/MainWindow.glade:2347
+msgid "Go to Updates"
+msgstr "Gaan na Opdaterings"
+
+#: ui/MainWindow.glade:3110
+msgid "Root"
+msgstr "Root"
+
+#: ui/MainWindow.glade:3186
+msgid "is free of"
+msgstr "vry is van"
+
+#: ui/MainWindow.glade:3226 ui/MainWindow.glade:3343
+msgid "Retry"
+msgstr "Probeer weer"
+
+#: ui/MainWindow.glade:3296 src/MainWindow.py:717
+msgid "Packages are downloading, please wait."
+msgstr "Pakkette word tans afgelaai, wag asseblief."
+
+#: ui/MainWindow.glade:3324
+msgid "Continue"
+msgstr "Aanhou"
+
+#: ui/MainWindow.glade:3387
+msgid "Your system will reboot and updates will be installed during startup."
+msgstr ""
+"Jou stelsel sal herlaai en opdaterings sal tydens opstart geïnstalleer word."
+
+#: ui/MainWindow.glade:3405
+msgid "Please do not turn off the machine while updates are installing."
+msgstr ""
+"Moet asseblief nie die masjien afskakel terwyl opdaterings geïnstalleer "
+"word nie."
+
+#: ui/MainWindow.glade:3452
+msgid "Reboot"
+msgstr "Herlaai"
+
+#: ui/MainWindow.glade:3516
+msgid "The last changes are processing."
+msgstr "Die laaste veranderinge word verwerk."
+
+#: ui/MainWindow.glade:3532
+msgid "Your system will reboot. Please wait..."
+msgstr "Jou stelsel sal herlaai. Wag asseblief..."
+
+#: ui/MainWindow.glade:3717 src/MainWindow.py:452 src/MainWindow.py:535
+#: src/MainWindow.py:659 src/MainWindow.py:777 src/MainWindow.py:797
+#: src/MainWindow.py:849 src/MainWindow.py:869
 msgid "Settings"
 msgstr "Instellings"
 
-#: ui/MainWindow.glade:2114
+#: ui/MainWindow.glade:3829
 msgid "About"
 msgstr "Oor"
 
-#: ui/MainWindow.glade:2166
-msgid "Package configuration files"
-msgstr "Pakket konfigurasie lêers"
-
-#: ui/MainWindow.glade:2185
-msgid "Use new configuration files"
-msgstr "Pakket konfigurasie lêers"
-
-#: ui/MainWindow.glade:2201
-msgid "Use old configuration files"
-msgstr "Gebruik ou konfigurasielêers"
-
-#: ui/MainWindow.glade:2217
+#: ui/MainWindow.glade:3932
 msgid "Ask me what to do"
 msgstr "Vra my wat om te doen"
 
-#: ui/MainWindow.glade:2243
+#: ui/MainWindow.glade:3958
 msgid "Interaction"
 msgstr "Interaksie"
 
-#: ui/MainWindow.glade:2262
+#: ui/MainWindow.glade:3977
 msgid "Start process (with -yq option)"
 msgstr "Begin proses (met -yq opsie)"
 
-#: ui/MainWindow.glade:2278
+#: ui/MainWindow.glade:3993
 msgid "Ask me before starting the process (without -yq)"
 msgstr "Ask me before starting the process (without -yq)"
 
-#: ui/MainWindow.glade:2329
-msgid "Restore Defaults"
-msgstr "Herstel standaard"
+#: src/MainWindow.py:156 src/MainWindow.py:157
+msgid "Start {} Upgrade"
+msgstr "Begin {} Gradeer op"
 
-#: src/MainWindow.py:300
+#: src/MainWindow.py:443
 msgid "Quit"
 msgstr "Sluit"
 
-#: src/MainWindow.py:305 src/MainWindow.py:841
+#: src/MainWindow.py:448 src/MainWindow.py:1160
 msgid "Last Check"
 msgstr "Laaste tjek"
 
-#: src/MainWindow.py:313 src/MainWindow.py:897
+#: src/MainWindow.py:456 src/MainWindow.py:1217
 msgid "System is Up to Date"
 msgstr "Stelsel is op datum"
 
-#: src/MainWindow.py:335 src/MainWindow.py:352 src/MainWindow.py:379
-#: src/MainWindow.py:391
+#: src/MainWindow.py:478 src/MainWindow.py:495 src/MainWindow.py:527
+#: src/MainWindow.py:541
 msgid "Hide App"
 msgstr "Versteek toepassing"
 
-#: src/MainWindow.py:337 src/MainWindow.py:349 src/MainWindow.py:656
+#: src/MainWindow.py:480 src/MainWindow.py:492 src/MainWindow.py:974
 msgid "Show App"
 msgstr "Wys toepassing"
 
-#: src/MainWindow.py:453 src/MainWindow.py:472 src/MainWindow.py:492
+#: src/MainWindow.py:607 src/MainWindow.py:626 src/MainWindow.py:646
 msgid "Package manager is busy, try again later."
 msgstr "Pakketbestuurder is besig, probeer later weer."
 
-#: src/MainWindow.py:854
+#: src/MainWindow.py:1173
 msgid "System is Broken"
 msgstr "Stelsel is gebreek"
 
-#: src/MainWindow.py:866 src/MainWindow.py:872
+#: src/MainWindow.py:1185 src/MainWindow.py:1191
 msgid "Software Update"
 msgstr "Sagteware-opdatering"
 
-#: src/MainWindow.py:867
+#: src/MainWindow.py:1186
 msgid "There are {} software updates available."
 msgstr "Daar is {} sagteware-opdaterings beskikbaar."
 
-#: src/MainWindow.py:873
+#: src/MainWindow.py:1192
 msgid "There is {} software update available."
 msgstr "Daar is {} sagteware-opdatering beskikbaar."
 
-#: src/MainWindow.py:886
+#: src/MainWindow.py:1206
 msgid "You have removable residual packages."
 msgstr "Jy het verwyderbare oorblywende pakkette."
 
-#: src/MainWindow.py:900
+#: src/MainWindow.py:1220
 msgid "{} Updates Pending"
 msgstr "{} Bywerkings hangende"
 
-#: src/MainWindow.py:902
+#: src/MainWindow.py:1222
 msgid "{} Update Pending"
 msgstr "{} Bywerking hangende"
 
-#: src/MainWindow.py:975 src/MainWindow.py:1051
+#: src/MainWindow.py:1261
+msgid "Upgrade to {}"
+msgstr "Gradeer op na {}"
+
+#: src/MainWindow.py:1402
+msgid "Total Required Size"
+msgstr "Totale vereiste grootte"
+
+#: src/MainWindow.py:1532 src/MainWindow.py:1608 src/MainWindow.py:1684
 msgid "Copy selected text"
 msgstr "Kopieer geselekteerde teks"
 
-#: src/MainWindow.py:1025
+#: src/MainWindow.py:1582
 msgid "Process completed."
 msgstr "Proses voltooi."
 
-#: src/MainWindow.py:1123
+#: src/MainWindow.py:1732
+msgid "The download is complete. You can continue."
+msgstr "Die aflaai is voltooi. Jy kan voortgaan."
+
+#: src/MainWindow.py:1745
+msgid "The download is not completed. Try again."
+msgstr "Die aflaai is nie voltooi nie. Probeer weer."
+
+#: src/MainWindow.py:1773
 msgid "Update"
 msgstr "Bywerking"
