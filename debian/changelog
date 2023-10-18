@@ -1,3 +1,10 @@
+mauna-update (1.0.3) mauna; urgency=medium
+
+  * New upstream version
+  * l10n: Update POT and translations
+
+ -- Mauna Linux <dev@maunalinux.top>  Wed, 18 Oct 2023 18:22:13 -0300
+
 mauna-update (1.0.2) mauna; urgency=medium
 
   * New upstream version
