@@ -11,7 +11,8 @@
     <property name="version">0.1.0</property>
     <property name="comments" translatable="yes">Mauna Update Application</property>
     <property name="website">https://github.com/maunalinux/mauna-update</property>
-    <property name="authors">Mauna Linux</property>
+    <property name="authors">Mauna Linux
+    </property>
     <property name="translator-credits">Mauna Linux</property>
     <property name="logo-icon-name">mauna-update</property>
     <property name="license-type">gpl-3-0</property>
@@ -2971,7 +2972,7 @@ Use with caution. Are you sure you want to continue?</property>
                             <property name="spacing">21</property>
                             <child>
                               <object class="GtkButton" id="ui_distuptodowncancel_button">
-                                <property name="label">Cancel</property>
+                                <property name="label" translatable="yes">Cancel</property>
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">True</property>
@@ -3422,7 +3423,7 @@ Use with caution. Are you sure you want to continue?</property>
                             <property name="spacing">21</property>
                             <child>
                               <object class="GtkButton" id="ui_distuptoinstallcancel_button">
-                                <property name="label">Cancel</property>
+                                <property name="label" translatable="yes">Cancel</property>
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">True</property>
