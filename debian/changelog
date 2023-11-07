@@ -1,3 +1,37 @@
+mauna-update (1.0.4) mauna; urgency=medium
+
+  * New upstream release
+  * Update .gitignore
+  * Update mauna-update-uptodate icon
+  * Add systemd offline dist upgrade
+  * Reformat Code
+  * Update dpkg monitoring as only status file
+  * Fix typo
+  * Update pot file
+  * Fix residual package controls
+  * Update normal upgrade info labels and visible values
+  * Add spinner to normal upgrade info and Update busy control
+  * Add ok button to upgrade busy control
+  * Fix normal upgrade info label set text
+  * Add visible state to normal upgrade spinner
+  * Fix indent
+  * Add bold weight to info label
+  * Add breaks for package-update-indicator, pk-update-icon
+  * Add breaks for gnome-shell-extension-apt-update-indicator
+  * Update pot file
+  * Add conflicts too
+  * Add dpkg interrupt control and fix
+  * Update distupgrade file controls and Add textview to last page
+  * Add replaces too
+  * Update dpkg interrupt control
+  * Add GLib idle to clear upgrade listboxes
+  * Update dpkg interrupt control and Add dpkg lock control
+  * Fix page args control
+  * Fix set updateinfo page on upgrade ok clicked
+  * Add apt keep list for dist upgrade
+
+ -- Mauna Linux <dev@maunalinux.top>  Mon, 30 Oct 2023 17:43:00 -0300
+
 mauna-update (1.0.3) mauna; urgency=medium
 
   * New upstream version
