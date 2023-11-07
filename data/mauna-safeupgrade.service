@@ -9,5 +9,5 @@ ConditionPathExists=!/run/ostree-booted
 
 [Service]
 Type=oneshot
-ExecStart=/usr/share/mauna/mauna-update/data/mauna-safeupgrade.sh
+ExecStart=@@execpath@@
 FailureAction=reboot
