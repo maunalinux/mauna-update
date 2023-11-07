@@ -14,5 +14,14 @@ Depends: ${misc:Depends},
          gir1.2-glib-2.0,
          gir1.2-gtk-3.0,
          python3-apt
+Breaks: gnome-shell-extension-apt-update-indicator,
+        package-update-indicator,
+        pk-update-icon
+Conflicts: gnome-shell-extension-apt-update-indicator,
+           package-update-indicator,
+           pk-update-icon
+Replaces: gnome-shell-extension-apt-update-indicator,
+          package-update-indicator,
+          pk-update-icon
 Description: Mauna Update.
  Mauna Update application
