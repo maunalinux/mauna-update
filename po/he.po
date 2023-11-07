@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-28 19:10-0300\n"
-"PO-Revision-Date: 2023-10-30 19:27-0300\n"
+"PO-Revision-Date: 2023-10-31 09:09-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: de\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,170 +19,167 @@ msgstr ""
 
 #: ui/MainWindow.glade:12
 msgid "Mauna Update Application"
-msgstr "Mauna Update Antrag"
+msgstr "אפליקציית עדכון מאונה"
 
 #: ui/MainWindow.glade:55 ui/MainWindow.glade:3788 src/MainWindow.py:75
 #: src/MainWindow.py:447
 msgid "Mauna Update"
-msgstr "Mauna Update"
+msgstr "עדכון מאונה"
 
 #: ui/MainWindow.glade:79
 msgid "No"
-msgstr "Nein"
+msgstr "לא"
 
 #: ui/MainWindow.glade:96 ui/MainWindow.glade:1695
 msgid "Yes"
-msgstr "Ja"
+msgstr "כן"
 
 #: ui/MainWindow.glade:124
 msgid ""
 "The upgrade process is in progress. Are you sure you want to close the "
 "application?"
-msgstr ""
-"Der Aktualisierungsvorgang ist im Gange. Sind Sie sicher, dass Sie die "
-"Anwendung schließen möchten?"
+msgstr "תהליך השדרוג בעיצומו. האם אתה בטוח שברצונך לסגור את היישום?"
 
 #: ui/MainWindow.glade:174 ui/MainWindow.glade:4034
 msgid "Package configuration files"
-msgstr "Paket-Konfigurationsdateien"
+msgstr "קבצי תצורה של חבילה"
 
 #: ui/MainWindow.glade:193 ui/MainWindow.glade:4053
 msgid "Use new configuration files"
-msgstr "Neue Konfigurationsdateien verwenden"
+msgstr "השתמש בקבצי תצורה חדשים"
 
 #: ui/MainWindow.glade:209 ui/MainWindow.glade:4069
 msgid "Use old configuration files"
-msgstr "Alte Konfigurationsdateien verwenden"
+msgstr "השתמש בקבצי תצורה ישנים"
 
 #: ui/MainWindow.glade:260 ui/MainWindow.glade:4197
 msgid "Restore Defaults"
-msgstr "Standardeinstellungen wiederherstellen"
+msgstr "לשחזר את ברירות מחדל"
 
 #: ui/MainWindow.glade:371
 msgid "Package manager cache is updating"
-msgstr "Der Paketmanager-Cache wird aktualisiert"
+msgstr "מטמון מנהל החבילות מתעדכן"
 
 #: ui/MainWindow.glade:463 ui/MainWindow.glade:2509
 msgid "Upgraded"
-msgstr "Verbessert"
+msgstr "משודרג"
 
 #: ui/MainWindow.glade:489 ui/MainWindow.glade:2535
 msgid "Newly Installed"
-msgstr "Neu installiert"
+msgstr "מותקן לאחרונה"
 
 #: ui/MainWindow.glade:516 ui/MainWindow.glade:2562
 msgid "To Remove"
-msgstr "Zum Entfernen"
+msgstr "כדי להסיר"
 
 #: ui/MainWindow.glade:543 ui/MainWindow.glade:2589
 msgid "Not Upgraded"
-msgstr "Nicht aufgerüstet"
+msgstr "לא משודרג"
 
 #: ui/MainWindow.glade:591 ui/MainWindow.glade:2637
 msgid "Download size:"
-msgstr "Downloadgröße:"
+msgstr "גודל הורדה:"
 
 #: ui/MainWindow.glade:646 ui/MainWindow.glade:2693
 msgid "Required disk size:"
-msgstr "Erforderliche Festplattengröße:"
+msgstr "גודל דיסק נדרש:"
 
 #: ui/MainWindow.glade:701 ui/MainWindow.glade:2749
 msgid "Upgraded:"
-msgstr "Aktualisiert:"
+msgstr "Upgraded:"
 
 #: ui/MainWindow.glade:756 ui/MainWindow.glade:2805
 msgid "Newly installed:"
-msgstr "Neu installiert:"
+msgstr "מותקן לאחרונה:"
 
 #: ui/MainWindow.glade:811 ui/MainWindow.glade:2861
 msgid "To remove:"
-msgstr "Zu entfernen:"
+msgstr "כדי להסיר:"
 
 #: ui/MainWindow.glade:866 ui/MainWindow.glade:2917
 msgid "Not upgraded:"
-msgstr "Nicht aktualisiert:"
+msgstr "לא משודרג:"
 
 #: ui/MainWindow.glade:914
 msgid "Upgrade"
-msgstr "Aktualisierung"
+msgstr "שדרוג"
 
 #: ui/MainWindow.glade:1003
 msgid ""
 "<span color=\"red\">Package manager is busy, try again after the process is "
 "completed.</span>"
 msgstr ""
-"<span color=\"red\">Paketmanager ist beschäftigt, versuchen Sie es erneut, "
-"nachdem der Vorgang abgeschlossen ist.</span>"
+"<span color=\"red\">מנהל החבילות עסוק, נסה שוב לאחר השלמת התהליך.</span>"
 
 #: ui/MainWindow.glade:1079 ui/MainWindow.glade:3704
 msgid "Ok"
-msgstr "OK"
+msgstr "בסדר"
 
 #: ui/MainWindow.glade:1096 ui/MainWindow.glade:3634
 msgid "Fix"
-msgstr "Fix"
+msgstr "לתקן"
 
 #: ui/MainWindow.glade:1162
 msgid "Your system is up to date."
-msgstr "Ihr System ist auf dem neuesten Stand."
+msgstr "המערכת שלך מעודכנת."
 
 #: ui/MainWindow.glade:1203 src/MainWindow.py:451
 msgid "Check Updates"
-msgstr "Auf updates prüfen"
+msgstr "בדוק עדכונים"
 
 #: ui/MainWindow.glade:1249
 msgid "Mauna new version is available."
-msgstr "Mauna neue Version ist verfügbar."
+msgstr "גרסה חדשה של Mauna זמינה."
 
 #: ui/MainWindow.glade:1343
 msgid "Update Check Frequency:"
-msgstr "Häufigkeit der Aktualisierungsprüfung:"
+msgstr "תדירות בדיקת עדכונים:"
 
 #: ui/MainWindow.glade:1361
 msgid "Hourly"
-msgstr "Stündlich"
+msgstr "מדי שעה"
 
 #: ui/MainWindow.glade:1362
 msgid "Daily"
-msgstr "Täglich"
+msgstr "יום יומי"
 
 #: ui/MainWindow.glade:1363
 msgid "Weekly"
-msgstr "Wöchentlich"
+msgstr "שְׁבוּעִי"
 
 #: ui/MainWindow.glade:1364
 msgid "Never"
-msgstr "Niemals"
+msgstr "לעולם לא"
 
 #: ui/MainWindow.glade:1381 ui/MainWindow.glade:1398
 msgid "seconds"
-msgstr "Sekunden"
+msgstr "שניות"
 
 #: ui/MainWindow.glade:1437
 msgid "Last Update Check Date:"
-msgstr "Datum der letzten Aktualisierungsprüfung:"
+msgstr "תאריך בדיקת עדכון אחרון:"
 
 #: ui/MainWindow.glade:1475
 msgid "Launch at Startup:"
-msgstr "Beim Start ausführen:"
+msgstr "הפעל בעת ההפעלה:"
 
 #: ui/MainWindow.glade:1544 ui/MainWindow.glade:2140 ui/MainWindow.glade:2423
 #: src/MainWindow.py:524 src/MainWindow.py:694 src/MainWindow.py:846
 #: src/MainWindow.py:889
 msgid "Home Page"
-msgstr "Startseite"
+msgstr "דף הבית"
 
 #: ui/MainWindow.glade:1590
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
 msgstr ""
-"Ihre Systemquellenliste, die vom Paketmanager verwendet wird, scheint "
-"fehlerhaft zu sein oder Ihr System weist fehlerhafte Abhängigkeiten auf."
+"רשימת מקורות המערכת שלך שבה נעשה שימוש על ידי מנהל החבילות נראית שבורה או "
+"שלמערכת שלך יש תלות שבורה."
 
 #: ui/MainWindow.glade:1613
 msgid "Try Fix"
-msgstr "Versuchen Sie es mit Fix"
+msgstr "נסה לתקן"
 
 #: ui/MainWindow.glade:1655
 msgid ""
@@ -195,251 +192,240 @@ msgid ""
 "\n"
 "Use with caution. Are you sure you want to continue?"
 msgstr ""
-"Diese Operation;\n"
-"Entfernt alle Einträge in „sources.list“ und „sources.list.d“ und erstellt "
-"Standardeinstellungen.\n"
-"führt den Befehl „apt update“ aus,\n"
-"führt den Befehl „apt install --fix-broken“ aus,\n"
-"führt „dpkg --configure -a“ aus.\n"
+"פעולה זו;\n"
+"יסיר את כל הערכים sources.list ו-sources.list.d ויצור ברירת מחדל,\n"
+"יפעיל את הפקודה \"apt update\",\n"
+"יפעיל את הפקודה \"apt install --fix-broken\",\n"
+"יפעיל את \"dpkg --configure -a\".\n"
 "\n"
-"Mit Vorsicht verwenden. Bist du dir sicher, dass du weitermachen willst?"
+"השתמש בזהירות. האם אתה בטוח שאתה רוצה להמשיך?"
 
 #: ui/MainWindow.glade:1678 ui/MainWindow.glade:2965 ui/MainWindow.glade:3416
 msgid "Cancel"
-msgstr "Stornieren"
+msgstr "לְבַטֵל"
 
 #: ui/MainWindow.glade:1744
 msgid "Operation completed."
-msgstr "Vorgang abgeschlossen."
+msgstr "הפעולה הושלמה."
 
 #: ui/MainWindow.glade:1784
 msgid "Go to Home Page"
-msgstr "Gehen Sie zur Startseite"
+msgstr "עבור לעמוד הבית"
 
 #: ui/MainWindow.glade:1815
 msgid "You can check the terminal output below."
-msgstr "Sie können die Terminalausgabe unten überprüfen."
+msgstr "אתה יכול לבדוק את פלט המסוף למטה."
 
 #: ui/MainWindow.glade:1844
 msgid "The error in the package manager could not be fixed."
-msgstr "Der Fehler im Paketmanager konnte nicht behoben werden."
+msgstr "לא ניתן לתקן את השגיאה במנהל החבילות."
 
 #: ui/MainWindow.glade:1862
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
-msgstr ""
-"Sie können den Anweisungen folgen, indem Sie sich die Terminalausgabe unten "
-"ansehen."
+msgstr "אתה יכול לעקוב אחר ההוראות על ידי התבוננות בפלט המסוף למטה."
 
 #: ui/MainWindow.glade:1874
 msgid "You can ask for help about your problem through Mauna help channels."
-msgstr ""
-"Sie können über die Mauna-Hilfekanäle um Hilfe zu Ihrem Problem bitten."
+msgstr "אתה יכול לבקש עזרה לגבי הבעיה שלך דרך ערוצי העזרה של מאונה."
 
 #: ui/MainWindow.glade:1982
 msgid "List of automatically removable all unused packages"
-msgstr "Liste aller nicht verwendeten Pakete, die automatisch entfernt werden"
+msgstr "רשימה של כל החבילות שאינן בשימוש הניתנות להסרה אוטומטית"
 
 #: ui/MainWindow.glade:1983
 msgid "Autoremovable Packages"
-msgstr "Automatisch entfernbare Pakete"
+msgstr "חבילות הניתנות להסרה אוטומטית"
 
 #: ui/MainWindow.glade:2019 ui/MainWindow.glade:2085
 msgid "Remove"
-msgstr "Entfernen"
+msgstr "לְהַסִיר"
 
 #: ui/MainWindow.glade:2048
 msgid "List of unnecessary packages with residual config files"
-msgstr "Liste unnötiger Pakete mit verbleibenden Konfigurationsdateien"
+msgstr "רשימת חבילות מיותרות עם קבצי תצורה שיוריים"
 
 #: ui/MainWindow.glade:2049
 msgid "Residual Packages"
-msgstr "Restpakete"
+msgstr "חבילות שיוריות"
 
 #: ui/MainWindow.glade:2195
 msgid "Your Current Version:"
-msgstr "Ihre aktuelle Version:"
+msgstr "הגרסה הנוכחית שלך:"
 
 #: ui/MainWindow.glade:2239
 msgid "Upgradable Version:"
-msgstr "Aktualisierbare Version:"
+msgstr "גרסה ניתנת לשדרוג:"
 
 #: ui/MainWindow.glade:2322
 msgid "Your system is not up to date. Firstly, install the available updates."
-msgstr ""
-"Ihr System ist nicht auf dem neuesten Stand. Installieren Sie zunächst die "
-"verfügbaren Updates."
+msgstr "המערכת שלך לא מעודכנת. ראשית, התקן את העדכונים הזמינים."
 
 #: ui/MainWindow.glade:2337
 msgid "Go to Updates"
-msgstr "Gehen Sie zu Updates"
+msgstr "עבור אל עדכונים"
 
 #: ui/MainWindow.glade:3100
 msgid "Root"
-msgstr "Root"
+msgstr "שורש"
 
 #: ui/MainWindow.glade:3176
 msgid "is free of"
-msgstr "ist frei von"
+msgstr "הוא חופשי מ"
 
 #: ui/MainWindow.glade:3216 ui/MainWindow.glade:3333
 msgid "Retry"
-msgstr "Wiederholen"
+msgstr "נסה שוב"
 
 #: ui/MainWindow.glade:3286 src/MainWindow.py:755
 msgid "Packages are downloading, please wait."
-msgstr "Pakete werden heruntergeladen, bitte warten."
+msgstr "החבילות יורדות, אנא המתן."
 
 #: ui/MainWindow.glade:3314
 msgid "Continue"
-msgstr "Weitermachen"
+msgstr "לְהַמשִׁיך"
 
 #: ui/MainWindow.glade:3377
 msgid "Your system will reboot and updates will be installed during startup."
-msgstr ""
-"Ihr System wird neu gestartet und Updates werden während des Startvorgangs "
-"installiert."
+msgstr "המערכת שלך תאתחל מחדש ועדכונים יותקנו במהלך האתחול."
 
 #: ui/MainWindow.glade:3395
 msgid "Please do not turn off the machine while updates are installing."
-msgstr ""
-"Bitte schalten Sie den Computer nicht aus, während Updates installiert "
-"werden."
+msgstr "נא לא לכבות את המכשיר בזמן התקנת העדכונים."
 
 #: ui/MainWindow.glade:3442
 msgid "Reboot"
-msgstr "Neustart"
+msgstr "לְאַתחֵל"
 
 #: ui/MainWindow.glade:3506
 msgid "The last changes are processing."
-msgstr "Die letzten Änderungen werden bearbeitet."
+msgstr "השינויים האחרונים נמצאים בעיבוד."
 
 #: ui/MainWindow.glade:3522
 msgid "Your system will reboot. Please wait..."
-msgstr "Ihr System wird neu gestartet. Bitte warten..."
+msgstr "המערכת שלך תאתחל. המתן בבקשה..."
 
 #: ui/MainWindow.glade:3870 src/MainWindow.py:471 src/MainWindow.py:554
 #: src/MainWindow.py:697 src/MainWindow.py:822 src/MainWindow.py:842
 #: src/MainWindow.py:894 src/MainWindow.py:914
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "הגדרות"
 
 #: ui/MainWindow.glade:3926 src/MainWindow.py:528 src/MainWindow.py:556
 #: src/MainWindow.py:565 src/MainWindow.py:824 src/MainWindow.py:851
 #: src/MainWindow.py:881 src/MainWindow.py:917
 msgid "Version Upgrade"
-msgstr "Versionsaktualisierung"
+msgstr "שדרוג גרסה"
 
 #: ui/MainWindow.glade:3982
 msgid "About"
-msgstr "Über"
+msgstr "על אודות"
 
 #: ui/MainWindow.glade:4085
 msgid "Ask me what to do"
-msgstr "Fragen Sie mich, was ich tun soll"
+msgstr "תשאל אותי מה לעשות"
 
 #: ui/MainWindow.glade:4111
 msgid "Interaction"
-msgstr "Interaktion"
+msgstr "אינטראקציה"
 
 #: ui/MainWindow.glade:4130
 msgid "Start process (with -yq option)"
-msgstr "Prozess starten (mit der Option -yq)"
+msgstr "התחל תהליך (עם אפשרות -yq)"
 
 #: ui/MainWindow.glade:4146
 msgid "Ask me before starting the process (without -yq)"
-msgstr "Fragen Sie mich, bevor Sie den Vorgang starten (ohne -yq)"
+msgstr "שאל אותי לפני תחילת התהליך (ללא -yq)"
 
 #: src/MainWindow.py:156 src/MainWindow.py:157
 msgid "Start {} Upgrade"
-msgstr "Starten Sie das {} Aktualisierung"
+msgstr "התחל {} שדרוג"
 
 #: src/MainWindow.py:462
 msgid "Quit"
-msgstr "Aufhören"
+msgstr "לְהַפְסִיק"
 
 #: src/MainWindow.py:467 src/MainWindow.py:1245
 msgid "Last Check"
-msgstr "Letzte Überprüfung"
+msgstr "בדיקה אחרונה"
 
 #: src/MainWindow.py:475 src/MainWindow.py:1301
 msgid "System is Up to Date"
-msgstr "Das System ist auf dem neuesten Stand"
+msgstr "המערכת מעודכנת"
 
 #: src/MainWindow.py:497 src/MainWindow.py:514 src/MainWindow.py:546
 #: src/MainWindow.py:560
 msgid "Hide App"
-msgstr "Anwendung ausblenden"
+msgstr "הסתר אפליקציה"
 
 #: src/MainWindow.py:499 src/MainWindow.py:511 src/MainWindow.py:1054
 msgid "Show App"
-msgstr "Bewerbung anzeigen"
+msgstr "הצג אפליקציה"
 
 #: src/MainWindow.py:624
 msgid "Updates are installing. Please wait..."
-msgstr "Updates werden installiert. Bitte warten..."
+msgstr "מתבצעת התקנה של עדכונים. המתן בבקשה..."
 
 #: src/MainWindow.py:626
 msgid "Updating"
-msgstr "Aktualisierung"
+msgstr "עִדכּוּן"
 
 #: src/MainWindow.py:652 src/MainWindow.py:678
 msgid "Packages are removing. Please wait..."
-msgstr "Pakete werden entfernt. Bitte warten..."
+msgstr "חבילות מוסרות. המתן בבקשה..."
 
 #: src/MainWindow.py:1016 src/MainWindow.py:1702
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
 msgstr ""
-"dpkg-Interrupt erkannt. Klicken Sie auf die Schaltfläche „Reparieren“ oder\n"
-"Führen Sie manuell „sudo dpkg --configure -a“ aus, um das Problem zu "
-"beheben."
+"זוהתה הפסקת dpkg. לחץ על הלחצן 'תקן' או\n"
+"הפעל באופן ידני את 'sudo dpkg --configure -a' כדי לתקן את הבעיה."
 
 #: src/MainWindow.py:1025
 msgid "The process is in progress. Please wait..."
-msgstr "Der Prozess ist im Gange. Bitte warten..."
+msgstr "התהליך נמצא בעיצומו. המתן בבקשה..."
 
 #: src/MainWindow.py:1258
 msgid "System is Broken"
-msgstr "Das System ist kaputt"
+msgstr "המערכת שבורה"
 
 #: src/MainWindow.py:1269 src/MainWindow.py:1275
 msgid "Software Update"
-msgstr "Software-Aktualisierung"
+msgstr "עדכון תוכנה"
 
 #: src/MainWindow.py:1270
 msgid "There are {} software updates available."
-msgstr "Es sind {} Software-Updates verfügbar."
+msgstr "ישנם {} עדכוני תוכנה זמינים."
 
 #: src/MainWindow.py:1276
 msgid "There is {} software update available."
-msgstr "Es ist {} Software-Update verfügbar."
+msgstr "יש {} עדכוני תוכנה זמינים."
 
 #: src/MainWindow.py:1290
 msgid "You have removable residual packages."
-msgstr "Sie haben entfernbare Restpakete."
+msgstr "יש לך חבילות שאריות נשלפות."
 
 #: src/MainWindow.py:1304
 msgid "{} Updates Pending"
-msgstr "{} Aktualisierungen ausstehend"
+msgstr "{} עדכונים בהמתנה"
 
 #: src/MainWindow.py:1306
 msgid "{} Update Pending"
-msgstr "{} Aktualisierung ausstehend"
+msgstr "{} עדכון בהמתנה"
 
 #: src/MainWindow.py:1351
 msgid "Upgrade to {}"
-msgstr "Upgraden auf {}"
+msgstr "לשדרג ל {}"
 
 #: src/MainWindow.py:1490
 msgid "Total Required Size"
-msgstr "Erforderliche Gesamtgröße"
+msgstr "סה\"כ גודל נדרש"
 
 #: src/MainWindow.py:1641 src/MainWindow.py:1732 src/MainWindow.py:1808
 #: src/MainWindow.py:1900
 msgid "Copy selected text"
-msgstr "Ausgewählten Text kopieren"
+msgstr "העתק את הטקסט שנבחר"
 
 #: src/MainWindow.py:1698
 msgid ""
@@ -447,26 +433,26 @@ msgid ""
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
 "'Synaptic' first."
 msgstr ""
-"Es darf nur ein Software-Management-Tool gleichzeitig ausgeführt werden.\n"
-"Bitte schließen Sie die andere Anwendung, z.B. Zuerst „Update Manager“, "
-"„aptitude“ oder „Synaptic“."
+"רק כלי ניהול תוכנה אחד רשאי לפעול בו-זמנית.\n"
+"אנא סגור את האפליקציה האחרת, למשל. תחילה 'מנהל העדכונים', 'aptitude' או "
+"'Synaptic'."
 
 #: src/MainWindow.py:1707 src/MainWindow.py:1954
 msgid "Process completed."
-msgstr "Prozess abgeschlossen."
+msgstr "התהליך הושלם."
 
 #: src/MainWindow.py:1856
 msgid "The download is complete. You can continue."
-msgstr "Der Download ist abgeschlossen. Du kannst fortfahren."
+msgstr "ההורדה הושלמה. אתה יכול להמשיך."
 
 #: src/MainWindow.py:1869
 msgid "The download is not completed. Try again."
-msgstr "Der Download ist nicht abgeschlossen. Versuchen Sie es erneut."
+msgstr "ההורדה לא הושלמה. נסה שוב."
 
 #: src/MainWindow.py:1952
 msgid "Error."
-msgstr "Fehler."
+msgstr "שְׁגִיאָה."
 
 #: src/MainWindow.py:1978
 msgid "Update"
-msgstr "Aktualisieren"
+msgstr "עדכון"
