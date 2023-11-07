@@ -79,7 +79,7 @@ setup(
     install_requires=["PyGObject"],
     data_files=data_files,
     author="Fatih Altun",
-    author_email="dev@maunalinux.top",
+    author_email="dev@mauna.top",
     description="Mauna Update application",
     license="GPLv3",
     keywords="mauna-update, update, upgrade, apt",

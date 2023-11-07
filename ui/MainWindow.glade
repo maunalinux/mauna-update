@@ -12,7 +12,7 @@
     <property name="comments" translatable="yes">Mauna Update Application</property>
     <property name="website">https://github.com/maunalinux/mauna-update</property>
     <property name="authors">Mauna Linux
-    </property>
+</property>
     <property name="translator-credits">Mauna Linux</property>
     <property name="logo-icon-name">mauna-update</property>
     <property name="license-type">gpl-3-0</property>
@@ -369,6 +369,9 @@
                         <property name="can-focus">False</property>
                         <property name="valign">start</property>
                         <property name="label" translatable="yes">Package manager cache is updating</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -900,140 +903,50 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkStack" id="buttons_stack">
+                  <object class="GtkButtonBox" id="ui_upgrade_buttonbox">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="halign">center</property>
+                    <property name="homogeneous">True</property>
+                    <property name="layout-style">expand</property>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkButton" id="ui_upgrade_button">
+                        <property name="label" translatable="yes">Upgrade</property>
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="spacing">13</property>
-                        <property name="homogeneous">True</property>
-                        <child>
-                          <object class="GtkButton" id="ui_versionupgrade_button">
-                            <property name="label" translatable="yes">Version Upgrade</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="receives-default">True</property>
-                            <style>
-                              <class name="suggested-action"/>
-                            </style>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkButtonBox" id="ui_upgrade_buttonbox">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="halign">center</property>
-                            <property name="homogeneous">True</property>
-                            <property name="layout-style">expand</property>
-                            <child>
-                              <object class="GtkButton" id="ui_upgrade_button">
-                                <property name="label" translatable="yes">Upgrade</property>
-                                <property name="visible">True</property>
-                                <property name="can-focus">True</property>
-                                <property name="receives-default">True</property>
-                                <property name="halign">center</property>
-                                <signal name="clicked" handler="on_ui_upgrade_button_clicked" swapped="no"/>
-                                <style>
-                                  <class name="suggested-action"/>
-                                </style>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="position">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkButton" id="ui_upgradeoptions_button">
-                                <property name="visible">True</property>
-                                <property name="can-focus">True</property>
-                                <property name="receives-default">True</property>
-                                <signal name="clicked" handler="on_ui_upgradeoptions_button_clicked" swapped="no"/>
-                                <child>
-                                  <object class="GtkImage">
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">False</property>
-                                    <property name="icon-name">preferences-other-symbolic</property>
-                                  </object>
-                                </child>
-                                <style>
-                                  <class name="suggested-action"/>
-                                </style>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="position">1</property>
-                              </packing>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="halign">center</property>
+                        <signal name="clicked" handler="on_ui_upgrade_button_clicked" swapped="no"/>
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
                       </object>
                       <packing>
-                        <property name="name">upgrade_page</property>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkButton" id="ui_upgradeoptions_button">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="spacing">13</property>
-                        <property name="homogeneous">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <signal name="clicked" handler="on_ui_upgradeoptions_button_clicked" swapped="no"/>
                         <child>
-                          <object class="GtkButton" id="exit_button">
-                            <property name="label" translatable="yes">Exit</property>
+                          <object class="GtkImage">
                             <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="receives-default">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="icon-name">preferences-other-symbolic</property>
                           </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
                         </child>
-                        <child>
-                          <object class="GtkButton" id="fix_button">
-                            <property name="label" translatable="yes">Try Fix</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="receives-default">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkButton" id="refresh_button">
-                            <property name="label" translatable="yes">Refresh</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="receives-default">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">2</property>
-                          </packing>
-                        </child>
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
                       </object>
                       <packing>
-                        <property name="name">fix_page</property>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
@@ -1041,8 +954,7 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="padding">13</property>
-                    <property name="position">4</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
@@ -1075,8 +987,59 @@
                   <object class="GtkBox" id="ui_upgradeinfo_box">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">center</property>
                     <property name="orientation">vertical</property>
                     <property name="spacing">21</property>
+                    <child>
+                      <object class="GtkBox" id="ui_upgradeinfobusy_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="spacing">13</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="label" translatable="yes">&lt;span color="red"&gt;Package manager is busy, try again after the process is completed.&lt;/span&gt;</property>
+                            <property name="use-markup">True</property>
+                            <property name="justify">center</property>
+                            <property name="wrap">True</property>
+                            <property name="selectable">True</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="ui_upgradeinfobusyok_button">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="relief">none</property>
+                            <signal name="clicked" handler="on_ui_upgradeinfobusyok_button_clicked" swapped="no"/>
+                            <child>
+                              <object class="GtkImage">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="icon-name">emblem-ok-symbolic</property>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
                     <child>
                       <object class="GtkLabel" id="ui_upgradeinfo_label">
                         <property name="visible">True</property>
@@ -1089,40 +1052,67 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkButton" id="ui_upgradeinfoback_button">
-                        <property name="label" translatable="yes">Back</property>
-                        <property name="visible">True</property>
-                        <property name="can-focus">True</property>
-                        <property name="receives-default">True</property>
-                        <property name="halign">center</property>
-                        <signal name="clicked" handler="on_ui_upgradeinfoback_button_clicked" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkButton" id="ui_upgradeinfook_button">
-                        <property name="label" translatable="yes">Ok</property>
+                      <object class="GtkSpinner" id="ui_upgradeinfo_spinner">
                         <property name="visible">True</property>
-                        <property name="can-focus">True</property>
-                        <property name="receives-default">True</property>
-                        <property name="halign">center</property>
-                        <signal name="clicked" handler="on_ui_upgradeinfook_button_clicked" swapped="no"/>
-                        <style>
-                          <class name="suggested-action"/>
-                        </style>
+                        <property name="can-focus">False</property>
+                        <property name="active">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="spacing">34</property>
+                        <property name="homogeneous">True</property>
+                        <child>
+                          <object class="GtkButton" id="ui_upgradeinfook_button">
+                            <property name="label" translatable="yes">Ok</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <signal name="clicked" handler="on_ui_upgradeinfook_button_clicked" swapped="no"/>
+                            <style>
+                              <class name="suggested-action"/>
+                            </style>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="ui_upgradeinfofixdpkg_button">
+                            <property name="label" translatable="yes">Fix</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <signal name="clicked" handler="on_ui_upgradeinfofixdpkg_button_clicked" swapped="no"/>
+                            <style>
+                              <class name="suggested-action"/>
+                            </style>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
                       </packing>
                     </child>
                   </object>
@@ -1907,7 +1897,7 @@ Use with caution. Are you sure you want to continue?</property>
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
-                            <property name="label">&lt;a title='Mauna Mail' href='mailto:dev@maunalinux.top'&gt;dev@maunalinux.top&lt;/a&gt;</property>
+                            <property name="label">&lt;a title='Mauna Mail' href='mailto:support@maunalinux.top'&gt;support@maunalinux.top&lt;/a&gt;</property>
                             <property name="use-markup">True</property>
                             <property name="selectable">True</property>
                           </object>
@@ -2286,7 +2276,7 @@ Use with caution. Are you sure you want to continue?</property>
                             <property name="spacing">13</property>
                             <child>
                               <object class="GtkButton" id="ui_controldistup_button">
-                                <property name="label" translatable="yes">Start Mauna Upgrade</property>
+                                <property name="label">Start Mauna Upgrade</property>
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">True</property>
@@ -3371,10 +3361,10 @@ Use with caution. Are you sure you want to continue?</property>
                       <object class="GtkBox" id="ui_distupdateinstall_box">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="valign">start</property>
                         <property name="margin-start">55</property>
                         <property name="margin-end">55</property>
                         <property name="margin-top">34</property>
+                        <property name="margin-bottom">34</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">21</property>
                         <child>
@@ -3384,7 +3374,7 @@ Use with caution. Are you sure you want to continue?</property>
                             <property name="halign">center</property>
                             <property name="margin-start">55</property>
                             <property name="margin-end">55</property>
-                            <property name="label" translatable="yes">The system will reboot and updates will be installed during startup.</property>
+                            <property name="label" translatable="yes">Your system will reboot and updates will be installed during startup.</property>
                             <property name="justify">center</property>
                             <property name="wrap">True</property>
                             <attributes>
@@ -3402,7 +3392,7 @@ Use with caution. Are you sure you want to continue?</property>
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="halign">center</property>
-                            <property name="label" translatable="yes">Please do not turn off the machine while updates are installing at startup.</property>
+                            <property name="label" translatable="yes">Please do not turn off the machine while updates are installing.</property>
                             <property name="justify">center</property>
                             <property name="wrap">True</property>
                             <attributes>
@@ -3499,7 +3489,7 @@ Use with caution. Are you sure you want to continue?</property>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">True</property>
-                            <property name="position">3</property>
+                            <property name="position">2</property>
                           </packing>
                         </child>
                         <child>
@@ -3513,7 +3503,7 @@ Use with caution. Are you sure you want to continue?</property>
                               <object class="GtkLabel">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">The last changes are being made.</property>
+                                <property name="label" translatable="yes">The last changes are processing.</property>
                                 <property name="justify">center</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
@@ -3555,6 +3545,42 @@ Use with caution. Are you sure you want to continue?</property>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">True</property>
+                            <property name="position">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox" id="ui_distupgradetextview_box">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <object class="GtkScrolledWindow">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <child>
+                                  <object class="GtkTextView" id="ui_distupgrade_textview">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="pixels-below-lines">5</property>
+                                    <property name="editable">False</property>
+                                    <property name="wrap-mode">word</property>
+                                    <property name="left-margin">5</property>
+                                    <property name="right-margin">5</property>
+                                    <property name="top-margin">5</property>
+                                    <property name="bottom-margin">5</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
                             <property name="position">4</property>
                           </packing>
                         </child>
@@ -3575,6 +3601,133 @@ Use with caution. Are you sure you want to continue?</property>
               <packing>
                 <property name="name">distupgrade</property>
                 <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="ui_dpkgconfigure_box">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">13</property>
+                <child>
+                  <object class="GtkBox" id="ui_dpkgconfigurefix_box">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">13</property>
+                    <child>
+                      <object class="GtkLabel" id="ui_dpkgconfigurefix_label">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label">label</property>
+                        <property name="justify">center</property>
+                        <property name="wrap">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="ui_dpkgconfigurefix_button">
+                        <property name="label" translatable="yes">Fix</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="on_ui_dpkgconfigurefix_button_clicked" swapped="no"/>
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkScrolledWindow" id="ui_dpkgconfigurevte_sw">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="ui_dpkgconfigureinfo_box">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">13</property>
+                    <child>
+                      <object class="GtkLabel" id="ui_dpkgconfigureinfo_label">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label">The process is in progress. Please wait...</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkSpinner" id="ui_dpkgconfigureinfo_spinner">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="ui_dpkgconfigureok_button">
+                        <property name="label" translatable="yes">Ok</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="halign">center</property>
+                        <signal name="clicked" handler="on_ui_dpkgconfigureok_button_clicked" swapped="no"/>
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">dpkgconfigure</property>
+                <property name="position">8</property>
               </packing>
             </child>
           </object>
