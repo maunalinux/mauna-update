@@ -1,11 +1,12 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: pardus-update
+Upstream-Name:  mauna-update
 Upstream-Contact: Mauna Linux <dev@maunalinux.top>
 Source: https://github.com/maunalinux/mauna-update
 
 
 Files: *
-Copyright: 2023, Mauna Linux <dev@maunalinux.top>
+Copyright: 2023, Pardus <dev@pardus.org.tr>
+	   2023-2024, Mauna Linux <dev@maunalinux.top>
 License: GPL-3.0+
 
 License: GPL-3.0+
