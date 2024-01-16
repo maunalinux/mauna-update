@@ -1,3 +1,13 @@
+mauna-update (1.0.5) mauna; urgency=medium
+
+  * New upstream release
+  * Added new translations
+  * Minor updates
+  * Update copyright
+  * Update system icons
+
+ -- Mauna Linux <dev@maunalinux.top>  Tue, 09 Jan 2024 22:58:39 -0300
+
 mauna-update (1.0.4) mauna; urgency=medium
 
   * New upstream release
