@@ -16,6 +16,7 @@ class Application(Gtk.Application):
         super().__init__(*args, application_id="top.mauna.update",
                          flags=Gio.ApplicationFlags(8), **kwargs)
         self.window = None
+        GLib.set_prgname("top.mauna.update")        
 
         self.add_main_option(
             "tray",
