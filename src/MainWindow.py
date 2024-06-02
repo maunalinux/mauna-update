@@ -104,11 +104,8 @@ class MainWindow(object):
         GLib.idle_add(self.apt_update)
 
     def control_distupgrade(self):
-        if distro.id() == "mauna":
+        if self.user_distro_id == "mauna":
             try:
-                self.user_distro_version = int(distro.major_version())
-                self.user_distro_codename = distro.codename().lower()
-
                 # self.user_distro_version = 19
                 # self.user_distro_codename = "ondokuz"
 
@@ -117,9 +114,6 @@ class MainWindow(object):
                 self.repo_dist_control.get("http://apt.maunalinux.top/dists.json")
             except Exception as e:
                 print("{}".format(e))
-                self.user_distro_version = None
-                self.user_distro_codename = None
-
         else:
             print("{} not yet supported for dist upgrade".format(distro.id()))
 
@@ -398,6 +392,18 @@ class MainWindow(object):
         self.dpkgconfiguring = False
 
         self.dist_upgradable = False
+        
+        try:
+            self.user_distro_id = distro.id()
+            self.user_distro_version = int(distro.major_version())
+            self.user_distro_codename = distro.codename().lower()
+            self.pargnome23 = gnome_desktop and self.user_distro_id == "mauna" and self.user_distro_version == 24            
+        except Exception as e:
+            print("{}".format(e))
+            self.user_distro_id = None
+            self.user_distro_version = None
+            self.user_distro_codename = None
+            self.pargnome23 = False        
 
     def set_initial_hide_widgets(self):
         GLib.idle_add(self.ui_headerbar_messagebutton.set_visible, False)
@@ -491,7 +497,7 @@ class MainWindow(object):
 
         self.item_systemstatus = Gtk.MenuItem()
         self.item_systemstatus.set_label(_("System is Up to Date"))
-        self.item_systemstatus.set_sensitive(False)
+        self.item_systemstatus.set_sensitive(False if not self.pargnome23 else True)
         self.item_systemstatus.connect('activate', self.on_menu_updatespage_app)
 
         self.menu.append(self.item_sh_app)
@@ -530,6 +536,7 @@ class MainWindow(object):
         else:
             self.main_window.set_visible(True)
             self.item_sh_app.set_label(_("Hide App"))
+            self.main_window.present()            
 
     def on_menu_settings_app(self, *args):
 
@@ -567,7 +574,13 @@ class MainWindow(object):
         if self.upgrade_inprogress:
             self.ui_main_stack.set_visible_child_name("upgrade")
         else:
-            self.ui_main_stack.set_visible_child_name("updateinfo")
+            if self.isbroken:
+                self.ui_main_stack.set_visible_child_name("fix")
+            else:
+                if self.Package.upgradable():
+                    self.ui_main_stack.set_visible_child_name("updateinfo")
+                else:
+                    self.ui_main_stack.set_visible_child_name("ok")
         self.ui_menusettings_image.set_from_icon_name("preferences-system-symbolic", Gtk.IconSize.BUTTON)
         self.ui_menusettings_label.set_text(_("Settings"))
         self.ui_menudistupgrade_image.set_from_icon_name("go-up-symbolic", Gtk.IconSize.BUTTON)
@@ -1272,7 +1285,7 @@ class MainWindow(object):
         if self.isbroken:
             self.ui_main_stack.set_visible_child_name("fix")
             self.indicator.set_icon(self.icon_error)
-            self.item_systemstatus.set_sensitive(False)
+            self.item_systemstatus.set_sensitive(False if not self.pargnome23 else True)
             self.item_systemstatus.set_label(_("System is Broken"))
             GLib.idle_add(self.ui_headerbar_messagebutton.set_visible, False)
         else:
@@ -1329,7 +1342,7 @@ class MainWindow(object):
             self.item_systemstatus.set_label(updates)
             self.indicator.set_icon(self.icon_available)
         else:
-            self.item_systemstatus.set_sensitive(False)
+            self.item_systemstatus.set_sensitive(False if not self.pargnome23 else True)
             self.item_systemstatus.set_label(updates)
             self.indicator.set_icon(self.icon_normal)
 
