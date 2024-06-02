@@ -2028,6 +2028,7 @@ class Notification(GObject.GObject):
         self.notification = Notify.Notification.new(summary, body, icon)
         self.notification.set_timeout(Notify.EXPIRES_NEVER)
         self.notification.add_action('update', _('Update'), self.update_callback)
+        self.notification.add_action('close', _('Close'), self.close_callback)        
         self.notification.connect('closed', self.on_closed)
 
     def show(self, user_show_state):
@@ -2039,6 +2040,9 @@ class Notification(GObject.GObject):
         subprocess.Popen(["/usr/bin/mauna-update", "--page", "updateinfo"])
         # subprocess.Popen(["gtk-launch", self.appid])
         self.emit('notify-action', action)
+
+    def close_callback(self, widget, action):
+        self.emit('notify-action', 'closed')
 
     def on_closed(self, widget):
         self.emit('notify-action', 'closed')
