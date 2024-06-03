@@ -1166,8 +1166,8 @@ class MainWindow(object):
             self.ui_quit_dialog.run()
             self.ui_quit_dialog.hide()
         else:
-        if self.about_dialog.is_visible():
-            self.about_dialog.hide()        
+            if self.about_dialog.is_visible():
+                self.about_dialog.hide()
             self.main_window.get_application().quit()
 
     def monitoring(self):
