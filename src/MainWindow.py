@@ -99,6 +99,8 @@ class MainWindow(object):
 
         self.set_initial_hide_widgets()
 
+        self.define_last_variables()
+
         p1 = threading.Thread(target=self.worker)
         p1.daemon = True
         p1.start()
@@ -177,11 +179,11 @@ class MainWindow(object):
         """    
         print("in apt_update")
         
-        interval = self.UserSettings.config_interval
+        interval = self.UserSettings.config_update_interval
         if self.SystemSettings.config_update_interval is not None:
             interval = self.SystemSettings.config_update_interval
 
-        lastupdate = self.UserSettings.config_lastupdate
+        lastupdate = self.UserSettings.config_update_lastupdate
         if self.SystemSettings.config_update_lastupdate is not None:
             lastupdate = self.SystemSettings.config_update_lastupdate
         
@@ -200,6 +202,43 @@ class MainWindow(object):
             print("not started timed update check")
             print("lu:{} inv:{} now:{}".format(lastupdate, interval, int(datetime.now().timestamp())))
             self.set_upgradable_page_and_notify()
+            return
+
+    def apt_upgrade(self, force=False):
+        """
+        auto upgrade control function
+        """
+        print("in apt_upgrade")
+
+        if self.SystemSettings.config_upgrade_enabled is None or self.SystemSettings.config_upgrade_interval is None:
+            return
+
+        enabled = self.SystemSettings.config_upgrade_enabled
+        if not enabled:
+            return
+
+        interval = self.SystemSettings.config_upgrade_interval
+
+        if self.SystemSettings.config_upgrade_lastupgrade is not None:
+            lastupgrade = self.SystemSettings.config_upgrade_lastupgrade
+        else:
+            lastupgrade = 0
+
+        if force:
+            self.start_aptupgrade()
+            return
+        if interval == -1:  # never auto upgrade
+            # self.set_upgradable_page_and_notify()
+            return
+        if lastupgrade + interval - 10 <= int(datetime.now().timestamp()):
+            print("started timed upgrade check")
+            print("lu:{} inv:{} now:{}".format(lastupgrade, interval, int(datetime.now().timestamp())))
+            self.start_aptupgrade()
+            return
+        else:
+            print("not started timed upgrade check")
+            print("lu:{} inv:{} now:{}".format(lastupgrade, interval, int(datetime.now().timestamp())))
+            # self.set_upgradable_page_and_notify()
             return
 
     def control_args(self):
@@ -393,10 +432,12 @@ class MainWindow(object):
             self.icon_error = "security-low-symbolic"
 
         self.autoupdate_glibid = None
+        self.autoupgrade_glibid = None
         self.autoupdate_monitoring_glibid = None
         self.monitoring_timeoutadd_sec = 60
         self.update_inprogress = False
         self.upgrade_inprogress = False
+        self.auto_upgrade_inprogress = False
         self.distup_download_inprogress = False
         self.laststack = None
         self.aptlist_directory = "/var/lib/apt/lists"
@@ -407,6 +448,8 @@ class MainWindow(object):
         self.dpkgconfiguring = False
 
         self.dist_upgradable = False
+
+        self.autoupgrade_enabled = False
         
         try:
             self.user_distro_id = distro.id()
@@ -418,7 +461,15 @@ class MainWindow(object):
             self.user_distro_id = None
             self.user_distro_version = None
             self.user_distro_codename = None
-            self.pargnome23 = False        
+            self.pargnome23 = False
+
+    def define_last_variables(self):
+        self.auto_upgrade_init = False
+
+        if self.SystemSettings.config_upgrade_enabled is None or self.SystemSettings.config_upgrade_interval is None:
+            self.autoupgrade_enabled = False
+        else:
+            self.autoupgrade_enabled = self.SystemSettings.config_upgrade_enabled       
 
     def set_initial_hide_widgets(self):
         GLib.idle_add(self.ui_headerbar_messagebutton.set_visible, False)
@@ -464,9 +515,9 @@ class MainWindow(object):
         self.UserSettings.createDefaultConfig()
         self.UserSettings.readConfig()
 
-        print("{} {}".format("config_interval", self.UserSettings.config_interval))
-        print("{} {} ({})".format("config_lastupdate", self.UserSettings.config_lastupdate,
-                                datetime.fromtimestamp(self.UserSettings.config_lastupdate)))
+        print("{} {}".format("config_update_interval", self.UserSettings.config_update_interval))
+        print("{} {} ({})".format("config_update_lastupdate", self.UserSettings.config_update_lastupdate,
+                                  datetime.fromtimestamp(self.UserSettings.config_update_lastupdate)))
         print("{} {}".format("config_autostart", self.UserSettings.config_autostart))
         print("{} {}".format("config_notifications", self.UserSettings.config_notifications))        
 
@@ -476,9 +527,9 @@ class MainWindow(object):
 
         try:
             if self.SystemSettings.config_update_interval is not None:
-                print("system: {} {}".format("config_interval", self.SystemSettings.config_update_interval))
+                print("system: {} {}".format("config_update_interval", self.SystemSettings.config_update_interval))
             if self.SystemSettings.config_update_lastupdate is not None:
-                print("system: {} {}".format("config_lastupdate", self.SystemSettings.config_update_lastupdate))
+                print("system: {} {}".format("config_update_lastupdate", self.SystemSettings.config_update_lastupdate))
             if self.SystemSettings.config_autostart is not None:
                 print("system: {} {}".format("config_autostart", self.SystemSettings.config_autostart))
             if self.SystemSettings.config_notifications is not None:
@@ -537,7 +588,7 @@ class MainWindow(object):
         self.item_lastcheck = Gtk.MenuItem()
         self.item_lastcheck.set_sensitive(False)
         self.item_lastcheck.set_label("{}: {}".format(_("Last Check"),
-                                                      datetime.fromtimestamp(self.UserSettings.config_lastupdate)))
+                                                      datetime.fromtimestamp(self.UserSettings.config_update_lastupdate)))
 
         self.item_settings = Gtk.MenuItem()
         self.item_settings.set_label(_("Settings"))
@@ -924,7 +975,7 @@ class MainWindow(object):
         self.ui_menu_popover.popdown()
 
     def set_settings_widgets(self):
-        interval = self.UserSettings.config_interval
+        interval = self.UserSettings.config_update_interval
         interval_combo = self.interval_to_combo(interval)
         if self.SystemSettings.config_update_interval is not None:
             interval = self.SystemSettings.config_update_interval
@@ -940,7 +991,7 @@ class MainWindow(object):
             self.ui_updatefreq_spin.set_value(interval)
 
         self.ui_settingslastupdate_label.set_markup("{}".format(
-            datetime.fromtimestamp(self.UserSettings.config_lastupdate)))            
+            datetime.fromtimestamp(self.UserSettings.config_update_lastupdate)))
 
         autostart = self.UserSettings.config_autostart
         if self.SystemSettings.config_autostart is not None:
@@ -1029,9 +1080,9 @@ class MainWindow(object):
         elif combo_box.get_active() == 3:  # Never
             seconds = -1
 
-        user_interval = self.UserSettings.config_interval
+        user_interval = self.UserSettings.config_update_interval
         if seconds != user_interval:
-            self.UserSettings.writeConfig(seconds, self.UserSettings.config_lastupdate,
+            self.UserSettings.writeConfig(seconds, self.UserSettings.config_update_lastupdate,
                                           self.UserSettings.config_autostart, self.UserSettings.config_notifications)
             self.user_settings()
 
@@ -1040,15 +1091,15 @@ class MainWindow(object):
                 GLib.source_remove(self.autoupdate_glibid)
             # self.create_autoupdate_glibid()
 
-            if self.UserSettings.config_interval == -1:  # never auto update
+            if self.UserSettings.config_update_interval == -1:  # never auto update
                 return
 
             if not self.upgrade_inprogress and not self.update_inprogress:
-                if self.UserSettings.config_lastupdate + self.UserSettings.config_interval - 10 <= int(
+                if self.UserSettings.config_update_lastupdate + self.UserSettings.config_update_interval - 10 <= int(
                         datetime.now().timestamp()):
                     print("started timed update check from on_ui_updatefreq_combobox_changed")
-                    print("lu:{} inv:{} now:{}".format(self.UserSettings.config_lastupdate,
-                                                       self.UserSettings.config_interval,
+                    print("lu:{} inv:{} now:{}".format(self.UserSettings.config_update_lastupdate,
+                                                       self.UserSettings.config_update_interval,
                                                        int(datetime.now().timestamp())))
                     self.start_aptupdate()
                 else:
@@ -1060,9 +1111,9 @@ class MainWindow(object):
         if self.SystemSettings.config_update_interval is not None:
             return    
         seconds = int(spin_button.get_value())
-        user_interval = self.UserSettings.config_interval
+        user_interval = self.UserSettings.config_update_interval
         if seconds != user_interval:
-            self.UserSettings.writeConfig(seconds, self.UserSettings.config_lastupdate,
+            self.UserSettings.writeConfig(seconds, self.UserSettings.config_update_lastupdate,
                                           self.UserSettings.config_autostart, self.UserSettings.config_notifications)
             self.user_settings()
 
@@ -1079,7 +1130,7 @@ class MainWindow(object):
 
         user_autostart = self.UserSettings.config_autostart
         if state != user_autostart:
-            self.UserSettings.writeConfig(self.UserSettings.config_interval, self.UserSettings.config_lastupdate, state,
+            self.UserSettings.writeConfig(self.UserSettings.config_update_interval, self.UserSettings.config_update_lastupdate, state,
                                           self.UserSettings.config_notifications)
             self.user_settings()
             
@@ -1089,7 +1140,7 @@ class MainWindow(object):
                 
         user_notifications = self.UserSettings.config_notifications
         if state != user_notifications:
-            self.UserSettings.writeConfig(self.UserSettings.config_interval, self.UserSettings.config_lastupdate,
+            self.UserSettings.writeConfig(self.UserSettings.config_update_interval, self.UserSettings.config_update_lastupdate,
                                           self.UserSettings.config_autostart, state)
             self.user_settings()
                         
@@ -1183,9 +1234,9 @@ class MainWindow(object):
         self.dpkg_monitor.connect('changed', self.on_apt_changed)
 
     def on_apt_changed(self, file_monitor, file, other_file, event_type):
-        print("{} file changed, update_inprogress: {}, upgrade_inprogress: {}".format(
-            file.get_path(), self.update_inprogress, self.upgrade_inprogress))
-        if not self.update_inprogress and not self.upgrade_inprogress:
+        print("{} file changed, update_inprogress: {}, upgrade_inprogress: {}, auto_upgrade_inprogress {}".format(
+            file.get_path(), self.update_inprogress, self.upgrade_inprogress, self.auto_upgrade_inprogress))
+        if not self.update_inprogress and not self.upgrade_inprogress and not self.auto_upgrade_inprogress:
             print("Triggering control_upgradables from monitoring {}".format(file.get_path()))
             if self.autoupdate_monitoring_glibid:
                 GLib.source_remove(self.autoupdate_monitoring_glibid)
@@ -1349,17 +1400,24 @@ class MainWindow(object):
 
     def update_lastcheck_labels(self):
         self.ui_settingslastupdate_label.set_markup("{}".format(
-            datetime.fromtimestamp(self.UserSettings.config_lastupdate)))
+            datetime.fromtimestamp(self.UserSettings.config_update_lastupdate)))
 
         self.item_lastcheck.set_label("{}: {}".format(_("Last Check"),
-                                                      datetime.fromtimestamp(self.UserSettings.config_lastupdate)))
+                                                      datetime.fromtimestamp(self.UserSettings.config_update_lastupdate)))
 
     def create_autoupdate_glibid(self):
-        interval = self.UserSettings.config_interval
+        interval = self.UserSettings.config_update_interval
         if self.SystemSettings.config_update_interval is not None:
             interval = self.SystemSettings.config_update_interval
         if interval != -1:
             self.autoupdate_glibid = GLib.timeout_add_seconds(interval, self.apt_update)
+
+    def create_autoupgrade_glibid(self):
+        interval = self.SystemSettings.config_upgrade_interval
+        if interval != -1:
+            if self.autoupgrade_glibid:
+                GLib.source_remove(self.autoupgrade_glibid)
+            self.autoupgrade_glibid = GLib.timeout_add_seconds(interval, self.apt_upgrade)
 
     def set_upgradable_page_and_notify(self):
 
@@ -1394,6 +1452,9 @@ class MainWindow(object):
                 if self.ui_main_stack.get_visible_child_name() != "distupgrade":
                     self.ui_main_stack.set_visible_child_name("ok")
             self.update_indicator_updates_labels(upgradable)
+
+        if self.autoupgrade_enabled:
+            self.apt_upgrade()
 
     def control_update_residual_message_section(self):
         residual = self.Package.residual()
@@ -1430,6 +1491,28 @@ class MainWindow(object):
         self.ui_distnewly_listbox.foreach(lambda child: self.ui_distnewly_listbox.remove(child))
         self.ui_distremovable_listbox.foreach(lambda child: self.ui_distremovable_listbox.remove(child))
         self.ui_distkept_listbox.foreach(lambda child: self.ui_distkept_listbox.remove(child))
+
+    def start_aptupgrade(self):
+        if not self.upgrade_inprogress:
+            GLib.idle_add(self.indicator.set_icon, self.icon_inprogress)
+            command = ["/usr/bin/pkexec", os.path.dirname(os.path.abspath(__file__)) + "/AutoAptUpgrade.py"]
+            self.startAptUpgradeProcess(command)
+            self.auto_upgrade_inprogress = True
+
+            notification = Notification(summary=_("Mauna Install"),
+                                    body=_("Automatic upgrade started in the background."),
+                                    icon=self.icon_inprogress, appid=self.Application.get_application_id(),
+                                    only_info=True)
+            notification_state = self.UserSettings.config_notifications
+            if self.SystemSettings.config_notifications is not None:
+                notification_state = self.SystemSettings.config_notifications
+            notification.show(notification_state)
+
+        else:
+            print("auto_apt_upgrade: update_inprogress: {}, upgrade_inprogress: {}".format(self.update_inprogress,
+                                                                                      self.upgrade_inprogress))
+            if self.ui_main_stack.get_visible_child_name() == "spinner":
+                self.ui_main_stack.set_visible_child_name("ok")
 
     def startControlDistUpgradeProcess(self, params):
         pid, stdin, stdout, stderr = GLib.spawn_async(params, flags=GLib.SpawnFlags.DO_NOT_REAP_CHILD,
@@ -1720,7 +1803,7 @@ class MainWindow(object):
                 print("timestamp Error: {}".format(e))
                 timestamp = 0
 
-            self.UserSettings.writeConfig(self.UserSettings.config_interval, timestamp,
+            self.UserSettings.writeConfig(self.UserSettings.config_update_interval, timestamp,
                                           self.UserSettings.config_autostart, self.UserSettings.config_notifications)
             self.user_settings()
             self.update_lastcheck_labels()
@@ -1729,7 +1812,7 @@ class MainWindow(object):
             self.control_update_residual_message_section()
 
             if self.SystemSettings.config_update_interval is not None:
-                print("SystemSettings.config_update_interval writed")
+                print("SystemSettings.config_update_lastupdate writed")
                 command = ["/usr/bin/pkexec", os.path.dirname(os.path.abspath(__file__)) + "/SystemSettingsWrite.py",
                            "write", "lastupdate", "{}".format(timestamp)]
                 subprocess.run(command)            
@@ -1737,6 +1820,7 @@ class MainWindow(object):
             self.indicator.set_icon(self.icon_error)
             
         self.update_inprogress = False
+        print("update in progress set to False " + str(self.update_inprogress))
 
     def upgrade_vte_event(self, widget, event):
         if event.type == Gdk.EventType.BUTTON_PRESS:
@@ -2080,22 +2164,76 @@ class MainWindow(object):
         self.update_inprogress = False
 
 
+    def startAptUpgradeProcess(self, params):
+        pid, stdin, stdout, stderr = GLib.spawn_async(params, flags=GLib.SpawnFlags.DO_NOT_REAP_CHILD,
+                                                      standard_output=True, standard_error=True)
+        GLib.io_add_watch(GLib.IOChannel(stdout), GLib.IO_IN | GLib.IO_HUP, self.onAptUpgradeProcessStdout)
+        GLib.io_add_watch(GLib.IOChannel(stderr), GLib.IO_IN | GLib.IO_HUP, self.onAptUpgradeProcessStderr)
+        GLib.child_watch_add(GLib.PRIORITY_DEFAULT, pid, self.onAptUpgradeProcessExit)
+
+        return pid
+
+    def onAptUpgradeProcessStdout(self, source, condition):
+        if condition == GLib.IO_HUP:
+            return False
+        line = source.readline()
+        print("onAptUpgradeProcessStdout: {}".format(line))
+        return True
+
+    def onAptUpgradeProcessStderr(self, source, condition):
+        if condition == GLib.IO_HUP:
+            return False
+        line = source.readline()
+        print("onAptUpgradeProcessStderr: {}".format(line))
+        return True
+
+    def onAptUpgradeProcessExit(self, pid, status):
+        print("onAptUpgradeProcessExit: {}".format(status))
+        try:
+            timestamp = int(datetime.now().timestamp())
+        except Exception as e:
+            print("timestamp Error: {}".format(e))
+            timestamp = 0
+
+        command = ["/usr/bin/pkexec", os.path.dirname(os.path.abspath(__file__)) + "/SystemSettingsWrite.py",
+                   "write", "lastupgrade", "{}".format(timestamp)]
+        subprocess.run(command)
+        print("SystemSettings.config_upgrade_lastupgrade writed")
+
+        self.system_settings()
+        self.Package.updatecache()
+        self.create_autoupgrade_glibid()
+        self.set_upgradable_page_and_notify()
+
+        notification = Notification(summary=_("Mauna Install"),
+                                    body=_("Automatic upgrade completed."),
+                                    icon=self.icon_normal, appid=self.Application.get_application_id(),
+                                    only_info=True)
+        notification_state = self.UserSettings.config_notifications
+        if self.SystemSettings.config_notifications is not None:
+            notification_state = self.SystemSettings.config_notifications
+        notification.show(notification_state)
+
+        self.auto_upgrade_inprogress = False
+
+
 class Notification(GObject.GObject):
     __gsignals__ = {
         'notify-action': (GObject.SIGNAL_RUN_FIRST, None,
                           (str,))
     }
 
-    def __init__(self, summary="", body="", icon="mauna-update", appid="top.mauna-update"):
+    def __init__(self, summary="", body="", icon="mauna-update", appid="top.mauna-update, only_info=False"):
         GObject.GObject.__init__(self)
         self.appid = appid
         if Notify.is_initted():
             Notify.uninit()
         Notify.init(appid)
         self.notification = Notify.Notification.new(summary, body, icon)
-        self.notification.set_timeout(Notify.EXPIRES_NEVER)
-        self.notification.add_action('update', _('Update'), self.update_callback)
-        self.notification.add_action('close', _('Close'), self.close_callback)        
+        if not only_info:
+            self.notification.set_timeout(Notify.EXPIRES_NEVER)
+            self.notification.add_action('update', _('Update'), self.update_callback)
+            self.notification.add_action('close', _('Close'), self.close_callback)       
         self.notification.connect('closed', self.on_closed)
 
     def show(self, user_show_state):
