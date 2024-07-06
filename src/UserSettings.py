@@ -5,10 +5,14 @@ import os
 from configparser import ConfigParser
 from pathlib import Path
 
+import gi
+
+gi.require_version("GLib", "2.0")
+from gi.repository import GLib
+
 
 class UserSettings(object):
     def __init__(self):
-        self.xdg_config_dir = os.environ.get("XDG_CONFIG_HOME", str(Path.home()) + "/.config")
 
         self.default_update_interval = 86400  # daily
         self.default_update_lastupdate = 0
@@ -16,10 +20,10 @@ class UserSettings(object):
         self.default_autostart = True
         self.default_notifications = True        
 
-        self.configdir = self.xdg_config_dir + "/mauna/mauna-update/"
+        self.configdir = "{}/mauna/mauna-update/".format(GLib.get_user_config_dir())
         self.configfile = "settings.ini"
 
-        self.autostartdir = self.xdg_config_dir + "/autostart/"
+        self.autostartdir = "{}/autostart/".format(GLib.get_user_config_dir())
         self.autostartfile = "top.mauna.update-autostart.desktop"
 
         self.config = ConfigParser(strict=False)
