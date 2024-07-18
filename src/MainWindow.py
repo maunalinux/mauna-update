@@ -1506,7 +1506,7 @@ class MainWindow(object):
             self.startAptUpgradeProcess(command)
             self.auto_upgrade_inprogress = True
 
-            notification = Notification(summary=_("Mauna Install"),
+            notification = Notification(summary=_("Mauna Update"),
                                     body=_("Automatic upgrade started in the background."),
                                     icon=self.icon_inprogress, appid=self.Application.get_application_id(),
                                     only_info=True)
@@ -2214,7 +2214,7 @@ class MainWindow(object):
         self.create_autoupgrade_glibid()
         self.set_upgradable_page_and_notify()
 
-        notification = Notification(summary=_("Mauna Install"),
+        notification = Notification(summary=_("Mauna Update"),
                                     body=_("Automatic upgrade completed."),
                                     icon=self.icon_normal, appid=self.Application.get_application_id(),
                                     only_info=True)
