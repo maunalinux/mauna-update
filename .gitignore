@@ -61,7 +61,7 @@ coverage.xml
 cover/
 
 # Translations
-*.mo
+po/*.mo
 po/*/*/*.mo
 
 # Django stuff:
