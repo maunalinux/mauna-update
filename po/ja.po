@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-18 18:45-0300\n"
-"PO-Revision-Date: 2024-07-21 16:00-0300\n"
+"POT-Creation-Date: 2024-08-09 16:17-0300\n"
+"PO-Revision-Date: 2024-08-09 18:27-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: ui/MainWindow.glade:13 ui/MainWindow.glade:3831 src/MainWindow.py:80
-#: src/MainWindow.py:583 src/MainWindow.py:1515 src/MainWindow.py:2223
+#: ui/MainWindow.glade:13 ui/MainWindow.glade:3905 src/MainWindow.py:87
+#: src/MainWindow.py:595 src/MainWindow.py:1602 src/MainWindow.py:2311
 msgid "Mauna Update"
 msgstr "マウナのアップデート"
 
@@ -26,7 +26,7 @@ msgstr "マウナのアップデート"
 msgid "No"
 msgstr "いいえ"
 
-#: ui/MainWindow.glade:54 ui/MainWindow.glade:1738
+#: ui/MainWindow.glade:54 ui/MainWindow.glade:1812
 msgid "Yes"
 msgstr "はい"
 
@@ -47,19 +47,19 @@ msgstr "マウナアップデートアプリケーション"
 msgid "translator-credits"
 msgstr "Mauna Linux <dev@maunalinux.top>"
 
-#: ui/MainWindow.glade:177 ui/MainWindow.glade:4077
+#: ui/MainWindow.glade:177 ui/MainWindow.glade:4237
 msgid "Package configuration files"
 msgstr "パッケージ構成ファイル"
 
-#: ui/MainWindow.glade:196 ui/MainWindow.glade:4096
+#: ui/MainWindow.glade:196 ui/MainWindow.glade:4256
 msgid "Use new configuration files"
 msgstr "新しい構成ファイルを使用する"
 
-#: ui/MainWindow.glade:212 ui/MainWindow.glade:4112
+#: ui/MainWindow.glade:212 ui/MainWindow.glade:4272
 msgid "Use old configuration files"
 msgstr "古い設定ファイルを使用する"
 
-#: ui/MainWindow.glade:263 ui/MainWindow.glade:4240
+#: ui/MainWindow.glade:263 ui/MainWindow.glade:4400
 msgid "Restore Defaults"
 msgstr "デフォルトに戻す"
 
@@ -67,43 +67,43 @@ msgstr "デフォルトに戻す"
 msgid "Package manager cache is updating"
 msgstr "パッケージマネージャーのキャッシュを更新しています"
 
-#: ui/MainWindow.glade:466 ui/MainWindow.glade:2552
+#: ui/MainWindow.glade:466 ui/MainWindow.glade:2626
 msgid "Upgraded"
 msgstr "アップグレード済み"
 
-#: ui/MainWindow.glade:492 ui/MainWindow.glade:2578
+#: ui/MainWindow.glade:492 ui/MainWindow.glade:2652
 msgid "Newly Installed"
 msgstr "新規設置"
 
-#: ui/MainWindow.glade:519 ui/MainWindow.glade:2605
+#: ui/MainWindow.glade:519 ui/MainWindow.glade:2679
 msgid "To Remove"
 msgstr "削除する"
 
-#: ui/MainWindow.glade:546 ui/MainWindow.glade:2632
+#: ui/MainWindow.glade:546 ui/MainWindow.glade:2706
 msgid "Not Upgraded"
 msgstr "アップグレードされていません"
 
-#: ui/MainWindow.glade:594 ui/MainWindow.glade:2680
+#: ui/MainWindow.glade:594 ui/MainWindow.glade:2754
 msgid "Download size:"
 msgstr "ダウンロードサイズ:"
 
-#: ui/MainWindow.glade:649 ui/MainWindow.glade:2736
+#: ui/MainWindow.glade:649 ui/MainWindow.glade:2810
 msgid "Required disk size:"
 msgstr "必要なディスクサイズ:"
 
-#: ui/MainWindow.glade:704 ui/MainWindow.glade:2792
+#: ui/MainWindow.glade:704 ui/MainWindow.glade:2866
 msgid "Upgraded:"
 msgstr "アップグレード済み:"
 
-#: ui/MainWindow.glade:759 ui/MainWindow.glade:2848
+#: ui/MainWindow.glade:759 ui/MainWindow.glade:2922
 msgid "Newly installed:"
 msgstr "新しくインストールされたもの:"
 
-#: ui/MainWindow.glade:814 ui/MainWindow.glade:2904
+#: ui/MainWindow.glade:814 ui/MainWindow.glade:2978
 msgid "To remove:"
 msgstr "削除する："
 
-#: ui/MainWindow.glade:869 ui/MainWindow.glade:2960
+#: ui/MainWindow.glade:869 ui/MainWindow.glade:3034
 msgid "Not upgraded:"
 msgstr "アップグレードされていない:"
 
@@ -116,14 +116,14 @@ msgid ""
 "<span color=\"red\">Package manager is busy, try again after the process is "
 "completed.</span>"
 msgstr ""
-"<span color=\"red\">パッケージ マネージャーがビジー状態です。プロセスが完了"
-"してからもう一度お試しください。</span>"
+"<span color=\"red\">パッケージ マネージャーがビジー状態です。プロセスが完了し"
+"てからもう一度お試しください。</span>"
 
-#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3747
+#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3821
 msgid "Ok"
 msgstr "わかりました"
 
-#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3677
+#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3751
 msgid "Fix"
 msgstr "修理"
 
@@ -131,7 +131,7 @@ msgstr "修理"
 msgid "Your system is up to date."
 msgstr "システムは最新です。"
 
-#: ui/MainWindow.glade:1206 src/MainWindow.py:587
+#: ui/MainWindow.glade:1206 src/MainWindow.py:599
 msgid "Check Updates"
 msgstr "アップデートを確認する"
 
@@ -168,32 +168,36 @@ msgid "Last Update Check Date:"
 msgstr "最終更新チェック日:"
 
 #: ui/MainWindow.glade:1478
+msgid "Selectable Updates:"
+msgstr "選択可能な更新:"
+
+#: ui/MainWindow.glade:1552
 msgid "Notifications:"
 msgstr "通知:"
 
-#: ui/MainWindow.glade:1518
+#: ui/MainWindow.glade:1592
 msgid "Launch at Startup:"
 msgstr "起動時に起動:"
 
-#: ui/MainWindow.glade:1587 ui/MainWindow.glade:2183 ui/MainWindow.glade:2466
-#: src/MainWindow.py:661 src/MainWindow.py:825 src/MainWindow.py:977
-#: src/MainWindow.py:1039
+#: ui/MainWindow.glade:1661 ui/MainWindow.glade:2257 ui/MainWindow.glade:2540
+#: src/MainWindow.py:673 src/MainWindow.py:837 src/MainWindow.py:989
+#: src/MainWindow.py:1057
 msgid "Home Page"
 msgstr "ホームページ"
 
-#: ui/MainWindow.glade:1633
+#: ui/MainWindow.glade:1707
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
 msgstr ""
-"パッケージ マネージャーで使用されるシステム ソース リストが壊れているか、シ"
-"ステムの依存関係が壊れているようです。"
+"パッケージ マネージャーで使用されるシステム ソース リストが壊れているか、シス"
+"テムの依存関係が壊れているようです。"
 
-#: ui/MainWindow.glade:1656
+#: ui/MainWindow.glade:1730
 msgid "Try Fix"
 msgstr "修正を試す"
 
-#: ui/MainWindow.glade:1698
+#: ui/MainWindow.glade:1772
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create "
@@ -213,188 +217,201 @@ msgstr ""
 "\n"
 "慎重に使用してください。 続行してもよろしいですか?"
 
-#: ui/MainWindow.glade:1721 ui/MainWindow.glade:3008 ui/MainWindow.glade:3459
+#: ui/MainWindow.glade:1795 ui/MainWindow.glade:3082 ui/MainWindow.glade:3533
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ui/MainWindow.glade:1787
+#: ui/MainWindow.glade:1861
 msgid "Operation completed."
 msgstr "操作が完了しました。"
 
-#: ui/MainWindow.glade:1827
+#: ui/MainWindow.glade:1901
 msgid "Go to Home Page"
 msgstr "ホームページへ"
 
-#: ui/MainWindow.glade:1858
+#: ui/MainWindow.glade:1932
 msgid "You can check the terminal output below."
 msgstr "以下のターミナル出力を確認できます。"
 
-#: ui/MainWindow.glade:1887
+#: ui/MainWindow.glade:1961
 msgid "The error in the package manager could not be fixed."
 msgstr "パッケージマネージャーのエラーを修正できませんでした。"
 
-#: ui/MainWindow.glade:1905
+#: ui/MainWindow.glade:1979
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
 msgstr "以下の端末出力を確認することで、指示に従うことができます。"
 
-#: ui/MainWindow.glade:1917
+#: ui/MainWindow.glade:1991
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr ""
 "マウナ ヘルプ チャネルを通じて問題に関するサポートを求めることができます。"
 
-#: ui/MainWindow.glade:2025
+#: ui/MainWindow.glade:2099
 msgid "List of automatically removable all unused packages"
 msgstr "自動的に削除されるすべての未使用パッケージのリスト"
 
-#: ui/MainWindow.glade:2026
+#: ui/MainWindow.glade:2100
 msgid "Autoremovable Packages"
 msgstr "自動リムーバブルパッケージ"
 
-#: ui/MainWindow.glade:2062 ui/MainWindow.glade:2128
+#: ui/MainWindow.glade:2136 ui/MainWindow.glade:2202
 msgid "Remove"
 msgstr "取り除く"
 
-#: ui/MainWindow.glade:2091
+#: ui/MainWindow.glade:2165
 msgid "List of unnecessary packages with residual config files"
 msgstr "構成ファイルが残っている不要なパッケージのリスト"
 
-#: ui/MainWindow.glade:2092
+#: ui/MainWindow.glade:2166
 msgid "Residual Packages"
 msgstr "残りのパッケージ"
 
-#: ui/MainWindow.glade:2238
+#: ui/MainWindow.glade:2312
 msgid "Your Current Version:"
 msgstr "現在のバージョン:"
 
-#: ui/MainWindow.glade:2282
+#: ui/MainWindow.glade:2356
 msgid "Upgradable Version:"
 msgstr "アップグレード可能なバージョン:"
 
-#: ui/MainWindow.glade:2365
+#: ui/MainWindow.glade:2439
 msgid "Your system is not up to date. Firstly, install the available updates."
 msgstr ""
-"システムが最新ではありません。 まず、利用可能なアップデートをインストールし"
-"ます。"
+"システムが最新ではありません。 まず、利用可能なアップデートをインストールしま"
+"す。"
 
-#: ui/MainWindow.glade:2380
+#: ui/MainWindow.glade:2454
 msgid "Go to Updates"
 msgstr "アップデートに移動"
 
-#: ui/MainWindow.glade:3143
+#: ui/MainWindow.glade:3217
 msgid "Root"
 msgstr "根"
 
-#: ui/MainWindow.glade:3219
+#: ui/MainWindow.glade:3293
 msgid "is free of"
 msgstr "無料です"
 
-#: ui/MainWindow.glade:3259 ui/MainWindow.glade:3376
+#: ui/MainWindow.glade:3333 ui/MainWindow.glade:3450
 msgid "Retry"
 msgstr "リトライ"
 
-#: ui/MainWindow.glade:3329 src/MainWindow.py:886
+#: ui/MainWindow.glade:3403 src/MainWindow.py:898
 msgid "Packages are downloading, please wait."
 msgstr "パッケージをダウンロード中です。お待ちください。"
 
-#: ui/MainWindow.glade:3357
+#: ui/MainWindow.glade:3431
 msgid "Continue"
 msgstr "続く"
 
-#: ui/MainWindow.glade:3420
+#: ui/MainWindow.glade:3494
 msgid "Your system will reboot and updates will be installed during startup."
 msgstr "システムが再起動され、起動中にアップデートがインストールされます。"
 
-#: ui/MainWindow.glade:3438
+#: ui/MainWindow.glade:3512
 msgid "Please do not turn off the machine while updates are installing."
 msgstr "アップデートのインストール中はマシンの電源を切らないでください。"
 
-#: ui/MainWindow.glade:3485
+#: ui/MainWindow.glade:3559
 msgid "Reboot"
 msgstr "リブート"
 
-#: ui/MainWindow.glade:3549
+#: ui/MainWindow.glade:3623
 msgid "The last changes are processing."
 msgstr "最後の変更は処理中です。"
 
-#: ui/MainWindow.glade:3565
+#: ui/MainWindow.glade:3639
 msgid "Your system will reboot. Please wait..."
 msgstr "システムが再起動します。 お待ちください..."
 
-#: ui/MainWindow.glade:3913 src/MainWindow.py:264 src/MainWindow.py:607
-#: src/MainWindow.py:685 src/MainWindow.py:828 src/MainWindow.py:953
-#: src/MainWindow.py:973 src/MainWindow.py:1044 src/MainWindow.py:1064
+#: ui/MainWindow.glade:3987 src/MainWindow.py:271 src/MainWindow.py:619
+#: src/MainWindow.py:697 src/MainWindow.py:840 src/MainWindow.py:965
+#: src/MainWindow.py:985 src/MainWindow.py:1062 src/MainWindow.py:1082
 msgid "Settings"
 msgstr "設定"
 
-#: ui/MainWindow.glade:3969 src/MainWindow.py:266 src/MainWindow.py:665
-#: src/MainWindow.py:687 src/MainWindow.py:696 src/MainWindow.py:955
-#: src/MainWindow.py:982 src/MainWindow.py:1031 src/MainWindow.py:1067
+#: ui/MainWindow.glade:4043 src/MainWindow.py:273 src/MainWindow.py:677
+#: src/MainWindow.py:699 src/MainWindow.py:708 src/MainWindow.py:967
+#: src/MainWindow.py:994 src/MainWindow.py:1049 src/MainWindow.py:1085
 msgid "Version Upgrade"
 msgstr "バージョンアップ"
 
-#: ui/MainWindow.glade:4025
+#: ui/MainWindow.glade:4099
 msgid "About"
 msgstr "について"
 
-#: ui/MainWindow.glade:4128
+#: ui/MainWindow.glade:4167
+msgid "Caution"
+msgstr "注意"
+
+#: ui/MainWindow.glade:4189
+msgid ""
+"This feature is still in the testing phase. Before starting the update, it "
+"is recommended that you check one last time by selecting the \"Ask me before "
+"proceeding\" option in the update settings."
+msgstr ""
+"この機能はまだテスト段階です。更新を開始する前に、更新設定で「続行する前に確"
+"認する」オプションを選択して、最後にもう一度確認することをお勧めします。"
+
+#: ui/MainWindow.glade:4288
 msgid "Ask me what to do"
 msgstr "どうすればいいのか聞いてください"
 
-#: ui/MainWindow.glade:4154
+#: ui/MainWindow.glade:4314
 msgid "Interaction"
 msgstr "交流"
 
-#: ui/MainWindow.glade:4173
+#: ui/MainWindow.glade:4333
 msgid "Start process (with -yq option)"
 msgstr "プロセスの開始 (-yq オプション付き)"
 
-#: ui/MainWindow.glade:4189
+#: ui/MainWindow.glade:4349
 msgid "Ask me before starting the process (without -yq)"
 msgstr "プロセスを開始する前に質問します (-yq なし)"
 
-#: src/MainWindow.py:84
+#: src/MainWindow.py:91
 msgid "About Mauna Update"
 msgstr "マウナアップデートについて"
 
-#: src/MainWindow.py:164 src/MainWindow.py:165
+#: src/MainWindow.py:171 src/MainWindow.py:172
 msgid "Start {} Upgrade"
 msgstr "{} のアップグレードを開始する"
 
-#: src/MainWindow.py:270 src/MainWindow.py:633 src/MainWindow.py:650
-#: src/MainWindow.py:671 src/MainWindow.py:691
+#: src/MainWindow.py:277 src/MainWindow.py:645 src/MainWindow.py:662
+#: src/MainWindow.py:683 src/MainWindow.py:703
 msgid "Hide App"
 msgstr "アプリを隠す"
 
-#: src/MainWindow.py:598
+#: src/MainWindow.py:610
 msgid "Quit"
 msgstr "やめる"
 
-#: src/MainWindow.py:603 src/MainWindow.py:1418
+#: src/MainWindow.py:615 src/MainWindow.py:1505
 msgid "Last Check"
 msgstr "最終チェック"
 
-#: src/MainWindow.py:611 src/MainWindow.py:1488
+#: src/MainWindow.py:623 src/MainWindow.py:1575
 msgid "System is Up to Date"
 msgstr "システムは最新です"
 
-#: src/MainWindow.py:635 src/MainWindow.py:647 src/MainWindow.py:1225
+#: src/MainWindow.py:647 src/MainWindow.py:659 src/MainWindow.py:1264
 msgid "Show App"
 msgstr "アプリを表示"
 
-#: src/MainWindow.py:755
+#: src/MainWindow.py:767
 msgid "Updates are installing. Please wait..."
 msgstr "アップデートをインストール中です。 お待ちください..."
 
-#: src/MainWindow.py:757
+#: src/MainWindow.py:769
 msgid "Updating"
 msgstr "更新中"
 
-#: src/MainWindow.py:783 src/MainWindow.py:809
+#: src/MainWindow.py:795 src/MainWindow.py:821
 msgid "Packages are removing. Please wait..."
 msgstr "パッケージは削除されています。 お待ちください..."
 
-#: src/MainWindow.py:1185 src/MainWindow.py:1919
+#: src/MainWindow.py:1224 src/MainWindow.py:2007
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -402,89 +419,93 @@ msgstr ""
 "dpkg 割り込みが検出されました。 「修正」ボタンをクリックするか、\n"
 "問題を解決するには、「sudo dpkg --configure -a」を手動で実行してください。"
 
-#: src/MainWindow.py:1194
+#: src/MainWindow.py:1233
 msgid "The process is in progress. Please wait..."
 msgstr "プロセスが進行中です。 お待ちください..."
 
-#: src/MainWindow.py:1441
+#: src/MainWindow.py:1463
+msgid "Clear All Selections"
+msgstr "すべての選択をクリア"
+
+#: src/MainWindow.py:1528
 msgid "System is Broken"
 msgstr "システムが壊れています"
 
-#: src/MainWindow.py:1455
+#: src/MainWindow.py:1542
 msgid "Software Update"
 msgstr "ソフトウェアの更新"
 
-#: src/MainWindow.py:1456
+#: src/MainWindow.py:1543
 msgid "There are {} software updates available."
 msgstr "利用可能なソフトウェア アップデートが {} あります。"
 
-#: src/MainWindow.py:1458
+#: src/MainWindow.py:1545
 msgid "There is {} software update available."
 msgstr "{} のソフトウェア アップデートが利用可能です。"
 
-#: src/MainWindow.py:1477
+#: src/MainWindow.py:1564
 msgid "You have removable residual packages."
 msgstr "削除可能な残留パッケージがあります。"
 
-#: src/MainWindow.py:1491
+#: src/MainWindow.py:1578
 msgid "{} Updates Pending"
 msgstr "{} 保留中のアップデート"
 
-#: src/MainWindow.py:1493
+#: src/MainWindow.py:1580
 msgid "{} Update Pending"
 msgstr "{} 更新が保留中"
 
-#: src/MainWindow.py:1516
+#: src/MainWindow.py:1603
 msgid "Automatic upgrade started in the background."
 msgstr "バックグラウンドで自動アップグレードが開始されました。"
 
-#: src/MainWindow.py:1560
+#: src/MainWindow.py:1647
 msgid "Upgrade to {}"
 msgstr "へのアップグレード {}"
 
-#: src/MainWindow.py:1699
+#: src/MainWindow.py:1786
 msgid "Total Required Size"
 msgstr "必要な合計サイズ"
 
-#: src/MainWindow.py:1858 src/MainWindow.py:1950 src/MainWindow.py:2026
-#: src/MainWindow.py:2118
+#: src/MainWindow.py:1946 src/MainWindow.py:2038 src/MainWindow.py:2114
+#: src/MainWindow.py:2206
 msgid "Copy selected text"
 msgstr "選択したテキストをコピーする"
 
-#: src/MainWindow.py:1915
+#: src/MainWindow.py:2003
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
 "'Synaptic' first."
 msgstr ""
 "同時に実行できるソフトウェア管理ツールは 1 つだけです。\n"
-"他のアプリケーションを閉じてください。 「Update Manager」、「aptitude」、ま"
-"たは「Synaptic」を最初に選択します。"
+"他のアプリケーションを閉じてください。 「Update Manager」、「aptitude」、また"
+"は「Synaptic」を最初に選択します。"
 
-#: src/MainWindow.py:1924 src/MainWindow.py:2172
+#: src/MainWindow.py:2012 src/MainWindow.py:2260
 msgid "Process completed."
 msgstr "処理が完了しました。"
 
-#: src/MainWindow.py:2074
+#: src/MainWindow.py:2162
 msgid "The download is complete. You can continue."
 msgstr "ダウンロードが完了しました。 続行できます。"
 
-#: src/MainWindow.py:2087
+#: src/MainWindow.py:2175
 msgid "The download is not completed. Try again."
 msgstr "ダウンロードが完了していません。 もう一度やり直してください。"
 
-#: src/MainWindow.py:2170
+#: src/MainWindow.py:2258
 msgid "Error."
 msgstr "エラー。"
 
-#: src/MainWindow.py:2224
+#: src/MainWindow.py:2312
 msgid "Automatic upgrade completed."
 msgstr "自動アップグレードが完了しました。"
 
-#: src/MainWindow.py:2250
+#: src/MainWindow.py:2338
 msgid "Update"
 msgstr "アップデート"
 
-#: src/MainWindow.py:2251
+#: src/MainWindow.py:2339
 msgid "Close"
 msgstr "近い"

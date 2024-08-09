@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-18 18:45-0300\n"
-"PO-Revision-Date: 2024-07-21 15:59-0300\n"
+"POT-Creation-Date: 2024-08-09 16:17-0300\n"
+"PO-Revision-Date: 2024-08-09 17:55-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: ui/MainWindow.glade:13 ui/MainWindow.glade:3831 src/MainWindow.py:80
-#: src/MainWindow.py:583 src/MainWindow.py:1515 src/MainWindow.py:2223
+#: ui/MainWindow.glade:13 ui/MainWindow.glade:3905 src/MainWindow.py:87
+#: src/MainWindow.py:595 src/MainWindow.py:1602 src/MainWindow.py:2311
 msgid "Mauna Update"
 msgstr "Mise à jour Mauna"
 
@@ -26,7 +26,7 @@ msgstr "Mise à jour Mauna"
 msgid "No"
 msgstr "Non"
 
-#: ui/MainWindow.glade:54 ui/MainWindow.glade:1738
+#: ui/MainWindow.glade:54 ui/MainWindow.glade:1812
 msgid "Yes"
 msgstr "Oui"
 
@@ -47,19 +47,19 @@ msgstr "Application de mise à jour Mauna"
 msgid "translator-credits"
 msgstr "Mauna Linux <dev@maunalinux.top>"
 
-#: ui/MainWindow.glade:177 ui/MainWindow.glade:4077
+#: ui/MainWindow.glade:177 ui/MainWindow.glade:4237
 msgid "Package configuration files"
 msgstr "Fichiers de configuration du paquet"
 
-#: ui/MainWindow.glade:196 ui/MainWindow.glade:4096
+#: ui/MainWindow.glade:196 ui/MainWindow.glade:4256
 msgid "Use new configuration files"
 msgstr "Utiliser de nouveaux fichiers de configuration"
 
-#: ui/MainWindow.glade:212 ui/MainWindow.glade:4112
+#: ui/MainWindow.glade:212 ui/MainWindow.glade:4272
 msgid "Use old configuration files"
 msgstr "Utiliser d'anciens fichiers de configuration"
 
-#: ui/MainWindow.glade:263 ui/MainWindow.glade:4240
+#: ui/MainWindow.glade:263 ui/MainWindow.glade:4400
 msgid "Restore Defaults"
 msgstr "Réinitialiser"
 
@@ -67,43 +67,43 @@ msgstr "Réinitialiser"
 msgid "Package manager cache is updating"
 msgstr "Le cache du gestionnaire de paquets est en cours de mise à jour"
 
-#: ui/MainWindow.glade:466 ui/MainWindow.glade:2552
+#: ui/MainWindow.glade:466 ui/MainWindow.glade:2626
 msgid "Upgraded"
 msgstr "Mise à niveau"
 
-#: ui/MainWindow.glade:492 ui/MainWindow.glade:2578
+#: ui/MainWindow.glade:492 ui/MainWindow.glade:2652
 msgid "Newly Installed"
 msgstr "Nouvellement installé"
 
-#: ui/MainWindow.glade:519 ui/MainWindow.glade:2605
+#: ui/MainWindow.glade:519 ui/MainWindow.glade:2679
 msgid "To Remove"
 msgstr "Retirer"
 
-#: ui/MainWindow.glade:546 ui/MainWindow.glade:2632
+#: ui/MainWindow.glade:546 ui/MainWindow.glade:2706
 msgid "Not Upgraded"
 msgstr "Non mis à niveau"
 
-#: ui/MainWindow.glade:594 ui/MainWindow.glade:2680
+#: ui/MainWindow.glade:594 ui/MainWindow.glade:2754
 msgid "Download size:"
 msgstr "Taille du téléchargement :"
 
-#: ui/MainWindow.glade:649 ui/MainWindow.glade:2736
+#: ui/MainWindow.glade:649 ui/MainWindow.glade:2810
 msgid "Required disk size:"
 msgstr "Taille de disque requise :"
 
-#: ui/MainWindow.glade:704 ui/MainWindow.glade:2792
+#: ui/MainWindow.glade:704 ui/MainWindow.glade:2866
 msgid "Upgraded:"
 msgstr "Mise à niveau :"
 
-#: ui/MainWindow.glade:759 ui/MainWindow.glade:2848
+#: ui/MainWindow.glade:759 ui/MainWindow.glade:2922
 msgid "Newly installed:"
 msgstr "Récemment installé :"
 
-#: ui/MainWindow.glade:814 ui/MainWindow.glade:2904
+#: ui/MainWindow.glade:814 ui/MainWindow.glade:2978
 msgid "To remove:"
 msgstr "Retirer:"
 
-#: ui/MainWindow.glade:869 ui/MainWindow.glade:2960
+#: ui/MainWindow.glade:869 ui/MainWindow.glade:3034
 msgid "Not upgraded:"
 msgstr "Non mis à niveau :"
 
@@ -119,11 +119,11 @@ msgstr ""
 "<span color=\"red\">Le gestionnaire de paquets est occupé, réessayez une "
 "fois le processus terminé.</span>"
 
-#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3747
+#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3821
 msgid "Ok"
 msgstr "D'accord"
 
-#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3677
+#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3751
 msgid "Fix"
 msgstr "Réparer"
 
@@ -131,7 +131,7 @@ msgstr "Réparer"
 msgid "Your system is up to date."
 msgstr "Votre système est à jour."
 
-#: ui/MainWindow.glade:1206 src/MainWindow.py:587
+#: ui/MainWindow.glade:1206 src/MainWindow.py:599
 msgid "Check Updates"
 msgstr "Vérifier les mises à jour"
 
@@ -168,20 +168,24 @@ msgid "Last Update Check Date:"
 msgstr "Date de vérification de la dernière mise à jour :"
 
 #: ui/MainWindow.glade:1478
+msgid "Selectable Updates:"
+msgstr "Mises à jour sélectionnables :"
+
+#: ui/MainWindow.glade:1552
 msgid "Notifications:"
 msgstr "Notifications:"
 
-#: ui/MainWindow.glade:1518
+#: ui/MainWindow.glade:1592
 msgid "Launch at Startup:"
 msgstr "Exécuter au démarrage :"
 
-#: ui/MainWindow.glade:1587 ui/MainWindow.glade:2183 ui/MainWindow.glade:2466
-#: src/MainWindow.py:661 src/MainWindow.py:825 src/MainWindow.py:977
-#: src/MainWindow.py:1039
+#: ui/MainWindow.glade:1661 ui/MainWindow.glade:2257 ui/MainWindow.glade:2540
+#: src/MainWindow.py:673 src/MainWindow.py:837 src/MainWindow.py:989
+#: src/MainWindow.py:1057
 msgid "Home Page"
 msgstr "Page d'accueil"
 
-#: ui/MainWindow.glade:1633
+#: ui/MainWindow.glade:1707
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
@@ -189,11 +193,11 @@ msgstr ""
 "La liste des sources de votre système utilisée par le gestionnaire de "
 "packages semble brisée ou votre système a des dépendances rompues."
 
-#: ui/MainWindow.glade:1656
+#: ui/MainWindow.glade:1730
 msgid "Try Fix"
 msgstr "Essayez de réparer"
 
-#: ui/MainWindow.glade:1698
+#: ui/MainWindow.glade:1772
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create "
@@ -213,195 +217,210 @@ msgstr ""
 "\n"
 "Utiliser avec précaution. Es-tu sur de vouloir continuer?"
 
-#: ui/MainWindow.glade:1721 ui/MainWindow.glade:3008 ui/MainWindow.glade:3459
+#: ui/MainWindow.glade:1795 ui/MainWindow.glade:3082 ui/MainWindow.glade:3533
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ui/MainWindow.glade:1787
+#: ui/MainWindow.glade:1861
 msgid "Operation completed."
 msgstr "Opération terminée."
 
-#: ui/MainWindow.glade:1827
+#: ui/MainWindow.glade:1901
 msgid "Go to Home Page"
 msgstr "Aller à la Page d'accueil"
 
-#: ui/MainWindow.glade:1858
+#: ui/MainWindow.glade:1932
 msgid "You can check the terminal output below."
 msgstr "Vous pouvez vérifier la sortie du terminal ci-dessous."
 
-#: ui/MainWindow.glade:1887
+#: ui/MainWindow.glade:1961
 msgid "The error in the package manager could not be fixed."
 msgstr "L'erreur dans le gestionnaire de paquets n'a pas pu être corrigée."
 
-#: ui/MainWindow.glade:1905
+#: ui/MainWindow.glade:1979
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
 msgstr ""
 "Vous pouvez suivre les instructions en consultant la sortie du terminal ci-"
 "dessous."
 
-#: ui/MainWindow.glade:1917
+#: ui/MainWindow.glade:1991
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr ""
 "Vous pouvez demander de l'aide concernant votre problème via les canaux "
 "d'aide Mauna."
 
-#: ui/MainWindow.glade:2025
+#: ui/MainWindow.glade:2099
 msgid "List of automatically removable all unused packages"
 msgstr "Liste de tous les packages inutilisés automatiquement supprimés"
 
-#: ui/MainWindow.glade:2026
+#: ui/MainWindow.glade:2100
 msgid "Autoremovable Packages"
 msgstr "Forfaits auto-amovibles"
 
-#: ui/MainWindow.glade:2062 ui/MainWindow.glade:2128
+#: ui/MainWindow.glade:2136 ui/MainWindow.glade:2202
 msgid "Remove"
 msgstr "Retirer"
 
-#: ui/MainWindow.glade:2091
+#: ui/MainWindow.glade:2165
 msgid "List of unnecessary packages with residual config files"
 msgstr ""
 "Liste des paquets inutiles avec des fichiers de configuration résiduels"
 
-#: ui/MainWindow.glade:2092
+#: ui/MainWindow.glade:2166
 msgid "Residual Packages"
 msgstr "Paquets résiduels"
 
-#: ui/MainWindow.glade:2238
+#: ui/MainWindow.glade:2312
 msgid "Your Current Version:"
 msgstr "Votre version actuelle :"
 
-#: ui/MainWindow.glade:2282
+#: ui/MainWindow.glade:2356
 msgid "Upgradable Version:"
 msgstr "Version évolutive :"
 
-#: ui/MainWindow.glade:2365
+#: ui/MainWindow.glade:2439
 msgid "Your system is not up to date. Firstly, install the available updates."
 msgstr ""
 "Votre système n'est pas à jour. Tout d’abord, installez les mises à jour "
 "disponibles."
 
-#: ui/MainWindow.glade:2380
+#: ui/MainWindow.glade:2454
 msgid "Go to Updates"
 msgstr "Aller aux mises à jour"
 
-#: ui/MainWindow.glade:3143
+#: ui/MainWindow.glade:3217
 msgid "Root"
 msgstr "Root"
 
-#: ui/MainWindow.glade:3219
+#: ui/MainWindow.glade:3293
 msgid "is free of"
 msgstr "est libre de"
 
-#: ui/MainWindow.glade:3259 ui/MainWindow.glade:3376
+#: ui/MainWindow.glade:3333 ui/MainWindow.glade:3450
 msgid "Retry"
 msgstr "Recommencez"
 
-#: ui/MainWindow.glade:3329 src/MainWindow.py:886
+#: ui/MainWindow.glade:3403 src/MainWindow.py:898
 msgid "Packages are downloading, please wait."
 msgstr "Les paquets sont en cours de téléchargement, veuillez patienter."
 
-#: ui/MainWindow.glade:3357
+#: ui/MainWindow.glade:3431
 msgid "Continue"
 msgstr "Continuer"
 
-#: ui/MainWindow.glade:3420
+#: ui/MainWindow.glade:3494
 msgid "Your system will reboot and updates will be installed during startup."
 msgstr ""
 "Votre système redémarrera et les mises à jour seront installées au démarrage."
 
-#: ui/MainWindow.glade:3438
+#: ui/MainWindow.glade:3512
 msgid "Please do not turn off the machine while updates are installing."
 msgstr ""
 "Veuillez ne pas éteindre la machine pendant l'installation des mises à jour."
 
-#: ui/MainWindow.glade:3485
+#: ui/MainWindow.glade:3559
 msgid "Reboot"
 msgstr "Redémarrer"
 
-#: ui/MainWindow.glade:3549
+#: ui/MainWindow.glade:3623
 msgid "The last changes are processing."
 msgstr "Les dernières modifications sont en cours de traitement."
 
-#: ui/MainWindow.glade:3565
+#: ui/MainWindow.glade:3639
 msgid "Your system will reboot. Please wait..."
 msgstr "Votre système va redémarrer. S'il vous plaît, attendez..."
 
-#: ui/MainWindow.glade:3913 src/MainWindow.py:264 src/MainWindow.py:607
-#: src/MainWindow.py:685 src/MainWindow.py:828 src/MainWindow.py:953
-#: src/MainWindow.py:973 src/MainWindow.py:1044 src/MainWindow.py:1064
+#: ui/MainWindow.glade:3987 src/MainWindow.py:271 src/MainWindow.py:619
+#: src/MainWindow.py:697 src/MainWindow.py:840 src/MainWindow.py:965
+#: src/MainWindow.py:985 src/MainWindow.py:1062 src/MainWindow.py:1082
 msgid "Settings"
 msgstr "Paramètres"
 
-#: ui/MainWindow.glade:3969 src/MainWindow.py:266 src/MainWindow.py:665
-#: src/MainWindow.py:687 src/MainWindow.py:696 src/MainWindow.py:955
-#: src/MainWindow.py:982 src/MainWindow.py:1031 src/MainWindow.py:1067
+#: ui/MainWindow.glade:4043 src/MainWindow.py:273 src/MainWindow.py:677
+#: src/MainWindow.py:699 src/MainWindow.py:708 src/MainWindow.py:967
+#: src/MainWindow.py:994 src/MainWindow.py:1049 src/MainWindow.py:1085
 msgid "Version Upgrade"
 msgstr "Mise à niveau de version"
 
-#: ui/MainWindow.glade:4025
+#: ui/MainWindow.glade:4099
 msgid "About"
 msgstr "À propos"
 
-#: ui/MainWindow.glade:4128
+#: ui/MainWindow.glade:4167
+msgid "Caution"
+msgstr "Prudence"
+
+#: ui/MainWindow.glade:4189
+msgid ""
+"This feature is still in the testing phase. Before starting the update, it "
+"is recommended that you check one last time by selecting the \"Ask me before "
+"proceeding\" option in the update settings."
+msgstr ""
+"Cette fonctionnalité est encore en phase de test. Avant de démarrer la mise "
+"à jour, il est recommandé de vérifier une dernière fois en sélectionnant "
+"l'option « Me demander avant de continuer » dans les paramètres de mise à "
+"jour."
+
+#: ui/MainWindow.glade:4288
 msgid "Ask me what to do"
 msgstr "Demande-moi quoi faire"
 
-#: ui/MainWindow.glade:4154
+#: ui/MainWindow.glade:4314
 msgid "Interaction"
 msgstr "Interaction"
 
-#: ui/MainWindow.glade:4173
+#: ui/MainWindow.glade:4333
 msgid "Start process (with -yq option)"
 msgstr "Démarrer le processus (avec l'option -yq)"
 
-#: ui/MainWindow.glade:4189
+#: ui/MainWindow.glade:4349
 msgid "Ask me before starting the process (without -yq)"
 msgstr "Demandez-moi avant de démarrer le processus (sans -yq)"
 
-#: src/MainWindow.py:84
+#: src/MainWindow.py:91
 msgid "About Mauna Update"
 msgstr "À propos de la mise à jour Mauna"
 
-#: src/MainWindow.py:164 src/MainWindow.py:165
+#: src/MainWindow.py:171 src/MainWindow.py:172
 msgid "Start {} Upgrade"
 msgstr "Démarrer {} Mettre à niveau"
 
-#: src/MainWindow.py:270 src/MainWindow.py:633 src/MainWindow.py:650
-#: src/MainWindow.py:671 src/MainWindow.py:691
+#: src/MainWindow.py:277 src/MainWindow.py:645 src/MainWindow.py:662
+#: src/MainWindow.py:683 src/MainWindow.py:703
 msgid "Hide App"
 msgstr "Masquer l'application"
 
-#: src/MainWindow.py:598
+#: src/MainWindow.py:610
 msgid "Quit"
 msgstr "Quitter"
 
-#: src/MainWindow.py:603 src/MainWindow.py:1418
+#: src/MainWindow.py:615 src/MainWindow.py:1505
 msgid "Last Check"
 msgstr "Dernière vérification"
 
-#: src/MainWindow.py:611 src/MainWindow.py:1488
+#: src/MainWindow.py:623 src/MainWindow.py:1575
 msgid "System is Up to Date"
 msgstr "Le système est à jour"
 
-#: src/MainWindow.py:635 src/MainWindow.py:647 src/MainWindow.py:1225
+#: src/MainWindow.py:647 src/MainWindow.py:659 src/MainWindow.py:1264
 msgid "Show App"
 msgstr "Afficher l'application"
 
-#: src/MainWindow.py:755
+#: src/MainWindow.py:767
 msgid "Updates are installing. Please wait..."
 msgstr ""
 "Les mises à jour sont en cours d'installation. S'il vous plaît, attendez..."
 
-#: src/MainWindow.py:757
+#: src/MainWindow.py:769
 msgid "Updating"
 msgstr "Mise à jour"
 
-#: src/MainWindow.py:783 src/MainWindow.py:809
+#: src/MainWindow.py:795 src/MainWindow.py:821
 msgid "Packages are removing. Please wait..."
 msgstr "Les paquets sont supprimés. S'il vous plaît, attendez..."
 
-#: src/MainWindow.py:1185 src/MainWindow.py:1919
+#: src/MainWindow.py:1224 src/MainWindow.py:2007
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -409,56 +428,60 @@ msgstr ""
 "Interruption dpkg détectée. Cliquez sur le bouton « Réparer » ou\n"
 "exécutez manuellement 'sudo dpkg --configure -a' pour résoudre le problème."
 
-#: src/MainWindow.py:1194
+#: src/MainWindow.py:1233
 msgid "The process is in progress. Please wait..."
 msgstr "Le processus est en cours. S'il vous plaît, attendez..."
 
-#: src/MainWindow.py:1441
+#: src/MainWindow.py:1463
+msgid "Clear All Selections"
+msgstr "Effacer toutes les sélections"
+
+#: src/MainWindow.py:1528
 msgid "System is Broken"
 msgstr "Le système est cassé"
 
-#: src/MainWindow.py:1455
+#: src/MainWindow.py:1542
 msgid "Software Update"
 msgstr "Mise à jour logicielle"
 
-#: src/MainWindow.py:1456
+#: src/MainWindow.py:1543
 msgid "There are {} software updates available."
 msgstr "Il y a {} mises à jour logicielles disponibles."
 
-#: src/MainWindow.py:1458
+#: src/MainWindow.py:1545
 msgid "There is {} software update available."
 msgstr "Il y a {} mise à jour logicielle disponible."
 
-#: src/MainWindow.py:1477
+#: src/MainWindow.py:1564
 msgid "You have removable residual packages."
 msgstr "Vous disposez de packages résiduels amovibles."
 
-#: src/MainWindow.py:1491
+#: src/MainWindow.py:1578
 msgid "{} Updates Pending"
 msgstr "{} Mises à jour en attente"
 
-#: src/MainWindow.py:1493
+#: src/MainWindow.py:1580
 msgid "{} Update Pending"
 msgstr "{} Mise à jour en attente"
 
-#: src/MainWindow.py:1516
+#: src/MainWindow.py:1603
 msgid "Automatic upgrade started in the background."
 msgstr "La mise à niveau automatique a démarré en arrière-plan."
 
-#: src/MainWindow.py:1560
+#: src/MainWindow.py:1647
 msgid "Upgrade to {}"
 msgstr "Mettre à niveau vers {}"
 
-#: src/MainWindow.py:1699
+#: src/MainWindow.py:1786
 msgid "Total Required Size"
 msgstr "Taille totale requise"
 
-#: src/MainWindow.py:1858 src/MainWindow.py:1950 src/MainWindow.py:2026
-#: src/MainWindow.py:2118
+#: src/MainWindow.py:1946 src/MainWindow.py:2038 src/MainWindow.py:2114
+#: src/MainWindow.py:2206
 msgid "Copy selected text"
 msgstr "Copier le texte sélectionné"
 
-#: src/MainWindow.py:1915
+#: src/MainWindow.py:2003
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -469,30 +492,30 @@ msgstr ""
 "Veuillez fermer l'autre application, par ex. 'Gestionnaire de mise à jour', "
 "'aptitude' ou 'Synaptic' en premier."
 
-#: src/MainWindow.py:1924 src/MainWindow.py:2172
+#: src/MainWindow.py:2012 src/MainWindow.py:2260
 msgid "Process completed."
 msgstr "Processus terminé."
 
-#: src/MainWindow.py:2074
+#: src/MainWindow.py:2162
 msgid "The download is complete. You can continue."
 msgstr "Le téléchargement est terminé. Tu peux continuer."
 
-#: src/MainWindow.py:2087
+#: src/MainWindow.py:2175
 msgid "The download is not completed. Try again."
 msgstr "Le téléchargement n'est pas terminé. Essayer à nouveau."
 
-#: src/MainWindow.py:2170
+#: src/MainWindow.py:2258
 msgid "Error."
 msgstr "Erreur."
 
-#: src/MainWindow.py:2224
+#: src/MainWindow.py:2312
 msgid "Automatic upgrade completed."
 msgstr "Mise à niveau automatique terminée."
 
-#: src/MainWindow.py:2250
+#: src/MainWindow.py:2338
 msgid "Update"
 msgstr "Mise à jour"
 
-#: src/MainWindow.py:2251
+#: src/MainWindow.py:2339
 msgid "Close"
 msgstr "Fermer"

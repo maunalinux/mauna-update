@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-18 18:45-0300\n"
-"PO-Revision-Date: 2024-07-21 15:59-0300\n"
+"POT-Creation-Date: 2024-08-09 16:17-0300\n"
+"PO-Revision-Date: 2024-08-09 18:22-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hi\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: ui/MainWindow.glade:13 ui/MainWindow.glade:3831 src/MainWindow.py:80 src/MainWindow.py:583
-#: src/MainWindow.py:1515 src/MainWindow.py:2223
+#: ui/MainWindow.glade:13 ui/MainWindow.glade:3905 src/MainWindow.py:87
+#: src/MainWindow.py:595 src/MainWindow.py:1602 src/MainWindow.py:2311
 msgid "Mauna Update"
 msgstr "मौना अपडेट"
 
@@ -26,7 +26,7 @@ msgstr "मौना अपडेट"
 msgid "No"
 msgstr "नहीं"
 
-#: ui/MainWindow.glade:54 ui/MainWindow.glade:1738
+#: ui/MainWindow.glade:54 ui/MainWindow.glade:1812
 msgid "Yes"
 msgstr "हाँ"
 
@@ -43,19 +43,19 @@ msgstr "मौना अद्यतन आवेदन"
 msgid "translator-credits"
 msgstr "Mauna Linux <dev@maunalinux.top>"
 
-#: ui/MainWindow.glade:177 ui/MainWindow.glade:4077
+#: ui/MainWindow.glade:177 ui/MainWindow.glade:4237
 msgid "Package configuration files"
 msgstr "पैकेज कॉन्फ़िगरेशन फ़ाइलें"
 
-#: ui/MainWindow.glade:196 ui/MainWindow.glade:4096
+#: ui/MainWindow.glade:196 ui/MainWindow.glade:4256
 msgid "Use new configuration files"
 msgstr "नई कॉन्फ़िगरेशन फ़ाइलों का उपयोग करें"
 
-#: ui/MainWindow.glade:212 ui/MainWindow.glade:4112
+#: ui/MainWindow.glade:212 ui/MainWindow.glade:4272
 msgid "Use old configuration files"
 msgstr "पुरानी कॉन्फ़िगरेशन फ़ाइलों का उपयोग करें"
 
-#: ui/MainWindow.glade:263 ui/MainWindow.glade:4240
+#: ui/MainWindow.glade:263 ui/MainWindow.glade:4400
 msgid "Restore Defaults"
 msgstr "डिफॉल्ट्स का पुनःस्थापन"
 
@@ -63,43 +63,43 @@ msgstr "डिफॉल्ट्स का पुनःस्थापन"
 msgid "Package manager cache is updating"
 msgstr "पैकेज मैनेजर कैश अपडेट हो रहा है"
 
-#: ui/MainWindow.glade:466 ui/MainWindow.glade:2552
+#: ui/MainWindow.glade:466 ui/MainWindow.glade:2626
 msgid "Upgraded"
 msgstr "उन्नत"
 
-#: ui/MainWindow.glade:492 ui/MainWindow.glade:2578
+#: ui/MainWindow.glade:492 ui/MainWindow.glade:2652
 msgid "Newly Installed"
 msgstr "नव स्थापित"
 
-#: ui/MainWindow.glade:519 ui/MainWindow.glade:2605
+#: ui/MainWindow.glade:519 ui/MainWindow.glade:2679
 msgid "To Remove"
 msgstr "दूर करना"
 
-#: ui/MainWindow.glade:546 ui/MainWindow.glade:2632
+#: ui/MainWindow.glade:546 ui/MainWindow.glade:2706
 msgid "Not Upgraded"
 msgstr "अपग्रेड नहीं किया गया"
 
-#: ui/MainWindow.glade:594 ui/MainWindow.glade:2680
+#: ui/MainWindow.glade:594 ui/MainWindow.glade:2754
 msgid "Download size:"
 msgstr "डाउनलोड का आकार:"
 
-#: ui/MainWindow.glade:649 ui/MainWindow.glade:2736
+#: ui/MainWindow.glade:649 ui/MainWindow.glade:2810
 msgid "Required disk size:"
 msgstr "आवश्यक डिस्क आकार:"
 
-#: ui/MainWindow.glade:704 ui/MainWindow.glade:2792
+#: ui/MainWindow.glade:704 ui/MainWindow.glade:2866
 msgid "Upgraded:"
 msgstr "उन्नत:"
 
-#: ui/MainWindow.glade:759 ui/MainWindow.glade:2848
+#: ui/MainWindow.glade:759 ui/MainWindow.glade:2922
 msgid "Newly installed:"
 msgstr "नव स्थापित:"
 
-#: ui/MainWindow.glade:814 ui/MainWindow.glade:2904
+#: ui/MainWindow.glade:814 ui/MainWindow.glade:2978
 msgid "To remove:"
 msgstr "दूर करना:"
 
-#: ui/MainWindow.glade:869 ui/MainWindow.glade:2960
+#: ui/MainWindow.glade:869 ui/MainWindow.glade:3034
 msgid "Not upgraded:"
 msgstr "अपग्रेड नहीं किया गया:"
 
@@ -108,14 +108,16 @@ msgid "Upgrade"
 msgstr "उन्नत करना"
 
 #: ui/MainWindow.glade:1006
-msgid "<span color=\"red\">Package manager is busy, try again after the process is completed.</span>"
+msgid ""
+"<span color=\"red\">Package manager is busy, try again after the process is completed.</"
+"span>"
 msgstr "<span color='red'>पैकेज प्रबंधक व्यस्त है, प्रक्रिया पूरी होने के बाद पुनः प्रयास करें।</span>"
 
-#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3747
+#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3821
 msgid "Ok"
 msgstr "ठीक है"
 
-#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3677
+#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3751
 msgid "Fix"
 msgstr "हल करना"
 
@@ -123,7 +125,7 @@ msgstr "हल करना"
 msgid "Your system is up to date."
 msgstr "आपका सिस्टम आधुनिक है।"
 
-#: ui/MainWindow.glade:1206 src/MainWindow.py:587
+#: ui/MainWindow.glade:1206 src/MainWindow.py:599
 msgid "Check Updates"
 msgstr "अपडेट जांचें"
 
@@ -160,29 +162,35 @@ msgid "Last Update Check Date:"
 msgstr "अंतिम अद्यतन जाँच दिनांक:"
 
 #: ui/MainWindow.glade:1478
+msgid "Selectable Updates:"
+msgstr "चयन योग्य अद्यतन:"
+
+#: ui/MainWindow.glade:1552
 msgid "Notifications:"
 msgstr "सूचनाएं:"
 
-#: ui/MainWindow.glade:1518
+#: ui/MainWindow.glade:1592
 msgid "Launch at Startup:"
 msgstr "शुरु होते वक्त चलाएं:"
 
-#: ui/MainWindow.glade:1587 ui/MainWindow.glade:2183 ui/MainWindow.glade:2466 src/MainWindow.py:661
-#: src/MainWindow.py:825 src/MainWindow.py:977 src/MainWindow.py:1039
+#: ui/MainWindow.glade:1661 ui/MainWindow.glade:2257 ui/MainWindow.glade:2540
+#: src/MainWindow.py:673 src/MainWindow.py:837 src/MainWindow.py:989 src/MainWindow.py:1057
 msgid "Home Page"
 msgstr "होम पेज"
 
-#: ui/MainWindow.glade:1633
+#: ui/MainWindow.glade:1707
 msgid ""
-"Your system sources list that used by package manager seems broken or your system has broken "
-"dependencies."
-msgstr "पैकेज प्रबंधक द्वारा उपयोग की गई आपकी सिस्टम स्रोत सूची टूटी हुई लगती है या आपके सिस्टम की निर्भरताएँ टूट गई हैं।"
+"Your system sources list that used by package manager seems broken or your system has "
+"broken dependencies."
+msgstr ""
+"पैकेज प्रबंधक द्वारा उपयोग की गई आपकी सिस्टम स्रोत सूची टूटी हुई लगती है या आपके सिस्टम की निर्भरताएँ "
+"टूट गई हैं।"
 
-#: ui/MainWindow.glade:1656
+#: ui/MainWindow.glade:1730
 msgid "Try Fix"
 msgstr "ठीक करने का प्रयास करें"
 
-#: ui/MainWindow.glade:1698
+#: ui/MainWindow.glade:1772
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create defaults,\n"
@@ -200,184 +208,197 @@ msgstr ""
 "\n"
 "सावधानी से प्रयोग करें। क्या आप वाकई जारी रखना चाहते हैं?"
 
-#: ui/MainWindow.glade:1721 ui/MainWindow.glade:3008 ui/MainWindow.glade:3459
+#: ui/MainWindow.glade:1795 ui/MainWindow.glade:3082 ui/MainWindow.glade:3533
 msgid "Cancel"
 msgstr "रद्द करना"
 
-#: ui/MainWindow.glade:1787
+#: ui/MainWindow.glade:1861
 msgid "Operation completed."
 msgstr "ऑपरेशन पूरा हुआ."
 
-#: ui/MainWindow.glade:1827
+#: ui/MainWindow.glade:1901
 msgid "Go to Home Page"
 msgstr "मुखपृष्ठ प्र जाएं"
 
-#: ui/MainWindow.glade:1858
+#: ui/MainWindow.glade:1932
 msgid "You can check the terminal output below."
 msgstr "आप नीचे टर्मिनल आउटपुट की जांच कर सकते हैं।"
 
-#: ui/MainWindow.glade:1887
+#: ui/MainWindow.glade:1961
 msgid "The error in the package manager could not be fixed."
 msgstr "पैकेज प्रबंधक में त्रुटि ठीक नहीं की जा सकी."
 
-#: ui/MainWindow.glade:1905
+#: ui/MainWindow.glade:1979
 msgid "You can follow the instructions by looking at the terminal output below."
 msgstr "आप नीचे दिए गए टर्मिनल आउटपुट को देखकर निर्देशों का पालन कर सकते हैं।"
 
-#: ui/MainWindow.glade:1917
+#: ui/MainWindow.glade:1991
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr "आप मौना सहायता चैनलों के माध्यम से अपनी समस्या के बारे में सहायता मांग सकते हैं।"
 
-#: ui/MainWindow.glade:2025
+#: ui/MainWindow.glade:2099
 msgid "List of automatically removable all unused packages"
 msgstr "स्वचालित रूप से हटाने योग्य सभी अप्रयुक्त पैकेजों की सूची"
 
-#: ui/MainWindow.glade:2026
+#: ui/MainWindow.glade:2100
 msgid "Autoremovable Packages"
 msgstr "स्वतः हटाने योग्य पैकेज"
 
-#: ui/MainWindow.glade:2062 ui/MainWindow.glade:2128
+#: ui/MainWindow.glade:2136 ui/MainWindow.glade:2202
 msgid "Remove"
 msgstr "निकालना"
 
-#: ui/MainWindow.glade:2091
+#: ui/MainWindow.glade:2165
 msgid "List of unnecessary packages with residual config files"
 msgstr "अवशिष्ट कॉन्फ़िगरेशन फ़ाइलों के साथ अनावश्यक पैकेजों की सूची"
 
-#: ui/MainWindow.glade:2092
+#: ui/MainWindow.glade:2166
 msgid "Residual Packages"
 msgstr "अवशिष्ट पैकेज"
 
-#: ui/MainWindow.glade:2238
+#: ui/MainWindow.glade:2312
 msgid "Your Current Version:"
 msgstr "आपका वर्तमान संस्करण:"
 
-#: ui/MainWindow.glade:2282
+#: ui/MainWindow.glade:2356
 msgid "Upgradable Version:"
 msgstr "अपग्रेड करने योग्य संस्करण:"
 
-#: ui/MainWindow.glade:2365
+#: ui/MainWindow.glade:2439
 msgid "Your system is not up to date. Firstly, install the available updates."
 msgstr "आपका सिस्टम अद्यतित नहीं है. सबसे पहले, उपलब्ध अपडेट इंस्टॉल करें।"
 
-#: ui/MainWindow.glade:2380
+#: ui/MainWindow.glade:2454
 msgid "Go to Updates"
 msgstr "अपडेट पर जाएं"
 
-#: ui/MainWindow.glade:3143
+#: ui/MainWindow.glade:3217
 msgid "Root"
 msgstr "जड़"
 
-#: ui/MainWindow.glade:3219
+#: ui/MainWindow.glade:3293
 msgid "is free of"
 msgstr "से मुक्त है"
 
-#: ui/MainWindow.glade:3259 ui/MainWindow.glade:3376
+#: ui/MainWindow.glade:3333 ui/MainWindow.glade:3450
 msgid "Retry"
 msgstr "पुन: प्रयास करें"
 
-#: ui/MainWindow.glade:3329 src/MainWindow.py:886
+#: ui/MainWindow.glade:3403 src/MainWindow.py:898
 msgid "Packages are downloading, please wait."
 msgstr "पैकेज डाउनलोड हो रहे हैं, कृपया प्रतीक्षा करें।"
 
-#: ui/MainWindow.glade:3357
+#: ui/MainWindow.glade:3431
 msgid "Continue"
 msgstr "जारी रखना"
 
-#: ui/MainWindow.glade:3420
+#: ui/MainWindow.glade:3494
 msgid "Your system will reboot and updates will be installed during startup."
 msgstr "आपका सिस्टम रीबूट हो जाएगा और स्टार्टअप के दौरान अपडेट इंस्टॉल हो जाएंगे।"
 
-#: ui/MainWindow.glade:3438
+#: ui/MainWindow.glade:3512
 msgid "Please do not turn off the machine while updates are installing."
 msgstr "अपडेट इंस्टॉल होने के दौरान कृपया मशीन को बंद न करें।"
 
-#: ui/MainWindow.glade:3485
+#: ui/MainWindow.glade:3559
 msgid "Reboot"
 msgstr "रीबूट"
 
-#: ui/MainWindow.glade:3549
+#: ui/MainWindow.glade:3623
 msgid "The last changes are processing."
 msgstr "अंतिम परिवर्तन संसाधित हो रहे हैं."
 
-#: ui/MainWindow.glade:3565
+#: ui/MainWindow.glade:3639
 msgid "Your system will reboot. Please wait..."
 msgstr "आपका सिस्टम रीबूट हो जाएगा. कृपया प्रतीक्षा करें..."
 
-#: ui/MainWindow.glade:3913 src/MainWindow.py:264 src/MainWindow.py:607 src/MainWindow.py:685
-#: src/MainWindow.py:828 src/MainWindow.py:953 src/MainWindow.py:973 src/MainWindow.py:1044
-#: src/MainWindow.py:1064
+#: ui/MainWindow.glade:3987 src/MainWindow.py:271 src/MainWindow.py:619
+#: src/MainWindow.py:697 src/MainWindow.py:840 src/MainWindow.py:965 src/MainWindow.py:985
+#: src/MainWindow.py:1062 src/MainWindow.py:1082
 msgid "Settings"
 msgstr "समायोजन"
 
-#: ui/MainWindow.glade:3969 src/MainWindow.py:266 src/MainWindow.py:665 src/MainWindow.py:687
-#: src/MainWindow.py:696 src/MainWindow.py:955 src/MainWindow.py:982 src/MainWindow.py:1031
-#: src/MainWindow.py:1067
+#: ui/MainWindow.glade:4043 src/MainWindow.py:273 src/MainWindow.py:677
+#: src/MainWindow.py:699 src/MainWindow.py:708 src/MainWindow.py:967 src/MainWindow.py:994
+#: src/MainWindow.py:1049 src/MainWindow.py:1085
 msgid "Version Upgrade"
 msgstr "संस्करण अपग्रेड"
 
-#: ui/MainWindow.glade:4025
+#: ui/MainWindow.glade:4099
 msgid "About"
 msgstr "के बारे में"
 
-#: ui/MainWindow.glade:4128
+#: ui/MainWindow.glade:4167
+msgid "Caution"
+msgstr "सावधानी"
+
+#: ui/MainWindow.glade:4189
+msgid ""
+"This feature is still in the testing phase. Before starting the update, it is "
+"recommended that you check one last time by selecting the \"Ask me before proceeding\" "
+"option in the update settings."
+msgstr ""
+"यह सुविधा अभी भी परीक्षण चरण में है। अपडेट शुरू करने से पहले, यह अनुशंसा की जाती है कि आप अपडेट सेटिंग में "
+"\"आगे बढ़ने से पहले मुझसे पूछें\" विकल्प चुनकर एक बार अंतिम बार जांच लें।"
+
+#: ui/MainWindow.glade:4288
 msgid "Ask me what to do"
 msgstr "मुझसे पूछो क्या करना है"
 
-#: ui/MainWindow.glade:4154
+#: ui/MainWindow.glade:4314
 msgid "Interaction"
 msgstr "इंटरैक्शन"
 
-#: ui/MainWindow.glade:4173
+#: ui/MainWindow.glade:4333
 msgid "Start process (with -yq option)"
 msgstr "प्रक्रिया प्रारंभ करें (-yq विकल्प के साथ)"
 
-#: ui/MainWindow.glade:4189
+#: ui/MainWindow.glade:4349
 msgid "Ask me before starting the process (without -yq)"
 msgstr "प्रक्रिया शुरू करने से पहले मुझसे पूछें (-yq के बिना)"
 
-#: src/MainWindow.py:84
+#: src/MainWindow.py:91
 msgid "About Mauna Update"
 msgstr "मौना अपडेट के बारे में"
 
-#: src/MainWindow.py:164 src/MainWindow.py:165
+#: src/MainWindow.py:171 src/MainWindow.py:172
 msgid "Start {} Upgrade"
 msgstr "{} अपग्रेड प्रारंभ करें"
 
-#: src/MainWindow.py:270 src/MainWindow.py:633 src/MainWindow.py:650 src/MainWindow.py:671
-#: src/MainWindow.py:691
+#: src/MainWindow.py:277 src/MainWindow.py:645 src/MainWindow.py:662 src/MainWindow.py:683
+#: src/MainWindow.py:703
 msgid "Hide App"
 msgstr "एप्लिकेशन छुपाएं"
 
-#: src/MainWindow.py:598
+#: src/MainWindow.py:610
 msgid "Quit"
 msgstr "छोड़ना"
 
-#: src/MainWindow.py:603 src/MainWindow.py:1418
+#: src/MainWindow.py:615 src/MainWindow.py:1505
 msgid "Last Check"
 msgstr "अंतिम जांच"
 
-#: src/MainWindow.py:611 src/MainWindow.py:1488
+#: src/MainWindow.py:623 src/MainWindow.py:1575
 msgid "System is Up to Date"
 msgstr "सिस्टम अप टू डेट है"
 
-#: src/MainWindow.py:635 src/MainWindow.py:647 src/MainWindow.py:1225
+#: src/MainWindow.py:647 src/MainWindow.py:659 src/MainWindow.py:1264
 msgid "Show App"
 msgstr "आवेदन दिखाएँ"
 
-#: src/MainWindow.py:755
+#: src/MainWindow.py:767
 msgid "Updates are installing. Please wait..."
 msgstr "अपडेट इंस्टॉल हो रहे हैं. कृपया प्रतीक्षा करें..."
 
-#: src/MainWindow.py:757
+#: src/MainWindow.py:769
 msgid "Updating"
 msgstr "अद्यतन करने"
 
-#: src/MainWindow.py:783 src/MainWindow.py:809
+#: src/MainWindow.py:795 src/MainWindow.py:821
 msgid "Packages are removing. Please wait..."
 msgstr "पैकेज हटा रहे हैं. कृपया प्रतीक्षा करें..."
 
-#: src/MainWindow.py:1185 src/MainWindow.py:1919
+#: src/MainWindow.py:1224 src/MainWindow.py:2007
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -385,55 +406,60 @@ msgstr ""
 "डीपीकेजी व्यवधान का पता चला। 'ठीक करें' बटन पर क्लिक करें या\n"
 "समस्या को ठीक करने के लिए मैन्युअल रूप से 'sudo dpkg --configure -a' चलाएँ।"
 
-#: src/MainWindow.py:1194
+#: src/MainWindow.py:1233
 msgid "The process is in progress. Please wait..."
 msgstr "प्रक्रिया प्रगति पर है. कृपया प्रतीक्षा करें..."
 
-#: src/MainWindow.py:1441
+#: src/MainWindow.py:1463
+msgid "Clear All Selections"
+msgstr "सभी चयन साफ़ करें"
+
+#: src/MainWindow.py:1528
 msgid "System is Broken"
 msgstr "सिस्टम टूटा हुआ है"
 
-#: src/MainWindow.py:1455
+#: src/MainWindow.py:1542
 msgid "Software Update"
 msgstr "सॉफ्टवेयर अपडेट"
 
-#: src/MainWindow.py:1456
+#: src/MainWindow.py:1543
 msgid "There are {} software updates available."
 msgstr "{}सॉफ्टवेयर अपडेट उपलब्ध हैं।"
 
-#: src/MainWindow.py:1458
+#: src/MainWindow.py:1545
 msgid "There is {} software update available."
 msgstr "{}सॉफ्टवेयर अपडेट उपलब्ध है।"
 
-#: src/MainWindow.py:1477
+#: src/MainWindow.py:1564
 msgid "You have removable residual packages."
 msgstr "आपके पास हटाने योग्य अवशिष्ट पैकेज हैं."
 
-#: src/MainWindow.py:1491
+#: src/MainWindow.py:1578
 msgid "{} Updates Pending"
 msgstr "{} अपडेट लंबित"
 
-#: src/MainWindow.py:1493
+#: src/MainWindow.py:1580
 msgid "{} Update Pending"
 msgstr "{} अद्यतन लंबित"
 
-#: src/MainWindow.py:1516
+#: src/MainWindow.py:1603
 msgid "Automatic upgrade started in the background."
 msgstr "पृष्ठभूमि में स्वचालित उन्नयन प्रारंभ हो गया।"
 
-#: src/MainWindow.py:1560
+#: src/MainWindow.py:1647
 msgid "Upgrade to {}"
 msgstr "में अपग्रेड {}"
 
-#: src/MainWindow.py:1699
+#: src/MainWindow.py:1786
 msgid "Total Required Size"
 msgstr "कुल आवश्यक आकार"
 
-#: src/MainWindow.py:1858 src/MainWindow.py:1950 src/MainWindow.py:2026 src/MainWindow.py:2118
+#: src/MainWindow.py:1946 src/MainWindow.py:2038 src/MainWindow.py:2114
+#: src/MainWindow.py:2206
 msgid "Copy selected text"
 msgstr "चयनित पाठ की प्रतिलिपि बनाएँ"
 
-#: src/MainWindow.py:1915
+#: src/MainWindow.py:2003
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or 'Synaptic' first."
@@ -441,30 +467,30 @@ msgstr ""
 "एक ही समय में केवल एक सॉफ़्टवेयर प्रबंधन टूल को चलाने की अनुमति है।\n"
 "कृपया अन्य एप्लिकेशन को बंद करें उदा. 'अपडेट मैनेजर', 'एप्टीट्यूड' या 'सिनैप्टिक' पहले।"
 
-#: src/MainWindow.py:1924 src/MainWindow.py:2172
+#: src/MainWindow.py:2012 src/MainWindow.py:2260
 msgid "Process completed."
 msgstr "प्रक्रिया पूरी हुई."
 
-#: src/MainWindow.py:2074
+#: src/MainWindow.py:2162
 msgid "The download is complete. You can continue."
 msgstr "डाउनलोड पूरा हो गया है. आप जारी रख सकते हैं।"
 
-#: src/MainWindow.py:2087
+#: src/MainWindow.py:2175
 msgid "The download is not completed. Try again."
 msgstr "डाउनलोड पूरा नहीं हुआ है. पुनः प्रयास करें।"
 
-#: src/MainWindow.py:2170
+#: src/MainWindow.py:2258
 msgid "Error."
 msgstr "गलती।"
 
-#: src/MainWindow.py:2224
+#: src/MainWindow.py:2312
 msgid "Automatic upgrade completed."
 msgstr "स्वचालित अपग्रेड पूर्ण हुआ."
 
-#: src/MainWindow.py:2250
+#: src/MainWindow.py:2338
 msgid "Update"
 msgstr "अद्यतन"
 
-#: src/MainWindow.py:2251
+#: src/MainWindow.py:2339
 msgid "Close"
 msgstr "बंद करना"

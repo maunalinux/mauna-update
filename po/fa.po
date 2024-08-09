@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-18 18:45-0300\n"
-"PO-Revision-Date: 2024-07-21 15:58-0300\n"
+"POT-Creation-Date: 2024-08-09 16:17-0300\n"
+"PO-Revision-Date: 2024-08-09 17:53-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: ui/MainWindow.glade:13 ui/MainWindow.glade:3831 src/MainWindow.py:80
-#: src/MainWindow.py:583 src/MainWindow.py:1515 src/MainWindow.py:2223
+#: ui/MainWindow.glade:13 ui/MainWindow.glade:3905 src/MainWindow.py:87
+#: src/MainWindow.py:595 src/MainWindow.py:1602 src/MainWindow.py:2311
 msgid "Mauna Update"
 msgstr "به روز رسانی Mauna"
 
@@ -27,7 +27,7 @@ msgstr "به روز رسانی Mauna"
 msgid "No"
 msgstr "خیر"
 
-#: ui/MainWindow.glade:54 ui/MainWindow.glade:1738
+#: ui/MainWindow.glade:54 ui/MainWindow.glade:1812
 msgid "Yes"
 msgstr "آره"
 
@@ -47,19 +47,19 @@ msgstr "برنامه به روز رسانی Mauna"
 msgid "translator-credits"
 msgstr "Mauna Linux <dev@maunalinux.top>"
 
-#: ui/MainWindow.glade:177 ui/MainWindow.glade:4077
+#: ui/MainWindow.glade:177 ui/MainWindow.glade:4237
 msgid "Package configuration files"
 msgstr "فایل های پیکربندی بسته"
 
-#: ui/MainWindow.glade:196 ui/MainWindow.glade:4096
+#: ui/MainWindow.glade:196 ui/MainWindow.glade:4256
 msgid "Use new configuration files"
 msgstr "از فایل های پیکربندی جدید استفاده کنید"
 
-#: ui/MainWindow.glade:212 ui/MainWindow.glade:4112
+#: ui/MainWindow.glade:212 ui/MainWindow.glade:4272
 msgid "Use old configuration files"
 msgstr "از فایل های پیکربندی قدیمی استفاده کنید"
 
-#: ui/MainWindow.glade:263 ui/MainWindow.glade:4240
+#: ui/MainWindow.glade:263 ui/MainWindow.glade:4400
 msgid "Restore Defaults"
 msgstr "بازیابی پیش فرض ها"
 
@@ -67,43 +67,43 @@ msgstr "بازیابی پیش فرض ها"
 msgid "Package manager cache is updating"
 msgstr "حافظه پنهان مدیر بسته در حال به روز رسانی است"
 
-#: ui/MainWindow.glade:466 ui/MainWindow.glade:2552
+#: ui/MainWindow.glade:466 ui/MainWindow.glade:2626
 msgid "Upgraded"
 msgstr "ارتقا یافته است"
 
-#: ui/MainWindow.glade:492 ui/MainWindow.glade:2578
+#: ui/MainWindow.glade:492 ui/MainWindow.glade:2652
 msgid "Newly Installed"
 msgstr "تازه نصب شده"
 
-#: ui/MainWindow.glade:519 ui/MainWindow.glade:2605
+#: ui/MainWindow.glade:519 ui/MainWindow.glade:2679
 msgid "To Remove"
 msgstr "برای حذف"
 
-#: ui/MainWindow.glade:546 ui/MainWindow.glade:2632
+#: ui/MainWindow.glade:546 ui/MainWindow.glade:2706
 msgid "Not Upgraded"
 msgstr "ارتقا داده نشده است"
 
-#: ui/MainWindow.glade:594 ui/MainWindow.glade:2680
+#: ui/MainWindow.glade:594 ui/MainWindow.glade:2754
 msgid "Download size:"
 msgstr "حجم دانلود:"
 
-#: ui/MainWindow.glade:649 ui/MainWindow.glade:2736
+#: ui/MainWindow.glade:649 ui/MainWindow.glade:2810
 msgid "Required disk size:"
 msgstr "اندازه دیسک مورد نیاز:"
 
-#: ui/MainWindow.glade:704 ui/MainWindow.glade:2792
+#: ui/MainWindow.glade:704 ui/MainWindow.glade:2866
 msgid "Upgraded:"
 msgstr "ارتقا یافته:"
 
-#: ui/MainWindow.glade:759 ui/MainWindow.glade:2848
+#: ui/MainWindow.glade:759 ui/MainWindow.glade:2922
 msgid "Newly installed:"
 msgstr "تازه نصب شده:"
 
-#: ui/MainWindow.glade:814 ui/MainWindow.glade:2904
+#: ui/MainWindow.glade:814 ui/MainWindow.glade:2978
 msgid "To remove:"
 msgstr "برای حذف:"
 
-#: ui/MainWindow.glade:869 ui/MainWindow.glade:2960
+#: ui/MainWindow.glade:869 ui/MainWindow.glade:3034
 msgid "Not upgraded:"
 msgstr "ارتقاء نیافته:"
 
@@ -119,11 +119,11 @@ msgstr ""
 "<span color=\"red\">مدیر بسته مشغول است، پس از تکمیل فرآیند دوباره امتحان "
 "کنید.</span>"
 
-#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3747
+#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3821
 msgid "Ok"
 msgstr "خوب"
 
-#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3677
+#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3751
 msgid "Fix"
 msgstr "ثابت"
 
@@ -131,7 +131,7 @@ msgstr "ثابت"
 msgid "Your system is up to date."
 msgstr "سیستم شما به روز است."
 
-#: ui/MainWindow.glade:1206 src/MainWindow.py:587
+#: ui/MainWindow.glade:1206 src/MainWindow.py:599
 msgid "Check Updates"
 msgstr "به روز رسانی ها را بررسی کنید"
 
@@ -168,20 +168,24 @@ msgid "Last Update Check Date:"
 msgstr "تاریخ بررسی آخرین به روز رسانی:"
 
 #: ui/MainWindow.glade:1478
+msgid "Selectable Updates:"
+msgstr "به روز رسانی های قابل انتخاب:"
+
+#: ui/MainWindow.glade:1552
 msgid "Notifications:"
 msgstr "اطلاعیه:"
 
-#: ui/MainWindow.glade:1518
+#: ui/MainWindow.glade:1592
 msgid "Launch at Startup:"
 msgstr "دویدن در خط شروع:"
 
-#: ui/MainWindow.glade:1587 ui/MainWindow.glade:2183 ui/MainWindow.glade:2466
-#: src/MainWindow.py:661 src/MainWindow.py:825 src/MainWindow.py:977
-#: src/MainWindow.py:1039
+#: ui/MainWindow.glade:1661 ui/MainWindow.glade:2257 ui/MainWindow.glade:2540
+#: src/MainWindow.py:673 src/MainWindow.py:837 src/MainWindow.py:989
+#: src/MainWindow.py:1057
 msgid "Home Page"
 msgstr "صفحه نخست"
 
-#: ui/MainWindow.glade:1633
+#: ui/MainWindow.glade:1707
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
@@ -189,11 +193,11 @@ msgstr ""
 "فهرست منابع سیستم شما که توسط مدیر بسته استفاده می‌شود خراب به نظر می‌رسد یا "
 "سیستم شما وابستگی‌هایش را قطع کرده است."
 
-#: ui/MainWindow.glade:1656
+#: ui/MainWindow.glade:1730
 msgid "Try Fix"
 msgstr "Fix را امتحان کنید"
 
-#: ui/MainWindow.glade:1698
+#: ui/MainWindow.glade:1772
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create defaults,\n"
@@ -212,186 +216,200 @@ msgstr ""
 "\n"
 "با احتیاط استفاده کنید. آیا مطمئن هستید که میخواهید ادامه دهید؟"
 
-#: ui/MainWindow.glade:1721 ui/MainWindow.glade:3008 ui/MainWindow.glade:3459
+#: ui/MainWindow.glade:1795 ui/MainWindow.glade:3082 ui/MainWindow.glade:3533
 msgid "Cancel"
 msgstr "لغو کنید"
 
-#: ui/MainWindow.glade:1787
+#: ui/MainWindow.glade:1861
 msgid "Operation completed."
 msgstr "عملیات تکمیل شد."
 
-#: ui/MainWindow.glade:1827
+#: ui/MainWindow.glade:1901
 msgid "Go to Home Page"
 msgstr "به صفحه اصلی بروید"
 
-#: ui/MainWindow.glade:1858
+#: ui/MainWindow.glade:1932
 msgid "You can check the terminal output below."
 msgstr "در زیر می توانید خروجی ترمینال را بررسی کنید."
 
-#: ui/MainWindow.glade:1887
+#: ui/MainWindow.glade:1961
 msgid "The error in the package manager could not be fixed."
 msgstr "خطا در مدیر بسته قابل رفع نیست."
 
-#: ui/MainWindow.glade:1905
+#: ui/MainWindow.glade:1979
 msgid "You can follow the instructions by looking at the terminal output below."
 msgstr "با مشاهده خروجی ترمینال زیر می توانید دستورالعمل ها را دنبال کنید."
 
-#: ui/MainWindow.glade:1917
+#: ui/MainWindow.glade:1991
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr "می توانید از طریق کانال های کمک Mauna در مورد مشکل خود کمک بخواهید."
 
-#: ui/MainWindow.glade:2025
+#: ui/MainWindow.glade:2099
 msgid "List of automatically removable all unused packages"
 msgstr "لیست تمام بسته های استفاده نشده قابل حذف به صورت خودکار"
 
-#: ui/MainWindow.glade:2026
+#: ui/MainWindow.glade:2100
 msgid "Autoremovable Packages"
 msgstr "بسته های قابل حذف خودکار"
 
-#: ui/MainWindow.glade:2062 ui/MainWindow.glade:2128
+#: ui/MainWindow.glade:2136 ui/MainWindow.glade:2202
 msgid "Remove"
 msgstr "برداشتن"
 
-#: ui/MainWindow.glade:2091
+#: ui/MainWindow.glade:2165
 msgid "List of unnecessary packages with residual config files"
 msgstr "لیست بسته های غیر ضروری با فایل های پیکربندی باقیمانده"
 
-#: ui/MainWindow.glade:2092
+#: ui/MainWindow.glade:2166
 msgid "Residual Packages"
 msgstr "بسته های باقیمانده"
 
-#: ui/MainWindow.glade:2238
+#: ui/MainWindow.glade:2312
 msgid "Your Current Version:"
 msgstr "نسخه فعلی شما:"
 
-#: ui/MainWindow.glade:2282
+#: ui/MainWindow.glade:2356
 msgid "Upgradable Version:"
 msgstr "نسخه قابل ارتقا:"
 
-#: ui/MainWindow.glade:2365
+#: ui/MainWindow.glade:2439
 msgid "Your system is not up to date. Firstly, install the available updates."
 msgstr "سیستم شما به روز نیست ابتدا به روز رسانی های موجود را نصب کنید."
 
-#: ui/MainWindow.glade:2380
+#: ui/MainWindow.glade:2454
 msgid "Go to Updates"
 msgstr "برو به به روز رسانی"
 
-#: ui/MainWindow.glade:3143
+#: ui/MainWindow.glade:3217
 msgid "Root"
 msgstr "ریشه"
 
-#: ui/MainWindow.glade:3219
+#: ui/MainWindow.glade:3293
 msgid "is free of"
 msgstr "رایگان است"
 
-#: ui/MainWindow.glade:3259 ui/MainWindow.glade:3376
+#: ui/MainWindow.glade:3333 ui/MainWindow.glade:3450
 msgid "Retry"
 msgstr "دوباره امتحان کنید"
 
-#: ui/MainWindow.glade:3329 src/MainWindow.py:886
+#: ui/MainWindow.glade:3403 src/MainWindow.py:898
 msgid "Packages are downloading, please wait."
 msgstr "بسته ها در حال دانلود هستند، لطفا صبر کنید."
 
-#: ui/MainWindow.glade:3357
+#: ui/MainWindow.glade:3431
 msgid "Continue"
 msgstr "ادامه هید"
 
-#: ui/MainWindow.glade:3420
+#: ui/MainWindow.glade:3494
 msgid "Your system will reboot and updates will be installed during startup."
 msgstr ""
 "سیستم شما راه اندازی مجدد می شود و به روز رسانی ها در هنگام راه اندازی نصب می "
 "شوند."
 
-#: ui/MainWindow.glade:3438
+#: ui/MainWindow.glade:3512
 msgid "Please do not turn off the machine while updates are installing."
 msgstr "لطفاً هنگام نصب به‌روزرسانی‌ها، دستگاه را خاموش نکنید."
 
-#: ui/MainWindow.glade:3485
+#: ui/MainWindow.glade:3559
 msgid "Reboot"
 msgstr "راه اندازی مجدد"
 
-#: ui/MainWindow.glade:3549
+#: ui/MainWindow.glade:3623
 msgid "The last changes are processing."
 msgstr "آخرین تغییرات در حال پردازش است."
 
-#: ui/MainWindow.glade:3565
+#: ui/MainWindow.glade:3639
 msgid "Your system will reboot. Please wait..."
 msgstr "سیستم شما راه اندازی مجدد خواهد شد. لطفا صبر کنید..."
 
-#: ui/MainWindow.glade:3913 src/MainWindow.py:264 src/MainWindow.py:607
-#: src/MainWindow.py:685 src/MainWindow.py:828 src/MainWindow.py:953
-#: src/MainWindow.py:973 src/MainWindow.py:1044 src/MainWindow.py:1064
+#: ui/MainWindow.glade:3987 src/MainWindow.py:271 src/MainWindow.py:619
+#: src/MainWindow.py:697 src/MainWindow.py:840 src/MainWindow.py:965
+#: src/MainWindow.py:985 src/MainWindow.py:1062 src/MainWindow.py:1082
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: ui/MainWindow.glade:3969 src/MainWindow.py:266 src/MainWindow.py:665
-#: src/MainWindow.py:687 src/MainWindow.py:696 src/MainWindow.py:955
-#: src/MainWindow.py:982 src/MainWindow.py:1031 src/MainWindow.py:1067
+#: ui/MainWindow.glade:4043 src/MainWindow.py:273 src/MainWindow.py:677
+#: src/MainWindow.py:699 src/MainWindow.py:708 src/MainWindow.py:967
+#: src/MainWindow.py:994 src/MainWindow.py:1049 src/MainWindow.py:1085
 msgid "Version Upgrade"
 msgstr "ارتقاء نسخه"
 
-#: ui/MainWindow.glade:4025
+#: ui/MainWindow.glade:4099
 msgid "About"
 msgstr "در باره"
 
-#: ui/MainWindow.glade:4128
+#: ui/MainWindow.glade:4167
+msgid "Caution"
+msgstr "احتیاط"
+
+#: ui/MainWindow.glade:4189
+msgid ""
+"This feature is still in the testing phase. Before starting the update, it is "
+"recommended that you check one last time by selecting the \"Ask me before "
+"proceeding\" option in the update settings."
+msgstr ""
+"این ویژگی هنوز در مرحله آزمایش است. قبل از شروع به‌روزرسانی، توصیه می‌شود برای "
+"آخرین بار با انتخاب گزینه «پیش از ادامه دادن» در تنظیمات به‌روزرسانی، آن را "
+"بررسی کنید."
+
+#: ui/MainWindow.glade:4288
 msgid "Ask me what to do"
 msgstr "از من بپرس چه کار کنم"
 
-#: ui/MainWindow.glade:4154
+#: ui/MainWindow.glade:4314
 msgid "Interaction"
 msgstr "اثر متقابل"
 
-#: ui/MainWindow.glade:4173
+#: ui/MainWindow.glade:4333
 msgid "Start process (with -yq option)"
 msgstr "شروع فرآیند (با گزینه -yq)"
 
-#: ui/MainWindow.glade:4189
+#: ui/MainWindow.glade:4349
 msgid "Ask me before starting the process (without -yq)"
 msgstr "قبل از شروع فرآیند از من بپرسید (بدون -yq)"
 
-#: src/MainWindow.py:84
+#: src/MainWindow.py:91
 msgid "About Mauna Update"
 msgstr "درباره به روز رسانی Mauna"
 
-#: src/MainWindow.py:164 src/MainWindow.py:165
+#: src/MainWindow.py:171 src/MainWindow.py:172
 msgid "Start {} Upgrade"
 msgstr "شروع {} ارتقاء"
 
-#: src/MainWindow.py:270 src/MainWindow.py:633 src/MainWindow.py:650
-#: src/MainWindow.py:671 src/MainWindow.py:691
+#: src/MainWindow.py:277 src/MainWindow.py:645 src/MainWindow.py:662
+#: src/MainWindow.py:683 src/MainWindow.py:703
 msgid "Hide App"
 msgstr "پنهان کردن برنامه"
 
-#: src/MainWindow.py:598
+#: src/MainWindow.py:610
 msgid "Quit"
 msgstr "ترک کنید"
 
-#: src/MainWindow.py:603 src/MainWindow.py:1418
+#: src/MainWindow.py:615 src/MainWindow.py:1505
 msgid "Last Check"
 msgstr "آخرین بررسی"
 
-#: src/MainWindow.py:611 src/MainWindow.py:1488
+#: src/MainWindow.py:623 src/MainWindow.py:1575
 msgid "System is Up to Date"
 msgstr "سیستم به روز است"
 
-#: src/MainWindow.py:635 src/MainWindow.py:647 src/MainWindow.py:1225
+#: src/MainWindow.py:647 src/MainWindow.py:659 src/MainWindow.py:1264
 msgid "Show App"
 msgstr "نمایش برنامه"
 
-#: src/MainWindow.py:755
+#: src/MainWindow.py:767
 msgid "Updates are installing. Please wait..."
 msgstr "به روز رسانی ها در حال نصب هستند. لطفا صبر کنید..."
 
-#: src/MainWindow.py:757
+#: src/MainWindow.py:769
 msgid "Updating"
 msgstr "در حال بروز رسانی"
 
-#: src/MainWindow.py:783 src/MainWindow.py:809
+#: src/MainWindow.py:795 src/MainWindow.py:821
 msgid "Packages are removing. Please wait..."
 msgstr "بسته ها حذف می شوند. لطفا صبر کنید..."
 
-#: src/MainWindow.py:1185 src/MainWindow.py:1919
+#: src/MainWindow.py:1224 src/MainWindow.py:2007
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -399,56 +417,60 @@ msgstr ""
 "وقفه dpkg شناسایی شد. روی دکمه \"اصلاح\" یا کلیک کنید\n"
 "برای رفع مشکل، 'sudo dpkg --configure -a' را به صورت دستی اجرا کنید."
 
-#: src/MainWindow.py:1194
+#: src/MainWindow.py:1233
 msgid "The process is in progress. Please wait..."
 msgstr "فرآیند در حال انجام است. لطفا صبر کنید..."
 
-#: src/MainWindow.py:1441
+#: src/MainWindow.py:1463
+msgid "Clear All Selections"
+msgstr "پاک کردن همه انتخاب ها"
+
+#: src/MainWindow.py:1528
 msgid "System is Broken"
 msgstr "سیستم خراب است"
 
-#: src/MainWindow.py:1455
+#: src/MainWindow.py:1542
 msgid "Software Update"
 msgstr "به روز رسانی نرم افزار"
 
-#: src/MainWindow.py:1456
+#: src/MainWindow.py:1543
 msgid "There are {} software updates available."
 msgstr "{} به روز رسانی نرم افزار موجود است."
 
-#: src/MainWindow.py:1458
+#: src/MainWindow.py:1545
 msgid "There is {} software update available."
 msgstr "به روز رسانی نرم افزار {} موجود است."
 
-#: src/MainWindow.py:1477
+#: src/MainWindow.py:1564
 msgid "You have removable residual packages."
 msgstr "بسته های باقیمانده قابل جابجایی دارید."
 
-#: src/MainWindow.py:1491
+#: src/MainWindow.py:1578
 msgid "{} Updates Pending"
 msgstr "{} به روز رسانی در انتظار"
 
-#: src/MainWindow.py:1493
+#: src/MainWindow.py:1580
 msgid "{} Update Pending"
 msgstr "{} به‌روزرسانی در انتظار"
 
-#: src/MainWindow.py:1516
+#: src/MainWindow.py:1603
 msgid "Automatic upgrade started in the background."
 msgstr "ارتقای خودکار در پس‌زمینه شروع شد."
 
-#: src/MainWindow.py:1560
+#: src/MainWindow.py:1647
 msgid "Upgrade to {}"
 msgstr "ارتقا به {}"
 
-#: src/MainWindow.py:1699
+#: src/MainWindow.py:1786
 msgid "Total Required Size"
 msgstr "کل اندازه مورد نیاز"
 
-#: src/MainWindow.py:1858 src/MainWindow.py:1950 src/MainWindow.py:2026
-#: src/MainWindow.py:2118
+#: src/MainWindow.py:1946 src/MainWindow.py:2038 src/MainWindow.py:2114
+#: src/MainWindow.py:2206
 msgid "Copy selected text"
 msgstr "متن انتخاب شده را کپی کنید"
 
-#: src/MainWindow.py:1915
+#: src/MainWindow.py:2003
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -457,30 +479,30 @@ msgstr ""
 "تنها یک ابزار مدیریت نرم افزار مجاز است به طور همزمان اجرا شود.\n"
 "لطفاً برنامه دیگر را ببندید. ابتدا 'Update Manager'، 'aptitude' یا 'Synaptic'."
 
-#: src/MainWindow.py:1924 src/MainWindow.py:2172
+#: src/MainWindow.py:2012 src/MainWindow.py:2260
 msgid "Process completed."
 msgstr "فرآیند تکمیل شد."
 
-#: src/MainWindow.py:2074
+#: src/MainWindow.py:2162
 msgid "The download is complete. You can continue."
 msgstr "دانلود کامل شد. می توانید ادامه دهید."
 
-#: src/MainWindow.py:2087
+#: src/MainWindow.py:2175
 msgid "The download is not completed. Try again."
 msgstr "دانلود کامل نشده است. دوباره امتحان کنید."
 
-#: src/MainWindow.py:2170
+#: src/MainWindow.py:2258
 msgid "Error."
 msgstr "خطا."
 
-#: src/MainWindow.py:2224
+#: src/MainWindow.py:2312
 msgid "Automatic upgrade completed."
 msgstr "ارتقاء خودکار تکمیل شد."
 
-#: src/MainWindow.py:2250
+#: src/MainWindow.py:2338
 msgid "Update"
 msgstr "به روز رسانی"
 
-#: src/MainWindow.py:2251
+#: src/MainWindow.py:2339
 msgid "Close"
 msgstr "بستن"
