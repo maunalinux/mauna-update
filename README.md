@@ -1,8 +1,6 @@
 # Mauna Update
 
-Mauna Update is a simple system update application written in GTK and python.
-
-It is currently a work in progress. Maintenance is done by <a href="https://maunalinux.top/">Mauna</a> team.
+Mauna Update is a simple update application for debian based operating systems.
 
 ### **Dependencies**
 
@@ -38,3 +36,4 @@ gbp buildpackage --git-export-dir=/tmp/build/mauna-update -us -uc
 
 ![Mauna Update 1](screenshots/mauna-update-1.png)
 
+![Mauna Update 2](screenshots/mauna-update-2.png)
