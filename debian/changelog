@@ -1,3 +1,53 @@
+mauna-update (1.0.8) mauna; urgency=medium
+
+  * New upstream release
+  
+  * Add selectable feature to updates
+  * Fix listbox insert parameter
+  * Update pot file
+  * Update depends, rdepends controls for selectable updates
+  * Add missing config prints
+  * Fix typo and update some keep prints
+  * Update get keep rdepends func
+  * Update get rdepends other param too
+  * l10n: Update translations
+  * Update README
+  * Update screenshots
+
+ -- Mauna Linux <dev@maunalinux.top>  Fri, 09 Aug 2024 16:52:15 -0300
+
+mauna-update (1.0.7) mauna; urgency=medium
+
+  * New upstream release
+
+  * oops, fixed wrong variable name
+  * Add missing tolerance to required size label on ui too
+  * Update indicator sys_status sensitive as always true
+  * Add window present to show app
+  * Fix translators structure, fixes #5
+  * Update pot file
+  * Add pt to update translations script
+  * l10n: Update translations
+  * Update transient of about window
+  * Fix quit app func
+  * Add notification enable-disable switch to settings
+  * Add missing notification show state
+  * Add close button to notification
+  * Update copyright to 2024
+  * Add system based configuration for settings
+  * Add residuals control to system is up-to-date menu
+  * Fix if control of aptupdate process
+  * fix kde wayland wrong icon issue
+  * vte terminal background sync with gtk window background
+  * Add system conf based auto upgrade
+  * Add GLib idle to notification show
+  * feat: better support for XDG Base Directory
+  * Use GLib instead of getenv
+  * Fix typo
+  * Update pot file
+
+ -- Mauna Linux <dev@maunalinux.top>  Fri, 26 Jul 2024 18:12:11 -0300
+
 mauna-update (1.0.6) mauna; urgency=medium
 
   * New upstream release
