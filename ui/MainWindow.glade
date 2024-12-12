@@ -155,7 +155,7 @@
     <property name="transient-for">ui_main_window</property>
     <property name="program-name">Mauna Update</property>
     <property name="version">0.1.0</property>
-    <property name="copyright">© TÜBİTAK BİLGEM</property>
+    <property name="copyright">© MAUNA LINUX</property>
     <property name="comments" translatable="yes">Mauna Update Application</property>
     <property name="website">https://github.com/maunalinux/mauna-update</property>
     <property name="authors">Büşra Çağlıyan &lt;busra.cagliyan@pardus.org.tr&gt;
@@ -4898,7 +4898,7 @@ Use with caution. Are you sure you want to continue?</property>
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label">© TÜBİTAK BİLGEM</property>
+                <property name="label">© MAUNA LINUX</property>
                 <attributes>
                   <attribute name="weight" value="light"/>
                 </attributes>
