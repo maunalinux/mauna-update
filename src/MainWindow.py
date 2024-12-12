@@ -42,10 +42,21 @@ def getenv(str):
     env = os.environ.get(str)
     return env if env else ""
 
+cinnamon_desktop = False
+if "cinnamon" in getenv("SESSION").lower() or "cinnamon" in getenv("XDG_CURRENT_DESKTOP").lower():
+    cinnamon_desktop = True
 
-gnome_desktop = False
-if "gnome" in getenv("SESSION").lower() or "gnome" in getenv("XDG_CURRENT_DESKTOP").lower():
-    gnome_desktop = True
+lxqt_desktop = False
+if "lxqt" in getenv("SESSION").lower() or "lxqt" in getenv("XDG_CURRENT_DESKTOP").lower():
+    lxqt_desktop = True
+
+mate_desktop = False
+if "mate" in getenv("SESSION").lower() or "mate" in getenv("XDG_CURRENT_DESKTOP").lower():
+    mate_desktop = True
+
+xfce_desktop = False
+if "xfce" in getenv("SESSION").lower() or "xfce" in getenv("XDG_CURRENT_DESKTOP").lower():
+    xfce_desktop = True
 
 
 class MainWindow(object):
@@ -480,7 +491,7 @@ class MainWindow(object):
         self.icon_inprogress = "mauna-update-inprogress-symbolic" if system_wide else "emblem-synchronizing-symbolic"
         self.icon_error = "mauna-update-error-symbolic" if system_wide else "security-low-symbolic"
 
-        if gnome_desktop:
+        if not mate_desktop:
             self.icon_available = "software-update-available-symbolic"
             self.icon_normal = "security-medium-symbolic"
             self.icon_inprogress = "emblem-synchronizing-symbolic"
