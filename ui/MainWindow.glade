@@ -2,49 +2,6 @@
 <!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-  <object class="GtkAboutDialog" id="ui_about_dialog">
-    <property name="can-focus">False</property>
-    <property name="window-position">center-on-parent</property>
-    <property name="icon-name">mauna-update</property>
-    <property name="type-hint">dialog</property>
-    <property name="program-name">Mauna Update</property>
-    <property name="version">0.1.0</property>
-    <property name="comments" translatable="yes">Mauna Update Application</property>
-    <property name="website">https://github.com/maunalinux/mauna-update</property>
-    <property name="authors">Büşra Çağlıyan
-Fatih Altun
-</property>
-    <property name="translator-credits">Mauna Linux</property>
-    <property name="logo-icon-name">mauna-update</property>
-    <property name="license-type">gpl-3-0</property>
-    <child internal-child="vbox">
-      <object class="GtkBox">
-        <property name="can-focus">False</property>
-        <property name="orientation">vertical</property>
-        <property name="spacing">2</property>
-        <child internal-child="action_area">
-          <object class="GtkButtonBox">
-            <property name="can-focus">False</property>
-            <property name="layout-style">end</property>
-            <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
-            </child>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">False</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-      </object>
-    </child>
-  </object>
   <object class="GtkAdjustment" id="ui_interval_adjustment">
     <property name="lower">30</property>
     <property name="upper">5000000</property>
@@ -135,6 +92,102 @@ Fatih Altun
             <property name="fill">True</property>
             <property name="position">1</property>
           </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopover" id="ui_settings_aptclear_popover">
+    <property name="can-focus">False</property>
+    <property name="position">bottom</property>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="min-content-width">513</property>
+        <property name="min-content-height">153</property>
+        <child>
+          <object class="GtkViewport">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="valign">center</property>
+                <property name="margin-start">8</property>
+                <property name="margin-end">8</property>
+                <property name="margin-top">8</property>
+                <property name="margin-bottom">8</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">13</property>
+                <child>
+                  <object class="GtkTextView" id="ui_settings_aptclear_textview">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="pixels-below-lines">5</property>
+                    <property name="editable">False</property>
+                    <property name="left-margin">3</property>
+                    <property name="right-margin">3</property>
+                    <property name="top-margin">3</property>
+                    <property name="bottom-margin">3</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="monospace">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAboutDialog" id="ui_about_dialog">
+    <property name="can-focus">False</property>
+    <property name="window-position">center-on-parent</property>
+    <property name="icon-name">mauna-update</property>
+    <property name="type-hint">dialog</property>
+    <property name="transient-for">ui_main_window</property>
+    <property name="program-name">Mauna Update</property>
+    <property name="version">0.1.0</property>
+    <property name="copyright">© TÜBİTAK BİLGEM</property>
+    <property name="comments" translatable="yes">Mauna Update Application</property>
+    <property name="website">https://github.com/maunalinux/mauna-update</property>
+    <property name="authors">Büşra Çağlıyan &lt;busra.cagliyan@pardus.org.tr&gt;
+Fatih Altun &lt;fatih.altun@pardus.org.tr&gt;</property>
+    <property name="translator-credits" translatable="yes" comments="Name Surname &lt;example@examplemail.com&gt;">translator-credits</property>
+    <property name="artists">Yusuf Düzgün &lt;yusuf.duzgun@pardus.org.tr&gt;</property>
+    <property name="logo-icon-name">mauna-update</property>
+    <property name="license-type">gpl-3-0</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
         </child>
       </object>
     </child>
@@ -301,7 +354,6 @@ Fatih Altun
             <property name="can-focus">False</property>
             <property name="margin-start">13</property>
             <property name="margin-end">13</property>
-            <property name="margin-top">13</property>
             <property name="transition-duration">250</property>
             <property name="transition-type">crossfade</property>
             <child>
@@ -968,6 +1020,7 @@ Fatih Altun
               <object class="GtkBox" id="ui_upgrade_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
+                <property name="margin-top">13</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">21</property>
                 <child>
@@ -1284,7 +1337,7 @@ Fatih Altun
                               <object class="GtkLabel" id="ui_homecontroldistup_label">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label">Start Mauna Upgrade</property>
+                                <property name="label">Start Mauna X Upgrade</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -1318,10 +1371,69 @@ Fatih Altun
               <object class="GtkBox" id="ui_settings_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="margin-top">34</property>
-                <property name="margin-bottom">34</property>
+                <property name="margin-top">13</property>
                 <property name="orientation">vertical</property>
-                <property name="spacing">55</property>
+                <property name="spacing">21</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="spacing">89</property>
+                    <child>
+                      <object class="GtkButton" id="ui_homepage_button">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <signal name="clicked" handler="on_ui_homepage_button_clicked" swapped="no"/>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="spacing">5</property>
+                            <child>
+                              <object class="GtkImage">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="icon-name">user-home-symbolic</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">Home Page</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
@@ -1575,7 +1687,7 @@ Fatih Altun
                         <property name="fill">True</property>
                         <property name="position">3</property>
                       </packing>
-                    </child>                    
+                    </child>
                     <child>
                       <object class="GtkBox">
                         <property name="visible">True</property>
@@ -1620,31 +1732,309 @@ Fatih Altun
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox">
+                  <object class="GtkSeparator">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="halign">center</property>
-                    <property name="spacing">89</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkStack" id="ui_settingsapt_stack">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="transition-type">slide-left-right</property>
                     <child>
-                      <object class="GtkButton" id="ui_homepage_button">
+                      <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="can-focus">True</property>
-                        <property name="receives-default">True</property>
-                        <signal name="clicked" handler="on_ui_homepage_button_clicked" swapped="no"/>
+                        <property name="can-focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">13</property>
+                        <child>
+                          <object class="GtkButton" id="ui_clear_apt_button">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="valign">center</property>
+                            <signal name="clicked" handler="on_ui_clear_apt_button_clicked" swapped="no"/>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">center</property>
+                                <property name="spacing">5</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">user-trash-symbolic</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="label" translatable="yes">Package Manager Cache</property>
+                                    <attributes>
+                                      <attribute name="weight" value="bold"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="ui_fix_sources_button">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="valign">center</property>
+                            <signal name="clicked" handler="on_ui_fix_sources_button_clicked" swapped="no"/>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">center</property>
+                                <property name="spacing">5</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">preferences-system-symbolic</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="label" translatable="yes">APT Sources List</property>
+                                    <attributes>
+                                      <attribute name="weight" value="bold"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="ui_passwordless_button">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="valign">center</property>
+                            <signal name="clicked" handler="on_ui_passwordless_button_clicked" swapped="no"/>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">center</property>
+                                <property name="spacing">5</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">dialog-password-symbolic</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="ui_passwordless_button_label">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="label" translatable="yes">Enable Passwordless Usage</property>
+                                    <attributes>
+                                      <attribute name="weight" value="bold"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="name">main</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="ui_settings_apt_clear_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">13</property>
                         <child>
                           <object class="GtkBox">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="spacing">5</property>
+                            <property name="halign">center</property>
+                            <property name="spacing">21</property>
+                            <property name="homogeneous">True</property>
                             <child>
-                              <object class="GtkImage">
+                              <object class="GtkFrame">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="icon-name">user-home-symbolic</property>
+                                <property name="label-xalign">0</property>
+                                <property name="label-yalign">0</property>
+                                <property name="shadow-type">in</property>
+                                <child>
+                                  <object class="GtkBox">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">center</property>
+                                    <property name="margin-start">8</property>
+                                    <property name="margin-end">8</property>
+                                    <property name="margin-top">8</property>
+                                    <property name="margin-bottom">8</property>
+                                    <property name="orientation">vertical</property>
+                                    <property name="spacing">5</property>
+                                    <child>
+                                      <object class="GtkLabel">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="label" translatable="yes">Cached deb packages</property>
+                                        <property name="justify">center</property>
+                                        <property name="wrap">True</property>
+                                        <property name="max-width-chars">17</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">True</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">end</property>
+                                        <property name="spacing">5</property>
+                                        <child>
+                                          <object class="GtkLabel" id="ui_aptclean_size_label">
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">False</property>
+                                            <property name="label" translatable="yes">size</property>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">True</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <object class="GtkButton">
+                                            <property name="name">clean</property>
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="valign">center</property>
+                                            <property name="relief">none</property>
+                                            <signal name="clicked" handler="on_ui_settings_aptclear_info_button_clicked" swapped="no"/>
+                                            <child>
+                                              <object class="GtkImage">
+                                                <property name="visible">True</property>
+                                                <property name="can-focus">False</property>
+                                                <property name="icon-name">dialog-information-symbolic</property>
+                                                <property name="icon_size">2</property>
+                                              </object>
+                                            </child>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">True</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">2</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkCheckButton" id="ui_apt_clean_checkbutton">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="receives-default">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">end</property>
+                                        <property name="margin-top">3</property>
+                                        <property name="active">True</property>
+                                        <property name="draw-indicator">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">4</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child type="label_item">
+                                  <placeholder/>
+                                </child>
+                                <style>
+                                  <class name="mauna-update-frame"/>
+                                </style>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -1653,10 +2043,278 @@ Fatih Altun
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkLabel">
+                              <object class="GtkFrame">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">Home Page</property>
+                                <property name="label-xalign">0</property>
+                                <property name="label-yalign">0</property>
+                                <property name="shadow-type">in</property>
+                                <child>
+                                  <object class="GtkBox">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">center</property>
+                                    <property name="margin-start">8</property>
+                                    <property name="margin-end">8</property>
+                                    <property name="margin-top">8</property>
+                                    <property name="margin-bottom">8</property>
+                                    <property name="orientation">vertical</property>
+                                    <property name="spacing">5</property>
+                                    <child>
+                                      <object class="GtkLabel">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="label" translatable="yes">Autoremovable packages</property>
+                                        <property name="justify">center</property>
+                                        <property name="wrap">True</property>
+                                        <property name="max-width-chars">17</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">True</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">end</property>
+                                        <property name="spacing">5</property>
+                                        <child>
+                                          <object class="GtkLabel" id="ui_aptautoremove_size_label">
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">False</property>
+                                            <property name="label" translatable="yes">size</property>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">True</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <object class="GtkButton">
+                                            <property name="name">autoremove</property>
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="valign">center</property>
+                                            <property name="relief">none</property>
+                                            <signal name="clicked" handler="on_ui_settings_aptclear_info_button_clicked" swapped="no"/>
+                                            <child>
+                                              <object class="GtkImage">
+                                                <property name="visible">True</property>
+                                                <property name="can-focus">False</property>
+                                                <property name="icon-name">dialog-information-symbolic</property>
+                                                <property name="icon_size">2</property>
+                                              </object>
+                                            </child>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">True</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">2</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkCheckButton" id="ui_apt_autoremove_checkbutton">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="receives-default">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">end</property>
+                                        <property name="margin-top">3</property>
+                                        <property name="active">True</property>
+                                        <property name="draw-indicator">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">4</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child type="label_item">
+                                  <placeholder/>
+                                </child>
+                                <style>
+                                  <class name="mauna-update-frame"/>
+                                </style>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkFrame">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label-xalign">0</property>
+                                <property name="label-yalign">0</property>
+                                <property name="shadow-type">in</property>
+                                <child>
+                                  <object class="GtkBox">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">center</property>
+                                    <property name="margin-start">8</property>
+                                    <property name="margin-end">8</property>
+                                    <property name="margin-top">8</property>
+                                    <property name="margin-bottom">8</property>
+                                    <property name="orientation">vertical</property>
+                                    <property name="spacing">5</property>
+                                    <child>
+                                      <object class="GtkLabel">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="label" translatable="yes">Base repository files</property>
+                                        <property name="justify">center</property>
+                                        <property name="wrap">True</property>
+                                        <property name="max-width-chars">17</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">True</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkBox">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">end</property>
+                                        <property name="spacing">5</property>
+                                        <child>
+                                          <object class="GtkLabel" id="ui_aptlists_size_label">
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">False</property>
+                                            <property name="label" translatable="yes">size</property>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">True</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <object class="GtkButton">
+                                            <property name="name">lists</property>
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="receives-default">True</property>
+                                            <property name="halign">center</property>
+                                            <property name="valign">center</property>
+                                            <property name="relief">none</property>
+                                            <signal name="clicked" handler="on_ui_settings_aptclear_info_button_clicked" swapped="no"/>
+                                            <child>
+                                              <object class="GtkImage">
+                                                <property name="visible">True</property>
+                                                <property name="can-focus">False</property>
+                                                <property name="icon-name">dialog-information-symbolic</property>
+                                                <property name="icon_size">2</property>
+                                              </object>
+                                            </child>
+                                          </object>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">True</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">2</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkCheckButton" id="ui_apt_listsclean_checkbutton">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="receives-default">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">end</property>
+                                        <property name="margin-top">3</property>
+                                        <property name="draw-indicator">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">4</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child type="label_item">
+                                  <placeholder/>
+                                </child>
+                                <style>
+                                  <class name="mauna-update-frame"/>
+                                </style>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="spacing">21</property>
+                            <property name="homogeneous">True</property>
+                            <child>
+                              <object class="GtkButton" id="ui_settingsaptcancel_button">
+                                <property name="label" translatable="yes">Cancel</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="on_ui_settingsaptcancel_button_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="ui_settingsaptclear_button">
+                                <property name="label" translatable="yes">Clear</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="on_ui_settingsaptclear_button_clicked" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -1665,26 +2323,390 @@ Fatih Altun
                               </packing>
                             </child>
                           </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
                         </child>
-                        <style>
-                          <class name="suggested-action"/>
-                        </style>
                       </object>
                       <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
+                        <property name="name">apt</property>
                         <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="ui_settings_vte_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">13</property>
+                        <child>
+                          <object class="GtkScrolledWindow" id="ui_settingsvte_sw">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="ui_settings_aptclear_ok_button">
+                            <property name="label" translatable="yes">Process Completed</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">center</property>
+                            <signal name="clicked" handler="on_ui_settings_aptclear_ok_button_clicked" swapped="no"/>
+                            <style>
+                              <class name="suggested-action"/>
+                            </style>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="name">vte</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="ui_settings_sources_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">13</property>
+                        <child>
+                          <object class="GtkScrolledWindow">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
+                            <property name="min-content-width">100</property>
+                            <property name="min-content-height">115</property>
+                            <child>
+                              <object class="GtkViewport">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <child>
+                                  <object class="GtkListBox" id="ui_sources_listbox">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="selection-mode">none</property>
+                                    <property name="activate-on-single-click">False</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="spacing">21</property>
+                            <property name="homogeneous">True</property>
+                            <child>
+                              <object class="GtkButton">
+                                <property name="label" translatable="yes">Back</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="on_ui_settingsaptcancel_button_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="ui_settings_default_sources_button">
+                                <property name="label" translatable="yes">Use Default Sources List</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="on_ui_settings_default_sources_button_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="name">sources</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="ui_settings_defaultsources_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">13</property>
+                        <child>
+                          <object class="GtkLabel" id="ui_settings_sourceslist_info_label">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">This operation will remove sources.list entries and create defaults.</property>
+                            <property name="justify">center</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">13</property>
+                            <child>
+                              <object class="GtkCheckButton" id="ui_settings_fix_slistd_checkbox">
+                                <property name="label" translatable="yes">Fix "sources.list.d" entries too.</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">If not selected, adds these entries to the comment line.</property>
+                                <property name="active">True</property>
+                                <property name="draw-indicator">True</property>
+                                <signal name="toggled" handler="on_ui_settings_fix_slistd_checkbox_toggled" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkBox" id="ui_settings_fix_slistd_sub_box">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="margin-start">34</property>
+                                <property name="orientation">vertical</property>
+                                <property name="spacing">5</property>
+                                <child>
+                                  <object class="GtkRadioButton" id="ui_settings_remove_slistd_radiobutton">
+                                    <property name="label" translatable="yes">Remove sources.list.d entries</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">False</property>
+                                    <property name="active">True</property>
+                                    <property name="draw-indicator">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkRadioButton" id="ui_settings_cout_slistd_radiobutton">
+                                    <property name="label" translatable="yes">Comment out sources.list.d entries</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">False</property>
+                                    <property name="active">True</property>
+                                    <property name="draw-indicator">True</property>
+                                    <property name="group">ui_settings_remove_slistd_radiobutton</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkCheckButton" id="ui_settings_dpkgconfigure_checkbox">
+                                <property name="label" translatable="yes">Run "dpkg --configure -a" command</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">It attempts to fix unfinished package manager operations.</property>
+                                <property name="active">True</property>
+                                <property name="draw-indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkCheckButton" id="ui_settings_fixbroken_checkbox">
+                                <property name="label" translatable="yes">Run "apt install --fix-broken" command</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">It attempts to fix a system that has broken dependencies.</property>
+                                <property name="active">True</property>
+                                <property name="draw-indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">3</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Use with caution. Are you sure you want to continue?</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="spacing">21</property>
+                            <property name="homogeneous">True</property>
+                            <child>
+                              <object class="GtkButton" id="ui_settings_default_sources_cancel_button">
+                                <property name="label" translatable="yes">Cancel</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="on_ui_settings_default_sources_cancel_button_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="ui_settings_default_sources_accept_button">
+                                <property name="label" translatable="yes">Yes</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="on_ui_settings_default_sources_accept_button_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">3</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="name">defaultsources</property>
+                        <property name="position">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">start</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">13</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="margin-top">21</property>
+                            <property name="homogeneous">True</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <object class="GtkSpinner">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="active">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="name">spinner</property>
+                        <property name="position">5</property>
                       </packing>
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
+                    <property name="expand">True</property>
                     <property name="fill">True</property>
-                    <property name="position">1</property>
+                    <property name="position">4</property>
                   </packing>
-                </child>
-                <child>
-                  <placeholder/>
                 </child>
               </object>
               <packing>
@@ -1696,6 +2718,7 @@ Fatih Altun
               <object class="GtkBox" id="ui_fix_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
+                <property name="margin-top">13</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">21</property>
                 <child>
@@ -2073,10 +3096,58 @@ Use with caution. Are you sure you want to continue?</property>
               <object class="GtkBox" id="ui_clean_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="margin-top">34</property>
-                <property name="margin-bottom">34</property>
+                <property name="margin-top">13</property>
                 <property name="orientation">vertical</property>
-                <property name="spacing">55</property>
+                <property name="spacing">21</property>
+                <child>
+                  <object class="GtkButton" id="ui_homepage_button1">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <signal name="clicked" handler="on_ui_homepage_button_clicked" swapped="no"/>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="spacing">5</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="icon-name">user-home-symbolic</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Home Page</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                    <style>
+                      <class name="suggested-action"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
@@ -2220,55 +3291,6 @@ Use with caution. Are you sure you want to continue?</property>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="ui_homepage_button1">
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">True</property>
-                    <property name="halign">center</property>
-                    <property name="valign">center</property>
-                    <signal name="clicked" handler="on_ui_homepage_button_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="spacing">5</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="icon-name">user-home-symbolic</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Home Page</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                      </object>
-                    </child>
-                    <style>
-                      <class name="suggested-action"/>
-                    </style>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -2282,6 +3304,7 @@ Use with caution. Are you sure you want to continue?</property>
               <object class="GtkBox" id="ui_distupgrade_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
+                <property name="margin-top">13</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">21</property>
                 <child>
@@ -2321,7 +3344,7 @@ Use with caution. Are you sure you want to continue?</property>
                                 <property name="can-focus">False</property>
                                 <property name="halign">start</property>
                                 <property name="hexpand">True</property>
-                                <property name="label">Mauna</property>
+                                <property name="label">Mauna X</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
                                 </attributes>
@@ -2365,7 +3388,7 @@ Use with caution. Are you sure you want to continue?</property>
                                 <property name="can-focus">False</property>
                                 <property name="halign">start</property>
                                 <property name="hexpand">True</property>
-                                <property name="label">Mauna</property>
+                                <property name="label">Mauna X</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
                                 </attributes>
@@ -2391,7 +3414,7 @@ Use with caution. Are you sure you want to continue?</property>
                             <property name="spacing">13</property>
                             <child>
                               <object class="GtkButton" id="ui_controldistup_button">
-                                <property name="label">Start Mauna Upgrade</property>
+                                <property name="label">Start Mauna X Upgrade</property>
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">True</property>
@@ -3096,7 +4119,7 @@ Use with caution. Are you sure you want to continue?</property>
                             </child>
                             <child>
                               <object class="GtkButton" id="ui_distuptodown_button">
-                                <property name="label">Upgrade to Mauna</property>
+                                <property name="label">Upgrade to Mauna X</property>
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">True</property>
@@ -3722,6 +4745,7 @@ Use with caution. Are you sure you want to continue?</property>
               <object class="GtkBox" id="ui_dpkgconfigure_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
+                <property name="margin-top">13</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">13</property>
                 <child>
@@ -3874,7 +4898,7 @@ Use with caution. Are you sure you want to continue?</property>
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label">MAUNA LINUX | 2024</property>
+                <property name="label">© TÜBİTAK BİLGEM</property>
                 <attributes>
                   <attribute name="weight" value="light"/>
                 </attributes>
