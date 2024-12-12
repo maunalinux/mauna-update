@@ -19,7 +19,9 @@ class UserSettings(object):
         self.default_update_selectable = False
 
         self.default_autostart = True
-        self.default_notifications = True        
+        self.default_notifications = True
+
+        self.user_name = GLib.get_user_name()       
 
         self.configdir = "{}/mauna/mauna-update/".format(GLib.get_user_config_dir())
         self.configfile = "settings.ini"

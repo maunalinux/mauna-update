@@ -1,0 +1,5 @@
+#!/bin/bash
+
+getent group mauna-update &> /dev/null || addgroup --system mauna-update || true
+
+exit 0

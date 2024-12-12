@@ -41,7 +41,8 @@ data_files = [
                   ["ui/MainWindow.glade"]),
                  ("/usr/share/mauna/mauna-update/src",
                   ["src/AutoAptUpdate.py",
-                   "src/AutoAptUpgrade.py",                  
+                   "src/AutoAptUpgrade.py",
+                   "src/Group.py",                 
                    "src/Main.py",
                    "src/MainWindow.py",
                    "src/Package.py",
@@ -73,7 +74,9 @@ data_files = [
                    "data/mauna-update-error-symbolic.svg",
                    "data/mauna-update-inprogress-symbolic.svg",
                    "data/mauna-update-symbolic.svg",
-                   "data/mauna-update-uptodate.svg"])
+                   "data/mauna-update-uptodate.svg"]),
+                 ("/var/lib/polkit-1/localauthority/50-local.d/",
+                  ["data/mauna-update-group.pkla"])
              ] + create_mo_files()
 
 setup(
@@ -84,7 +87,7 @@ setup(
     install_requires=["PyGObject"],
     data_files=data_files,
     author="Fatih Altun",
-    author_email="dev@mauna.top",
+    author_email="dev@maunalinux.top",
     description="Mauna Update application",
     license="GPLv3",
     keywords="mauna-update, update, upgrade, apt",
