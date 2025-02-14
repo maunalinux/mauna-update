@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-09 16:17-0300\n"
-"PO-Revision-Date: 2024-08-09 17:36-0300\n"
+"POT-Creation-Date: 2024-12-12 18:27-0300\n"
+"PO-Revision-Date: 2024-12-13 12:28-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: af\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: ui/MainWindow.glade:13 ui/MainWindow.glade:3905 src/MainWindow.py:87
-#: src/MainWindow.py:595 src/MainWindow.py:1602 src/MainWindow.py:2311
+#: ui/MainWindow.glade:13 ui/MainWindow.glade:4927 src/MainWindow.py:91
+#: src/MainWindow.py:652 src/MainWindow.py:1871 src/MainWindow.py:2580
 msgid "Mauna Update"
 msgstr "Mauna-opdatering"
 
@@ -26,7 +26,7 @@ msgstr "Mauna-opdatering"
 msgid "No"
 msgstr "Geen"
 
-#: ui/MainWindow.glade:54 ui/MainWindow.glade:1812
+#: ui/MainWindow.glade:54 ui/MainWindow.glade:2634 ui/MainWindow.glade:2833
 msgid "Yes"
 msgstr "Ja"
 
@@ -38,80 +38,80 @@ msgstr ""
 "Die opgraderingsproses is aan die gang. Is jy seker jy wil die toepassing "
 "toemaak?"
 
-#: ui/MainWindow.glade:108
+#: ui/MainWindow.glade:159
 msgid "Mauna Update Application"
 msgstr "Mauna-opdatering Aansoek"
 
 #. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:112
+#: ui/MainWindow.glade:163
 msgid "translator-credits"
 msgstr "Mauna Linux <dev@maunalinux.top>"
 
-#: ui/MainWindow.glade:177 ui/MainWindow.glade:4237
+#: ui/MainWindow.glade:228 ui/MainWindow.glade:5259
 msgid "Package configuration files"
 msgstr "Pakketkonfigurasielêers"
 
-#: ui/MainWindow.glade:196 ui/MainWindow.glade:4256
+#: ui/MainWindow.glade:247 ui/MainWindow.glade:5278
 msgid "Use new configuration files"
 msgstr "Gebruik nuwe konfigurasielêers"
 
-#: ui/MainWindow.glade:212 ui/MainWindow.glade:4272
+#: ui/MainWindow.glade:263 ui/MainWindow.glade:5294
 msgid "Use old configuration files"
 msgstr "Gebruik ou konfigurasielêers"
 
-#: ui/MainWindow.glade:263 ui/MainWindow.glade:4400
+#: ui/MainWindow.glade:314 ui/MainWindow.glade:5422
 msgid "Restore Defaults"
 msgstr "Herstel verstekwaardes"
 
-#: ui/MainWindow.glade:374
+#: ui/MainWindow.glade:424
 msgid "Package manager cache is updating"
 msgstr "Pakketbestuurder-kas word tans opgedateer"
 
-#: ui/MainWindow.glade:466 ui/MainWindow.glade:2626
+#: ui/MainWindow.glade:516 ui/MainWindow.glade:3647
 msgid "Upgraded"
 msgstr "Opgegradeer"
 
-#: ui/MainWindow.glade:492 ui/MainWindow.glade:2652
+#: ui/MainWindow.glade:542 ui/MainWindow.glade:3673
 msgid "Newly Installed"
 msgstr "Nuut geïnstalleer"
 
-#: ui/MainWindow.glade:519 ui/MainWindow.glade:2679
+#: ui/MainWindow.glade:569 ui/MainWindow.glade:3700
 msgid "To Remove"
 msgstr "Om te verwyder"
 
-#: ui/MainWindow.glade:546 ui/MainWindow.glade:2706
+#: ui/MainWindow.glade:596 ui/MainWindow.glade:3727
 msgid "Not Upgraded"
 msgstr "Nie opgegradeer nie"
 
-#: ui/MainWindow.glade:594 ui/MainWindow.glade:2754
+#: ui/MainWindow.glade:644 ui/MainWindow.glade:3775
 msgid "Download size:"
 msgstr "Aflaai grootte:"
 
-#: ui/MainWindow.glade:649 ui/MainWindow.glade:2810
+#: ui/MainWindow.glade:699 ui/MainWindow.glade:3831
 msgid "Required disk size:"
 msgstr "Vereiste skyfgrootte:"
 
-#: ui/MainWindow.glade:704 ui/MainWindow.glade:2866
+#: ui/MainWindow.glade:754 ui/MainWindow.glade:3887
 msgid "Upgraded:"
 msgstr "Opgradeer:"
 
-#: ui/MainWindow.glade:759 ui/MainWindow.glade:2922
+#: ui/MainWindow.glade:809 ui/MainWindow.glade:3943
 msgid "Newly installed:"
 msgstr "Nuut geïnstalleer:"
 
-#: ui/MainWindow.glade:814 ui/MainWindow.glade:2978
+#: ui/MainWindow.glade:864 ui/MainWindow.glade:3999
 msgid "To remove:"
 msgstr "Om te verwyder:"
 
-#: ui/MainWindow.glade:869 ui/MainWindow.glade:3034
+#: ui/MainWindow.glade:919 ui/MainWindow.glade:4055
 msgid "Not upgraded:"
 msgstr "Nie opgegradeer nie:"
 
-#: ui/MainWindow.glade:917
+#: ui/MainWindow.glade:967
 msgid "Upgrade"
 msgstr "Gradeer op"
 
-#: ui/MainWindow.glade:1006
+#: ui/MainWindow.glade:1057
 msgid ""
 "<span color=\"red\">Package manager is busy, try again after the process is "
 "completed.</span>"
@@ -119,73 +119,164 @@ msgstr ""
 "<span color=\"red\">Pakketbestuurder is besig, probeer weer nadat die proses "
 "voltooi is.</span>"
 
-#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3821
+#: ui/MainWindow.glade:1133 ui/MainWindow.glade:4843
 msgid "Ok"
 msgstr "Goed"
 
-#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3751
+#: ui/MainWindow.glade:1150 ui/MainWindow.glade:4773
 msgid "Fix"
 msgstr "Maak reg"
 
-#: ui/MainWindow.glade:1165
+#: ui/MainWindow.glade:1216
 msgid "Your system is up to date."
 msgstr "Jou stelsel is op datum."
 
-#: ui/MainWindow.glade:1206 src/MainWindow.py:599
+#: ui/MainWindow.glade:1257 src/MainWindow.py:656
 msgid "Check Updates"
 msgstr "Gaan opdaterings na"
 
-#: ui/MainWindow.glade:1252
+#: ui/MainWindow.glade:1303
 msgid "Mauna new version is available."
 msgstr "Mauna nuwe weergawe is beskikbaar."
 
-#: ui/MainWindow.glade:1346
-msgid "Update Check Frequency:"
-msgstr "Opdateringskontrolefrekwensie:"
-
-#: ui/MainWindow.glade:1364
-msgid "Hourly"
-msgstr "Uurliks"
-
-#: ui/MainWindow.glade:1365
-msgid "Daily"
-msgstr "Daagliks"
-
-#: ui/MainWindow.glade:1366
-msgid "Weekly"
-msgstr "Weekliks"
-
-#: ui/MainWindow.glade:1367
-msgid "Never"
-msgstr "Nooit nie"
-
-#: ui/MainWindow.glade:1384 ui/MainWindow.glade:1401
-msgid "seconds"
-msgstr "sekondes"
-
-#: ui/MainWindow.glade:1440
-msgid "Last Update Check Date:"
-msgstr "Laaste opdatering kontroledatum:"
-
-#: ui/MainWindow.glade:1478
-msgid "Selectable Updates:"
-msgstr "Kiesbare opdaterings:"
-
-#: ui/MainWindow.glade:1552
-msgid "Notifications:"
-msgstr "Kennisgewings:"
-
-#: ui/MainWindow.glade:1592
-msgid "Launch at Startup:"
-msgstr "Hardloop by opstart:"
-
-#: ui/MainWindow.glade:1661 ui/MainWindow.glade:2257 ui/MainWindow.glade:2540
-#: src/MainWindow.py:673 src/MainWindow.py:837 src/MainWindow.py:989
-#: src/MainWindow.py:1057
+#: ui/MainWindow.glade:1410 ui/MainWindow.glade:3131 ui/MainWindow.glade:3561
+#: src/MainWindow.py:730 src/MainWindow.py:1076 src/MainWindow.py:1228
+#: src/MainWindow.py:1326
 msgid "Home Page"
 msgstr "Tuisblad"
 
-#: ui/MainWindow.glade:1707
+#: ui/MainWindow.glade:1456
+msgid "Update Check Frequency:"
+msgstr "Opdateringskontrolefrekwensie:"
+
+#: ui/MainWindow.glade:1474
+msgid "Hourly"
+msgstr "Uurliks"
+
+#: ui/MainWindow.glade:1475
+msgid "Daily"
+msgstr "Daagliks"
+
+#: ui/MainWindow.glade:1476
+msgid "Weekly"
+msgstr "Weekliks"
+
+#: ui/MainWindow.glade:1477
+msgid "Never"
+msgstr "Nooit nie"
+
+#: ui/MainWindow.glade:1494 ui/MainWindow.glade:1511
+msgid "seconds"
+msgstr "sekondes"
+
+#: ui/MainWindow.glade:1550
+msgid "Last Update Check Date:"
+msgstr "Laaste opdatering kontroledatum:"
+
+#: ui/MainWindow.glade:1588
+msgid "Selectable Updates:"
+msgstr "Kiesbare opdaterings:"
+
+#: ui/MainWindow.glade:1662
+msgid "Notifications:"
+msgstr "Kennisgewings:"
+
+#: ui/MainWindow.glade:1702
+msgid "Launch at Startup:"
+msgstr "Hardloop by opstart:"
+
+#: ui/MainWindow.glade:1790
+msgid "Package Manager Cache"
+msgstr "Pakketbestuurder-kas"
+
+#: ui/MainWindow.glade:1839
+msgid "APT Sources List"
+msgstr "APT Bronne Lys"
+
+#: ui/MainWindow.glade:1888 src/MainWindow.py:1292
+msgid "Enable Passwordless Usage"
+msgstr "Aktiveer wagwoordlose gebruik"
+
+#: ui/MainWindow.glade:1948
+msgid "Cached deb packages"
+msgstr "Gekasdeb-pakkette"
+
+#: ui/MainWindow.glade:1970 ui/MainWindow.glade:2089 ui/MainWindow.glade:2208
+msgid "size"
+msgstr "grootte"
+
+#: ui/MainWindow.glade:2067
+msgid "Autoremovable packages"
+msgstr "Outo-verwyderbare pakkette"
+
+#: ui/MainWindow.glade:2186
+msgid "Base repository files"
+msgstr "Basisbewaarpleklêers"
+
+#: ui/MainWindow.glade:2299 ui/MainWindow.glade:2620 ui/MainWindow.glade:2816
+#: ui/MainWindow.glade:4103 ui/MainWindow.glade:4554
+msgid "Cancel"
+msgstr "Kanselleer"
+
+#: ui/MainWindow.glade:2313
+msgid "Clear"
+msgstr "Duidelik"
+
+#: ui/MainWindow.glade:2360
+msgid "Process Completed"
+msgstr "Proses voltooi"
+
+#: ui/MainWindow.glade:2426
+msgid "Back"
+msgstr "Terug"
+
+#: ui/MainWindow.glade:2440
+msgid "Use Default Sources List"
+msgstr "Gebruik verstekbronnelys"
+
+#: ui/MainWindow.glade:2476
+msgid "This operation will remove sources.list entries and create defaults."
+msgstr ""
+"Hierdie bewerking sal sources.list-inskrywings verwyder en verstekwaardes "
+"skep."
+
+#: ui/MainWindow.glade:2497
+msgid "Fix \"sources.list.d\" entries too."
+msgstr "Maak ook \"sources.list.d\"-inskrywings reg."
+
+#: ui/MainWindow.glade:2501
+msgid "If not selected, adds these entries to the comment line."
+msgstr "Indien nie gekies nie, voeg hierdie inskrywings by die kommentaarlyn."
+
+#: ui/MainWindow.glade:2521
+msgid "Remove sources.list.d entries"
+msgstr "Verwyder sources.list.d-inskrywings"
+
+#: ui/MainWindow.glade:2536
+msgid "Comment out sources.list.d entries"
+msgstr "Lewer kommentaar oor sources.list.d-inskrywings"
+
+#: ui/MainWindow.glade:2559
+msgid "Run \"dpkg --configure -a\" command"
+msgstr "Voer \"dpkg --configure -a\" opdrag uit"
+
+#: ui/MainWindow.glade:2563
+msgid "It attempts to fix unfinished package manager operations."
+msgstr "Dit poog om onvoltooide pakketbestuurder-operasies reg te stel."
+
+#: ui/MainWindow.glade:2575
+msgid "Run \"apt install --fix-broken\" command"
+msgstr "Voer \"apt install --fix-broken\" opdrag uit"
+
+#: ui/MainWindow.glade:2579
+msgid "It attempts to fix a system that has broken dependencies."
+msgstr "Dit poog om 'n stelsel reg te stel wat afhanklikhede verbreek het."
+
+#: ui/MainWindow.glade:2600
+msgid "Use with caution. Are you sure you want to continue?"
+msgstr "Gebruik met omsigtigheid. Is jy seker jy wil voortgaan?"
+
+#: ui/MainWindow.glade:2728
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
@@ -193,11 +284,11 @@ msgstr ""
 "Jou stelselbronnelys wat deur pakketbestuurder gebruik word, lyk stukkend of "
 "jou stelsel het gebreekte afhanklikhede."
 
-#: ui/MainWindow.glade:1730
+#: ui/MainWindow.glade:2751
 msgid "Try Fix"
 msgstr "Probeer Fix"
 
-#: ui/MainWindow.glade:1772
+#: ui/MainWindow.glade:2793
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create "
@@ -217,138 +308,134 @@ msgstr ""
 "\n"
 "Gebruik met omsigtigheid. Is jy seker jy wil voortgaan?"
 
-#: ui/MainWindow.glade:1795 ui/MainWindow.glade:3082 ui/MainWindow.glade:3533
-msgid "Cancel"
-msgstr "Kanselleer"
-
-#: ui/MainWindow.glade:1861
+#: ui/MainWindow.glade:2882
 msgid "Operation completed."
 msgstr "Operasie voltooi."
 
-#: ui/MainWindow.glade:1901
+#: ui/MainWindow.glade:2922
 msgid "Go to Home Page"
 msgstr "Gaan na Tuisblad"
 
-#: ui/MainWindow.glade:1932
+#: ui/MainWindow.glade:2953
 msgid "You can check the terminal output below."
 msgstr "U kan die terminale uitvoer hieronder nagaan."
 
-#: ui/MainWindow.glade:1961
+#: ui/MainWindow.glade:2982
 msgid "The error in the package manager could not be fixed."
 msgstr "Die fout in die pakketbestuurder kon nie reggestel word nie."
 
-#: ui/MainWindow.glade:1979
+#: ui/MainWindow.glade:3000
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
 msgstr ""
 "Jy kan die instruksies volg deur na die terminale uitvoer hieronder te kyk."
 
-#: ui/MainWindow.glade:1991
+#: ui/MainWindow.glade:3012
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr "Jy kan deur Mauna-hulpkanale vir hulp oor jou probleem vra."
 
-#: ui/MainWindow.glade:2099
+#: ui/MainWindow.glade:3168
 msgid "List of automatically removable all unused packages"
 msgstr "Lys van outomaties verwyderbare alle ongebruikte pakkette"
 
-#: ui/MainWindow.glade:2100
+#: ui/MainWindow.glade:3169
 msgid "Autoremovable Packages"
 msgstr "Outo-verwyderbare pakkette"
 
-#: ui/MainWindow.glade:2136 ui/MainWindow.glade:2202
+#: ui/MainWindow.glade:3205 ui/MainWindow.glade:3271
 msgid "Remove"
 msgstr "Verwyder"
 
-#: ui/MainWindow.glade:2165
+#: ui/MainWindow.glade:3234
 msgid "List of unnecessary packages with residual config files"
 msgstr "Lys van onnodige pakkette met oorblywende konfigurasielêers"
 
-#: ui/MainWindow.glade:2166
+#: ui/MainWindow.glade:3235
 msgid "Residual Packages"
 msgstr "Residuele pakkette"
 
-#: ui/MainWindow.glade:2312
+#: ui/MainWindow.glade:3333
 msgid "Your Current Version:"
 msgstr "Jou huidige weergawe:"
 
-#: ui/MainWindow.glade:2356
+#: ui/MainWindow.glade:3377
 msgid "Upgradable Version:"
 msgstr "Opgradeerbare weergawe:"
 
-#: ui/MainWindow.glade:2439
+#: ui/MainWindow.glade:3460
 msgid "Your system is not up to date. Firstly, install the available updates."
 msgstr ""
 "Jou stelsel is nie op datum nie. Installeer eerstens die beskikbare "
 "opdaterings."
 
-#: ui/MainWindow.glade:2454
+#: ui/MainWindow.glade:3475
 msgid "Go to Updates"
 msgstr "Gaan na Opdaterings"
 
-#: ui/MainWindow.glade:3217
+#: ui/MainWindow.glade:4238
 msgid "Root"
 msgstr "Root"
 
-#: ui/MainWindow.glade:3293
+#: ui/MainWindow.glade:4314
 msgid "is free of"
 msgstr "vry is van"
 
-#: ui/MainWindow.glade:3333 ui/MainWindow.glade:3450
+#: ui/MainWindow.glade:4354 ui/MainWindow.glade:4471
 msgid "Retry"
 msgstr "Probeer weer"
 
-#: ui/MainWindow.glade:3403 src/MainWindow.py:898
+#: ui/MainWindow.glade:4424 src/MainWindow.py:1137
 msgid "Packages are downloading, please wait."
 msgstr "Pakkette word tans afgelaai, wag asseblief."
 
-#: ui/MainWindow.glade:3431
+#: ui/MainWindow.glade:4452
 msgid "Continue"
 msgstr "Aanhou"
 
-#: ui/MainWindow.glade:3494
+#: ui/MainWindow.glade:4515
 msgid "Your system will reboot and updates will be installed during startup."
 msgstr ""
 "Jou stelsel sal herlaai en opdaterings sal tydens opstart geïnstalleer word."
 
-#: ui/MainWindow.glade:3512
+#: ui/MainWindow.glade:4533
 msgid "Please do not turn off the machine while updates are installing."
 msgstr ""
 "Moet asseblief nie die masjien afskakel terwyl opdaterings geïnstalleer word "
 "nie."
 
-#: ui/MainWindow.glade:3559
+#: ui/MainWindow.glade:4580
 msgid "Reboot"
 msgstr "Herlaai"
 
-#: ui/MainWindow.glade:3623
+#: ui/MainWindow.glade:4644
 msgid "The last changes are processing."
 msgstr "Die laaste veranderinge word verwerk."
 
-#: ui/MainWindow.glade:3639
+#: ui/MainWindow.glade:4660
 msgid "Your system will reboot. Please wait..."
 msgstr "Jou stelsel sal herlaai. Wag asseblief..."
 
-#: ui/MainWindow.glade:3987 src/MainWindow.py:271 src/MainWindow.py:619
-#: src/MainWindow.py:697 src/MainWindow.py:840 src/MainWindow.py:965
-#: src/MainWindow.py:985 src/MainWindow.py:1062 src/MainWindow.py:1082
+#: ui/MainWindow.glade:5009 src/MainWindow.py:289 src/MainWindow.py:676
+#: src/MainWindow.py:754 src/MainWindow.py:1079 src/MainWindow.py:1204
+#: src/MainWindow.py:1224 src/MainWindow.py:1331 src/MainWindow.py:1351
 msgid "Settings"
 msgstr "Instellings"
 
-#: ui/MainWindow.glade:4043 src/MainWindow.py:273 src/MainWindow.py:677
-#: src/MainWindow.py:699 src/MainWindow.py:708 src/MainWindow.py:967
-#: src/MainWindow.py:994 src/MainWindow.py:1049 src/MainWindow.py:1085
+#: ui/MainWindow.glade:5065 src/MainWindow.py:291 src/MainWindow.py:734
+#: src/MainWindow.py:756 src/MainWindow.py:765 src/MainWindow.py:1206
+#: src/MainWindow.py:1233 src/MainWindow.py:1318 src/MainWindow.py:1354
 msgid "Version Upgrade"
 msgstr "Weergawe opgradering"
 
-#: ui/MainWindow.glade:4099
+#: ui/MainWindow.glade:5121
 msgid "About"
 msgstr "Oor"
 
-#: ui/MainWindow.glade:4167
+#: ui/MainWindow.glade:5189
 msgid "Caution"
 msgstr "Versigtig"
 
-#: ui/MainWindow.glade:4189
+#: ui/MainWindow.glade:5211
 msgid ""
 "This feature is still in the testing phase. Before starting the update, it "
 "is recommended that you check one last time by selecting the \"Ask me before "
@@ -358,64 +445,81 @@ msgstr ""
 "word dit aanbeveel dat u 'n laaste keer nagaan deur die opsie \"Vra my "
 "voordat u voortgaan\" in die opdateringsinstellings te kies."
 
-#: ui/MainWindow.glade:4288
+#: ui/MainWindow.glade:5310
 msgid "Ask me what to do"
 msgstr "Vra my wat om te doen"
 
-#: ui/MainWindow.glade:4314
+#: ui/MainWindow.glade:5336
 msgid "Interaction"
 msgstr "Interaksie"
 
-#: ui/MainWindow.glade:4333
+#: ui/MainWindow.glade:5355
 msgid "Start process (with -yq option)"
 msgstr "Begin proses (met -yq opsie)"
 
-#: ui/MainWindow.glade:4349
+#: ui/MainWindow.glade:5371
 msgid "Ask me before starting the process (without -yq)"
 msgstr "Vra my voordat die proses begin (sonder -yq)"
 
-#: src/MainWindow.py:91
+#: src/MainWindow.py:95
 msgid "About Mauna Update"
 msgstr "Oor Mauna-opdatering"
 
-#: src/MainWindow.py:171 src/MainWindow.py:172
+#: src/MainWindow.py:175 src/MainWindow.py:176
 msgid "Start {} Upgrade"
 msgstr "Begin {} Gradeer op"
 
-#: src/MainWindow.py:277 src/MainWindow.py:645 src/MainWindow.py:662
-#: src/MainWindow.py:683 src/MainWindow.py:703
+#: src/MainWindow.py:295 src/MainWindow.py:702 src/MainWindow.py:719
+#: src/MainWindow.py:740 src/MainWindow.py:760
 msgid "Hide App"
 msgstr "Versteek toepassing"
 
-#: src/MainWindow.py:610
+#: src/MainWindow.py:667
 msgid "Quit"
 msgstr "Hou op"
 
-#: src/MainWindow.py:615 src/MainWindow.py:1505
+#: src/MainWindow.py:672 src/MainWindow.py:1774
 msgid "Last Check"
 msgstr "Laaste tjek"
 
-#: src/MainWindow.py:623 src/MainWindow.py:1575
+#: src/MainWindow.py:680 src/MainWindow.py:1844
 msgid "System is Up to Date"
 msgstr "Stelsel is op datum"
 
-#: src/MainWindow.py:647 src/MainWindow.py:659 src/MainWindow.py:1264
+#: src/MainWindow.py:704 src/MainWindow.py:716 src/MainWindow.py:1533
 msgid "Show App"
 msgstr "Wys toepassing"
 
-#: src/MainWindow.py:767
+#: src/MainWindow.py:824
 msgid "Updates are installing. Please wait..."
 msgstr "Opdaterings word tans geïnstalleer. Wag asseblief..."
 
-#: src/MainWindow.py:769
+#: src/MainWindow.py:826
 msgid "Updating"
 msgstr "Dateer tans op"
 
-#: src/MainWindow.py:795 src/MainWindow.py:821
+#: src/MainWindow.py:852 src/MainWindow.py:878
 msgid "Packages are removing. Please wait..."
 msgstr "Pakkette word tans verwyder. Wag asseblief..."
 
-#: src/MainWindow.py:1224 src/MainWindow.py:2007
+#: src/MainWindow.py:945 src/MainWindow.py:1038 src/MainWindow.py:1061
+#: src/MainWindow.py:2699
+msgid "Error"
+msgstr "Fout"
+
+#: src/MainWindow.py:945 src/MainWindow.py:1038 src/MainWindow.py:1061
+msgid "Package manager is busy, try again after the process is completed."
+msgstr "Pakketbestuurder is besig, probeer weer nadat die proses voltooi is."
+
+#: src/MainWindow.py:982
+msgid "The default sources list is as follows."
+msgstr "Die verstek bronnelys is soos volg."
+
+#: src/MainWindow.py:1290
+msgid "Disable Passwordless Usage"
+msgstr "Deaktiveer wagwoordlose gebruik"
+
+#: src/MainWindow.py:1493 src/MainWindow.py:2276
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -423,60 +527,60 @@ msgstr ""
 "dpkg-onderbreking bespeur. Klik op die 'Fix'-knoppie of\n"
 "voer 'sudo dpkg --configure -a' handmatig uit om die probleem op te los."
 
-#: src/MainWindow.py:1233
+#: src/MainWindow.py:1502
 msgid "The process is in progress. Please wait..."
 msgstr "Die proses is aan die gang. Wag asseblief..."
 
-#: src/MainWindow.py:1463
+#: src/MainWindow.py:1732
 msgid "Clear All Selections"
 msgstr "Vee alle keuses uit"
 
-#: src/MainWindow.py:1528
+#: src/MainWindow.py:1797
 msgid "System is Broken"
 msgstr "Stelsel is gebreek"
 
-#: src/MainWindow.py:1542
+#: src/MainWindow.py:1811
 msgid "Software Update"
 msgstr "Sagteware opdatering"
 
-#: src/MainWindow.py:1543
+#: src/MainWindow.py:1812
 msgid "There are {} software updates available."
 msgstr "Daar is {} sagteware-opdaterings beskikbaar."
 
-#: src/MainWindow.py:1545
+#: src/MainWindow.py:1814
 msgid "There is {} software update available."
 msgstr "Daar is {} sagteware-opdatering beskikbaar."
 
-#: src/MainWindow.py:1564
+#: src/MainWindow.py:1833
 msgid "You have removable residual packages."
 msgstr "Jy het verwyderbare oorblywende pakkette."
 
-#: src/MainWindow.py:1578
+#: src/MainWindow.py:1847
 msgid "{} Updates Pending"
 msgstr "{} Opdaterings hangende"
 
-#: src/MainWindow.py:1580
+#: src/MainWindow.py:1849
 msgid "{} Update Pending"
 msgstr "{} Opdatering hangende"
 
-#: src/MainWindow.py:1603
+#: src/MainWindow.py:1872
 msgid "Automatic upgrade started in the background."
 msgstr "Outomatiese opgradering het in die agtergrond begin."
 
-#: src/MainWindow.py:1647
+#: src/MainWindow.py:1916
 msgid "Upgrade to {}"
 msgstr "Gradeer op na {}"
 
-#: src/MainWindow.py:1786
+#: src/MainWindow.py:2055
 msgid "Total Required Size"
 msgstr "Totale vereiste grootte"
 
-#: src/MainWindow.py:1946 src/MainWindow.py:2038 src/MainWindow.py:2114
-#: src/MainWindow.py:2206
+#: src/MainWindow.py:2215 src/MainWindow.py:2307 src/MainWindow.py:2383
+#: src/MainWindow.py:2475 src/MainWindow.py:2610
 msgid "Copy selected text"
 msgstr "Kopieer geselekteerde teks"
 
-#: src/MainWindow.py:2003
+#: src/MainWindow.py:2272
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -487,30 +591,70 @@ msgstr ""
 "Maak asseblief die ander toepassing toe, bv. 'Dateer Bestuurder op', "
 "'aptitude' of 'Synaptic' eers."
 
-#: src/MainWindow.py:2012 src/MainWindow.py:2260
+#: src/MainWindow.py:2281 src/MainWindow.py:2529
 msgid "Process completed."
 msgstr "Proses voltooi."
 
-#: src/MainWindow.py:2162
+#: src/MainWindow.py:2431
 msgid "The download is complete. You can continue."
 msgstr "Die aflaai is voltooi. Jy kan voortgaan."
 
-#: src/MainWindow.py:2175
+#: src/MainWindow.py:2444
 msgid "The download is not completed. Try again."
 msgstr "Die aflaai is nie voltooi nie. Probeer weer."
 
-#: src/MainWindow.py:2258
+#: src/MainWindow.py:2527
 msgid "Error."
 msgstr "Fout."
 
-#: src/MainWindow.py:2312
+#: src/MainWindow.py:2581
 msgid "Automatic upgrade completed."
 msgstr "Proses voltooi.Outomatiese opgradering voltooi."
 
-#: src/MainWindow.py:2338
+#: src/MainWindow.py:2717
 msgid "Update"
 msgstr "Opdateer"
 
-#: src/MainWindow.py:2339
+#: src/MainWindow.py:2718
 msgid "Close"
 msgstr "Naby"
+
+#: src/Utils.py:137
+msgid "OK"
+msgstr "OK"
+
+#: src/SysActions.py:627 src/SysActions.py:669
+msgid "Package Manager Cache is updating, please wait..."
+msgstr "Pakketbestuurder-kas word tans opgedateer, wag asseblief..."
+
+#: src/SysActions.py:632
+msgid "New Sources List"
+msgstr "Nuwe bronnelys"
+
+#: src/SysActions.py:633
+msgid "Fix sources.list.d"
+msgstr "Maak sources.list.d reg"
+
+#: src/SysActions.py:635
+msgid "Sources List Dir Remove"
+msgstr "Bronnelys Dir Verwyder"
+
+#: src/SysActions.py:636
+msgid "DPKG Configure State"
+msgstr "DPKG Konfigureer Staat"
+
+#: src/SysActions.py:637
+msgid "Fix Broken State"
+msgstr "Maak gebroke toestand reg"
+
+#: src/SysActions.py:658
+msgid "sources.list.d fix skipped per user request."
+msgstr "sources.list.d regstelling oorgeslaan per gebruikerversoek."
+
+#: src/SysActions.py:676
+msgid "dpkgconfigure skipped per user request."
+msgstr "dpkgconfigure oorgeslaan per gebruikerversoek."
+
+#: src/SysActions.py:681
+msgid "fixbroken skipped per user request."
+msgstr "fixbroken oorgeslaan per gebruikerversoek."

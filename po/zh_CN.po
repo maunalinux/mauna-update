@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-09 16:17-0300\n"
-"PO-Revision-Date: 2024-08-09 18:40-0300\n"
+"POT-Creation-Date: 2024-12-12 18:27-0300\n"
+"PO-Revision-Date: 2025-01-13 22:20-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: ui/MainWindow.glade:13 ui/MainWindow.glade:3905 src/MainWindow.py:87
-#: src/MainWindow.py:595 src/MainWindow.py:1602 src/MainWindow.py:2311
+#: ui/MainWindow.glade:13 ui/MainWindow.glade:4927 src/MainWindow.py:91
+#: src/MainWindow.py:652 src/MainWindow.py:1871 src/MainWindow.py:2580
 msgid "Mauna Update"
 msgstr "莫纳更新"
 
@@ -26,7 +26,7 @@ msgstr "莫纳更新"
 msgid "No"
 msgstr "不"
 
-#: ui/MainWindow.glade:54 ui/MainWindow.glade:1812
+#: ui/MainWindow.glade:54 ui/MainWindow.glade:2634 ui/MainWindow.glade:2833
 msgid "Yes"
 msgstr "是的"
 
@@ -36,162 +36,251 @@ msgid ""
 "application?"
 msgstr "升级过程正在进行中。 您确定要关闭该应用程序吗？"
 
-#: ui/MainWindow.glade:108
+#: ui/MainWindow.glade:159
 msgid "Mauna Update Application"
 msgstr "莫纳更新应用程序"
 
 #. Name Surname <example@examplemail.com>
-#: ui/MainWindow.glade:112
+#: ui/MainWindow.glade:163
 msgid "translator-credits"
 msgstr "Mauna Linux <dev@maunalinux.top>"
 
-#: ui/MainWindow.glade:177 ui/MainWindow.glade:4237
+#: ui/MainWindow.glade:228 ui/MainWindow.glade:5259
 msgid "Package configuration files"
 msgstr "包配置文件"
 
-#: ui/MainWindow.glade:196 ui/MainWindow.glade:4256
+#: ui/MainWindow.glade:247 ui/MainWindow.glade:5278
 msgid "Use new configuration files"
 msgstr "使用新的配置文件"
 
-#: ui/MainWindow.glade:212 ui/MainWindow.glade:4272
+#: ui/MainWindow.glade:263 ui/MainWindow.glade:5294
 msgid "Use old configuration files"
 msgstr "使用旧的配置文件"
 
-#: ui/MainWindow.glade:263 ui/MainWindow.glade:4400
+#: ui/MainWindow.glade:314 ui/MainWindow.glade:5422
 msgid "Restore Defaults"
 msgstr "恢复默认值"
 
-#: ui/MainWindow.glade:374
+#: ui/MainWindow.glade:424
 msgid "Package manager cache is updating"
 msgstr "包管理器缓存正在更新"
 
-#: ui/MainWindow.glade:466 ui/MainWindow.glade:2626
+#: ui/MainWindow.glade:516 ui/MainWindow.glade:3647
 msgid "Upgraded"
 msgstr "升级版"
 
-#: ui/MainWindow.glade:492 ui/MainWindow.glade:2652
+#: ui/MainWindow.glade:542 ui/MainWindow.glade:3673
 msgid "Newly Installed"
 msgstr "新安装"
 
-#: ui/MainWindow.glade:519 ui/MainWindow.glade:2679
+#: ui/MainWindow.glade:569 ui/MainWindow.glade:3700
 msgid "To Remove"
 msgstr "去除"
 
-#: ui/MainWindow.glade:546 ui/MainWindow.glade:2706
+#: ui/MainWindow.glade:596 ui/MainWindow.glade:3727
 msgid "Not Upgraded"
 msgstr "未升级"
 
-#: ui/MainWindow.glade:594 ui/MainWindow.glade:2754
+#: ui/MainWindow.glade:644 ui/MainWindow.glade:3775
 msgid "Download size:"
 msgstr "下载大小："
 
-#: ui/MainWindow.glade:649 ui/MainWindow.glade:2810
+#: ui/MainWindow.glade:699 ui/MainWindow.glade:3831
 msgid "Required disk size:"
 msgstr "所需磁盘大小："
 
-#: ui/MainWindow.glade:704 ui/MainWindow.glade:2866
+#: ui/MainWindow.glade:754 ui/MainWindow.glade:3887
 msgid "Upgraded:"
 msgstr "升级后："
 
-#: ui/MainWindow.glade:759 ui/MainWindow.glade:2922
+#: ui/MainWindow.glade:809 ui/MainWindow.glade:3943
 msgid "Newly installed:"
 msgstr "新安装："
 
-#: ui/MainWindow.glade:814 ui/MainWindow.glade:2978
+#: ui/MainWindow.glade:864 ui/MainWindow.glade:3999
 msgid "To remove:"
 msgstr "去除："
 
-#: ui/MainWindow.glade:869 ui/MainWindow.glade:3034
+#: ui/MainWindow.glade:919 ui/MainWindow.glade:4055
 msgid "Not upgraded:"
 msgstr "未升级："
 
-#: ui/MainWindow.glade:917
+#: ui/MainWindow.glade:967
 msgid "Upgrade"
 msgstr "升级"
 
-#: ui/MainWindow.glade:1006
+#: ui/MainWindow.glade:1057
 msgid ""
 "<span color=\"red\">Package manager is busy, try again after the process is "
 "completed.</span>"
 msgstr "<span color=\"red\">包管理器正忙，请在该过程完成后重试。</span>"
 
-#: ui/MainWindow.glade:1082 ui/MainWindow.glade:3821
+#: ui/MainWindow.glade:1133 ui/MainWindow.glade:4843
 msgid "Ok"
 msgstr "好的"
 
-#: ui/MainWindow.glade:1099 ui/MainWindow.glade:3751
+#: ui/MainWindow.glade:1150 ui/MainWindow.glade:4773
 msgid "Fix"
 msgstr "使固定"
 
-#: ui/MainWindow.glade:1165
+#: ui/MainWindow.glade:1216
 msgid "Your system is up to date."
 msgstr "您的系统是最新的。"
 
-#: ui/MainWindow.glade:1206 src/MainWindow.py:599
+#: ui/MainWindow.glade:1257 src/MainWindow.py:656
 msgid "Check Updates"
 msgstr "检查更新"
 
-#: ui/MainWindow.glade:1252
+#: ui/MainWindow.glade:1303
 msgid "Mauna new version is available."
 msgstr "莫纳新版本已推出。"
 
-#: ui/MainWindow.glade:1346
-msgid "Update Check Frequency:"
-msgstr "更新检查频率："
-
-#: ui/MainWindow.glade:1364
-msgid "Hourly"
-msgstr "每小时"
-
-#: ui/MainWindow.glade:1365
-msgid "Daily"
-msgstr "日常的"
-
-#: ui/MainWindow.glade:1366
-msgid "Weekly"
-msgstr "每周"
-
-#: ui/MainWindow.glade:1367
-msgid "Never"
-msgstr "绝不"
-
-#: ui/MainWindow.glade:1384 ui/MainWindow.glade:1401
-msgid "seconds"
-msgstr "秒"
-
-#: ui/MainWindow.glade:1440
-msgid "Last Update Check Date:"
-msgstr "最后更新检查日期："
-
-#: ui/MainWindow.glade:1478
-msgid "Selectable Updates:"
-msgstr "可选择的更新："
-
-#: ui/MainWindow.glade:1552
-msgid "Notifications:"
-msgstr "通知："
-
-#: ui/MainWindow.glade:1592
-msgid "Launch at Startup:"
-msgstr "启动时运行："
-
-#: ui/MainWindow.glade:1661 ui/MainWindow.glade:2257 ui/MainWindow.glade:2540
-#: src/MainWindow.py:673 src/MainWindow.py:837 src/MainWindow.py:989
-#: src/MainWindow.py:1057
+#: ui/MainWindow.glade:1410 ui/MainWindow.glade:3131 ui/MainWindow.glade:3561
+#: src/MainWindow.py:730 src/MainWindow.py:1076 src/MainWindow.py:1228
+#: src/MainWindow.py:1326
 msgid "Home Page"
 msgstr "主页"
 
-#: ui/MainWindow.glade:1707
+#: ui/MainWindow.glade:1456
+msgid "Update Check Frequency:"
+msgstr "更新检查频率："
+
+#: ui/MainWindow.glade:1474
+msgid "Hourly"
+msgstr "每小时"
+
+#: ui/MainWindow.glade:1475
+msgid "Daily"
+msgstr "日常的"
+
+#: ui/MainWindow.glade:1476
+msgid "Weekly"
+msgstr "每周"
+
+#: ui/MainWindow.glade:1477
+msgid "Never"
+msgstr "绝不"
+
+#: ui/MainWindow.glade:1494 ui/MainWindow.glade:1511
+msgid "seconds"
+msgstr "秒"
+
+#: ui/MainWindow.glade:1550
+msgid "Last Update Check Date:"
+msgstr "最后更新检查日期："
+
+#: ui/MainWindow.glade:1588
+msgid "Selectable Updates:"
+msgstr "可选择的更新："
+
+#: ui/MainWindow.glade:1662
+msgid "Notifications:"
+msgstr "通知："
+
+#: ui/MainWindow.glade:1702
+msgid "Launch at Startup:"
+msgstr "启动时运行："
+
+#: ui/MainWindow.glade:1790
+msgid "Package Manager Cache"
+msgstr "包管理器缓存"
+
+#: ui/MainWindow.glade:1839
+msgid "APT Sources List"
+msgstr "APT 来源列表"
+
+#: ui/MainWindow.glade:1888 src/MainWindow.py:1292
+msgid "Enable Passwordless Usage"
+msgstr "启用无密码使用"
+
+#: ui/MainWindow.glade:1948
+msgid "Cached deb packages"
+msgstr "缓存的 deb 包"
+
+#: ui/MainWindow.glade:1970 ui/MainWindow.glade:2089 ui/MainWindow.glade:2208
+msgid "size"
+msgstr "尺寸"
+
+#: ui/MainWindow.glade:2067
+msgid "Autoremovable packages"
+msgstr "自动卸载的软件包"
+
+#: ui/MainWindow.glade:2186
+msgid "Base repository files"
+msgstr "基础存储库文件"
+
+#: ui/MainWindow.glade:2299 ui/MainWindow.glade:2620 ui/MainWindow.glade:2816
+#: ui/MainWindow.glade:4103 ui/MainWindow.glade:4554
+msgid "Cancel"
+msgstr "取消"
+
+#: ui/MainWindow.glade:2313
+msgid "Clear"
+msgstr "清除"
+
+#: ui/MainWindow.glade:2360
+msgid "Process Completed"
+msgstr "流程已完成"
+
+#: ui/MainWindow.glade:2426
+msgid "Back"
+msgstr "后退"
+
+#: ui/MainWindow.glade:2440
+msgid "Use Default Sources List"
+msgstr "使用默认来源列表"
+
+#: ui/MainWindow.glade:2476
+msgid "This operation will remove sources.list entries and create defaults."
+msgstr "此操作将删除 sources.list 条目并创建默认值。"
+
+#: ui/MainWindow.glade:2497
+msgid "Fix \"sources.list.d\" entries too."
+msgstr "也修复“sources.list.d”条目。"
+
+#: ui/MainWindow.glade:2501
+msgid "If not selected, adds these entries to the comment line."
+msgstr "如果未选择，则将这些条目添加到注释行。"
+
+#: ui/MainWindow.glade:2521
+msgid "Remove sources.list.d entries"
+msgstr "删除 sources.list.d 条目"
+
+#: ui/MainWindow.glade:2536
+msgid "Comment out sources.list.d entries"
+msgstr "注释掉 sources.list.d 条目"
+
+#: ui/MainWindow.glade:2559
+msgid "Run \"dpkg --configure -a\" command"
+msgstr "运行“dpkg --configure -a”命令"
+
+#: ui/MainWindow.glade:2563
+msgid "It attempts to fix unfinished package manager operations."
+msgstr "它尝试修复未完成的包管理器操作。"
+
+#: ui/MainWindow.glade:2575
+msgid "Run \"apt install --fix-broken\" command"
+msgstr "运行“apt install --fix-broken”命令"
+
+#: ui/MainWindow.glade:2579
+msgid "It attempts to fix a system that has broken dependencies."
+msgstr "它尝试修复存​​在破坏依赖关系的系统。"
+
+#: ui/MainWindow.glade:2600
+msgid "Use with caution. Are you sure you want to continue?"
+msgstr "请谨慎使用。您确定要继续吗？"
+
+#: ui/MainWindow.glade:2728
 msgid ""
 "Your system sources list that used by package manager seems broken or your "
 "system has broken dependencies."
 msgstr "包管理器使用的系统源列表似乎已损坏，或者您的系统已损坏依赖项。"
 
-#: ui/MainWindow.glade:1730
+#: ui/MainWindow.glade:2751
 msgid "Try Fix"
 msgstr "尝试修复"
 
-#: ui/MainWindow.glade:1772
+#: ui/MainWindow.glade:2793
 msgid ""
 "This operation;\n"
 "will remove all sources.list and sources.list.d entries and create "
@@ -210,132 +299,128 @@ msgstr ""
 "\n"
 "谨慎使用。 你确定你要继续吗？"
 
-#: ui/MainWindow.glade:1795 ui/MainWindow.glade:3082 ui/MainWindow.glade:3533
-msgid "Cancel"
-msgstr "取消"
-
-#: ui/MainWindow.glade:1861
+#: ui/MainWindow.glade:2882
 msgid "Operation completed."
 msgstr "操作完成。"
 
-#: ui/MainWindow.glade:1901
+#: ui/MainWindow.glade:2922
 msgid "Go to Home Page"
 msgstr "去首页"
 
-#: ui/MainWindow.glade:1932
+#: ui/MainWindow.glade:2953
 msgid "You can check the terminal output below."
 msgstr "您可以检查下面的终端输出。"
 
-#: ui/MainWindow.glade:1961
+#: ui/MainWindow.glade:2982
 msgid "The error in the package manager could not be fixed."
 msgstr "无法修复包管理器中的错误。"
 
-#: ui/MainWindow.glade:1979
+#: ui/MainWindow.glade:3000
 msgid ""
 "You can follow the instructions by looking at the terminal output below."
 msgstr "无法修复包管理器中的错误。"
 
-#: ui/MainWindow.glade:1991
+#: ui/MainWindow.glade:3012
 msgid "You can ask for help about your problem through Mauna help channels."
 msgstr "您可以通过莫纳帮助渠道寻求有关问题的帮助。"
 
-#: ui/MainWindow.glade:2099
+#: ui/MainWindow.glade:3168
 msgid "List of automatically removable all unused packages"
 msgstr "自动删除所有未使用的软件包的列表"
 
-#: ui/MainWindow.glade:2100
+#: ui/MainWindow.glade:3169
 msgid "Autoremovable Packages"
 msgstr "自动移除包"
 
-#: ui/MainWindow.glade:2136 ui/MainWindow.glade:2202
+#: ui/MainWindow.glade:3205 ui/MainWindow.glade:3271
 msgid "Remove"
 msgstr "消除"
 
-#: ui/MainWindow.glade:2165
+#: ui/MainWindow.glade:3234
 msgid "List of unnecessary packages with residual config files"
 msgstr "带有残留配置文件的不必要的包列表"
 
-#: ui/MainWindow.glade:2166
+#: ui/MainWindow.glade:3235
 msgid "Residual Packages"
 msgstr "剩余套餐"
 
-#: ui/MainWindow.glade:2312
+#: ui/MainWindow.glade:3333
 msgid "Your Current Version:"
 msgstr "您当前的版本："
 
-#: ui/MainWindow.glade:2356
+#: ui/MainWindow.glade:3377
 msgid "Upgradable Version:"
 msgstr "可升级版本："
 
-#: ui/MainWindow.glade:2439
+#: ui/MainWindow.glade:3460
 msgid "Your system is not up to date. Firstly, install the available updates."
 msgstr "您的系统不是最新的。 首先，安装可用的更新。"
 
-#: ui/MainWindow.glade:2454
+#: ui/MainWindow.glade:3475
 msgid "Go to Updates"
 msgstr "前往更新"
 
-#: ui/MainWindow.glade:3217
+#: ui/MainWindow.glade:4238
 msgid "Root"
 msgstr "根"
 
-#: ui/MainWindow.glade:3293
+#: ui/MainWindow.glade:4314
 msgid "is free of"
 msgstr "是免费的"
 
-#: ui/MainWindow.glade:3333 ui/MainWindow.glade:3450
+#: ui/MainWindow.glade:4354 ui/MainWindow.glade:4471
 msgid "Retry"
 msgstr "重试"
 
-#: ui/MainWindow.glade:3403 src/MainWindow.py:898
+#: ui/MainWindow.glade:4424 src/MainWindow.py:1137
 msgid "Packages are downloading, please wait."
 msgstr "软件包正在下载中，请稍候。"
 
-#: ui/MainWindow.glade:3431
+#: ui/MainWindow.glade:4452
 msgid "Continue"
 msgstr "继续"
 
-#: ui/MainWindow.glade:3494
+#: ui/MainWindow.glade:4515
 msgid "Your system will reboot and updates will be installed during startup."
 msgstr "您的系统将重新启动，并且将在启动过程中安装更新。"
 
-#: ui/MainWindow.glade:3512
+#: ui/MainWindow.glade:4533
 msgid "Please do not turn off the machine while updates are installing."
 msgstr "安装更新时请不要关闭机器。"
 
-#: ui/MainWindow.glade:3559
+#: ui/MainWindow.glade:4580
 msgid "Reboot"
 msgstr "重启"
 
-#: ui/MainWindow.glade:3623
+#: ui/MainWindow.glade:4644
 msgid "The last changes are processing."
 msgstr "最后的更改正在处理中。"
 
-#: ui/MainWindow.glade:3639
+#: ui/MainWindow.glade:4660
 msgid "Your system will reboot. Please wait..."
 msgstr "您的系统将重新启动。 请稍等..."
 
-#: ui/MainWindow.glade:3987 src/MainWindow.py:271 src/MainWindow.py:619
-#: src/MainWindow.py:697 src/MainWindow.py:840 src/MainWindow.py:965
-#: src/MainWindow.py:985 src/MainWindow.py:1062 src/MainWindow.py:1082
+#: ui/MainWindow.glade:5009 src/MainWindow.py:289 src/MainWindow.py:676
+#: src/MainWindow.py:754 src/MainWindow.py:1079 src/MainWindow.py:1204
+#: src/MainWindow.py:1224 src/MainWindow.py:1331 src/MainWindow.py:1351
 msgid "Settings"
 msgstr "设置"
 
-#: ui/MainWindow.glade:4043 src/MainWindow.py:273 src/MainWindow.py:677
-#: src/MainWindow.py:699 src/MainWindow.py:708 src/MainWindow.py:967
-#: src/MainWindow.py:994 src/MainWindow.py:1049 src/MainWindow.py:1085
+#: ui/MainWindow.glade:5065 src/MainWindow.py:291 src/MainWindow.py:734
+#: src/MainWindow.py:756 src/MainWindow.py:765 src/MainWindow.py:1206
+#: src/MainWindow.py:1233 src/MainWindow.py:1318 src/MainWindow.py:1354
 msgid "Version Upgrade"
 msgstr "版本升级"
 
-#: ui/MainWindow.glade:4099
+#: ui/MainWindow.glade:5121
 msgid "About"
 msgstr "关于"
 
-#: ui/MainWindow.glade:4167
+#: ui/MainWindow.glade:5189
 msgid "Caution"
 msgstr "警告"
 
-#: ui/MainWindow.glade:4189
+#: ui/MainWindow.glade:5211
 msgid ""
 "This feature is still in the testing phase. Before starting the update, it "
 "is recommended that you check one last time by selecting the \"Ask me before "
@@ -344,64 +429,81 @@ msgstr ""
 "此功能仍在测试阶段。在开始更新之前，建议您在更新设置中选择“继续之前询问我”选"
 "项，最后检查一次。"
 
-#: ui/MainWindow.glade:4288
+#: ui/MainWindow.glade:5310
 msgid "Ask me what to do"
 msgstr "问我该怎么办"
 
-#: ui/MainWindow.glade:4314
+#: ui/MainWindow.glade:5336
 msgid "Interaction"
 msgstr "相互作用"
 
-#: ui/MainWindow.glade:4333
+#: ui/MainWindow.glade:5355
 msgid "Start process (with -yq option)"
 msgstr "启动进程（使用 -yq 选项）"
 
-#: ui/MainWindow.glade:4349
+#: ui/MainWindow.glade:5371
 msgid "Ask me before starting the process (without -yq)"
 msgstr "在开始该过程之前询问我（不带 -yq）"
 
-#: src/MainWindow.py:91
+#: src/MainWindow.py:95
 msgid "About Mauna Update"
 msgstr "关于莫纳更新"
 
-#: src/MainWindow.py:171 src/MainWindow.py:172
+#: src/MainWindow.py:175 src/MainWindow.py:176
 msgid "Start {} Upgrade"
 msgstr "开始{}升级"
 
-#: src/MainWindow.py:277 src/MainWindow.py:645 src/MainWindow.py:662
-#: src/MainWindow.py:683 src/MainWindow.py:703
+#: src/MainWindow.py:295 src/MainWindow.py:702 src/MainWindow.py:719
+#: src/MainWindow.py:740 src/MainWindow.py:760
 msgid "Hide App"
 msgstr "隐藏应用程序"
 
-#: src/MainWindow.py:610
+#: src/MainWindow.py:667
 msgid "Quit"
 msgstr "辞职"
 
-#: src/MainWindow.py:615 src/MainWindow.py:1505
+#: src/MainWindow.py:672 src/MainWindow.py:1774
 msgid "Last Check"
 msgstr "最后检查"
 
-#: src/MainWindow.py:623 src/MainWindow.py:1575
+#: src/MainWindow.py:680 src/MainWindow.py:1844
 msgid "System is Up to Date"
 msgstr "系统是最新的"
 
-#: src/MainWindow.py:647 src/MainWindow.py:659 src/MainWindow.py:1264
+#: src/MainWindow.py:704 src/MainWindow.py:716 src/MainWindow.py:1533
 msgid "Show App"
 msgstr "显示应用程序"
 
-#: src/MainWindow.py:767
+#: src/MainWindow.py:824
 msgid "Updates are installing. Please wait..."
 msgstr "正在安装更新。 请稍等..."
 
-#: src/MainWindow.py:769
+#: src/MainWindow.py:826
 msgid "Updating"
 msgstr "更新中"
 
-#: src/MainWindow.py:795 src/MainWindow.py:821
+#: src/MainWindow.py:852 src/MainWindow.py:878
 msgid "Packages are removing. Please wait..."
 msgstr "包裹正在移除。 请稍等..."
 
-#: src/MainWindow.py:1224 src/MainWindow.py:2007
+#: src/MainWindow.py:945 src/MainWindow.py:1038 src/MainWindow.py:1061
+#: src/MainWindow.py:2699
+msgid "Error"
+msgstr "错误"
+
+#: src/MainWindow.py:945 src/MainWindow.py:1038 src/MainWindow.py:1061
+msgid "Package manager is busy, try again after the process is completed."
+msgstr "包管理器正忙，请等待处理完成后再试。"
+
+#: src/MainWindow.py:982
+msgid "The default sources list is as follows."
+msgstr "默认源列表如下。"
+
+#: src/MainWindow.py:1290
+msgid "Disable Passwordless Usage"
+msgstr "禁用无密码使用"
+
+#: src/MainWindow.py:1493 src/MainWindow.py:2276
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -409,60 +511,60 @@ msgstr ""
 "检测到 dpkg 中断。 单击“修复”按钮或\n"
 "手动运行“sudo dpkg --configure -a”来解决问题。"
 
-#: src/MainWindow.py:1233
+#: src/MainWindow.py:1502
 msgid "The process is in progress. Please wait..."
 msgstr "该过程正在进行中。 请稍等..."
 
-#: src/MainWindow.py:1463
+#: src/MainWindow.py:1732
 msgid "Clear All Selections"
 msgstr "清除所有选择"
 
-#: src/MainWindow.py:1528
+#: src/MainWindow.py:1797
 msgid "System is Broken"
 msgstr "系统损坏"
 
-#: src/MainWindow.py:1542
+#: src/MainWindow.py:1811
 msgid "Software Update"
 msgstr "软件更新"
 
-#: src/MainWindow.py:1543
+#: src/MainWindow.py:1812
 msgid "There are {} software updates available."
 msgstr "有 {} 个可用软件更新。"
 
-#: src/MainWindow.py:1545
+#: src/MainWindow.py:1814
 msgid "There is {} software update available."
 msgstr "有 {} 个可用软件更新。"
 
-#: src/MainWindow.py:1564
+#: src/MainWindow.py:1833
 msgid "You have removable residual packages."
 msgstr "您有可移动的残留软件包。"
 
-#: src/MainWindow.py:1578
+#: src/MainWindow.py:1847
 msgid "{} Updates Pending"
 msgstr "{} 更新待定"
 
-#: src/MainWindow.py:1580
+#: src/MainWindow.py:1849
 msgid "{} Update Pending"
 msgstr "{} 更新待定"
 
-#: src/MainWindow.py:1603
+#: src/MainWindow.py:1872
 msgid "Automatic upgrade started in the background."
 msgstr "后台开始自动升级。"
 
-#: src/MainWindow.py:1647
+#: src/MainWindow.py:1916
 msgid "Upgrade to {}"
 msgstr "升级到 {}"
 
-#: src/MainWindow.py:1786
+#: src/MainWindow.py:2055
 msgid "Total Required Size"
 msgstr "所需总尺寸"
 
-#: src/MainWindow.py:1946 src/MainWindow.py:2038 src/MainWindow.py:2114
-#: src/MainWindow.py:2206
+#: src/MainWindow.py:2215 src/MainWindow.py:2307 src/MainWindow.py:2383
+#: src/MainWindow.py:2475 src/MainWindow.py:2610
 msgid "Copy selected text"
 msgstr "复制选定的文本"
 
-#: src/MainWindow.py:2003
+#: src/MainWindow.py:2272
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -471,30 +573,70 @@ msgstr ""
 "同一时间只允许运行一种软件管理工具。\n"
 "请关闭其他应用程序，例如 首先是“更新管理器”、“能力”或“新立得”。"
 
-#: src/MainWindow.py:2012 src/MainWindow.py:2260
+#: src/MainWindow.py:2281 src/MainWindow.py:2529
 msgid "Process completed."
 msgstr "流程完成。"
 
-#: src/MainWindow.py:2162
+#: src/MainWindow.py:2431
 msgid "The download is complete. You can continue."
 msgstr "下载完成。 您可以继续。"
 
-#: src/MainWindow.py:2175
+#: src/MainWindow.py:2444
 msgid "The download is not completed. Try again."
 msgstr "下载未完成。 再试一次。"
 
-#: src/MainWindow.py:2258
+#: src/MainWindow.py:2527
 msgid "Error."
 msgstr "错误。"
 
-#: src/MainWindow.py:2312
+#: src/MainWindow.py:2581
 msgid "Automatic upgrade completed."
 msgstr "自动升级完成。"
 
-#: src/MainWindow.py:2338
+#: src/MainWindow.py:2717
 msgid "Update"
 msgstr "更新"
 
-#: src/MainWindow.py:2339
+#: src/MainWindow.py:2718
 msgid "Close"
 msgstr "关闭"
+
+#: src/Utils.py:137
+msgid "OK"
+msgstr "好的"
+
+#: src/SysActions.py:627 src/SysActions.py:669
+msgid "Package Manager Cache is updating, please wait..."
+msgstr "包管理器缓存正在更新，请等待..."
+
+#: src/SysActions.py:632
+msgid "New Sources List"
+msgstr "新货源列表"
+
+#: src/SysActions.py:633
+msgid "Fix sources.list.d"
+msgstr "修复 sources.list.d"
+
+#: src/SysActions.py:635
+msgid "Sources List Dir Remove"
+msgstr "源列表目录删除"
+
+#: src/SysActions.py:636
+msgid "DPKG Configure State"
+msgstr "DPKG 配置状态"
+
+#: src/SysActions.py:637
+msgid "Fix Broken State"
+msgstr "修复损坏状态"
+
+#: src/SysActions.py:658
+msgid "sources.list.d fix skipped per user request."
+msgstr "根据用户请求，跳过 sources.list.d 修复。"
+
+#: src/SysActions.py:676
+msgid "dpkgconfigure skipped per user request."
+msgstr "根据用户请求，dpkgconfigure 已跳过。"
+
+#: src/SysActions.py:681
+msgid "fixbroken skipped per user request."
+msgstr "根据用户请求，已跳过 fixbroken。"
