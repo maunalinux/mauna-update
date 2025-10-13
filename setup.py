@@ -61,6 +61,7 @@ data_files = [
                    "data/mauna-update-inprogress-symbolic.svg",
                    "data/mauna-update-symbolic.svg",
                    "data/mauna-update-uptodate.svg",
+                   "data/mauna-update-cantconnect.svg",
                    "data/mauna-safeupgrade-template.sh",
                    "data/mauna-safeupgrade.service",
                    "data/style.css"]),
@@ -74,7 +75,8 @@ data_files = [
                    "data/mauna-update-error-symbolic.svg",
                    "data/mauna-update-inprogress-symbolic.svg",
                    "data/mauna-update-symbolic.svg",
-                   "data/mauna-update-uptodate.svg"]),
+                   "data/mauna-update-uptodate.svg",
+                   "data/pardus-update-cantconnect.svg"]),
                  ("/var/lib/polkit-1/localauthority/50-local.d/",
                   ["data/mauna-update-group.pkla"])
              ] + create_mo_files()
