@@ -1,0 +1,14 @@
+{
+    "debian": [
+      {
+        "name": "bookworm",
+        "version": 12,
+        "sources": "deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware\n#deb-src http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware\n\ndeb http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware\n#deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware\n\ndeb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware\n#deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware\n\ndeb http://apt.maunalinux.top/mauna/ mauna main contrib non-free non-free-firmware\n"
+      },
+      {
+        "name": "trixie",
+        "version": 13,
+        "sources": "deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware\n#deb-src http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware\n\ndeb http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware\n#deb-src http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware\n\ndeb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware\n#deb-src http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware\n\ndeb http://apt.maunalinux.top/polaris/ polaris main contrib non-free non-free-firmware\n"
+      }
+    ]
+}
