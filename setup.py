@@ -77,7 +77,7 @@ data_files = [
                    "data/mauna-update-inprogress-symbolic.svg",
                    "data/mauna-update-symbolic.svg",
                    "data/mauna-update-uptodate.svg",
-                   "data/pardus-update-cantconnect.svg"]),
+                   "data/mauna-update-cantconnect.svg"]),
                  ("/var/lib/polkit-1/localauthority/50-local.d/",
                   ["data/mauna-update-group.pkla"])
              ] + create_mo_files()
