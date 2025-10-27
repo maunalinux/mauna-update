@@ -1,3 +1,9 @@
+mauna-update (1.1.1) mauna; urgency=medium
+
+  * New upstream release
+
+ -- Mauna Linux <dev@maunalinux.top>  Wed, 15 Oct 2025 13:57:23 -0300
+
 mauna-update (1.1.0) mauna; urgency=medium
 
   * Add package manager operations to settings
