@@ -491,13 +491,13 @@ class MainWindow(object):
         system_wide = "usr/share" in os.path.dirname(os.path.abspath(__file__))
         self.icon_available = "mauna-update-available-symbolic" if system_wide else "software-update-available-symbolic"
         self.icon_normal = "mauna-update-symbolic" if system_wide else "security-medium-symbolic"
-        self.icon_inprogress = "mauna-update-inprogress-symbolic" if system_wide else "emblem-synchronizing-symbolic"
+        self.icon_inprogress = "mauna-update-inprogress-symbolic" if system_wide else "media-playlist-repeat-symbolic"
         self.icon_error = "mauna-update-error-symbolic" if system_wide else "security-low-symbolic"
 
         if not mate_desktop:
             self.icon_available = "software-update-available-symbolic"
             self.icon_normal = "security-medium-symbolic"
-            self.icon_inprogress = "emblem-synchronizing-symbolic"
+            self.icon_inprogress = "media-playlist-repeat-symbolic"
             self.icon_error = "security-low-symbolic"
 
         self.autoupdate_glibid = None
