@@ -78,8 +78,8 @@ data_files = [
                    "data/mauna-update-symbolic.svg",
                    "data/mauna-update-uptodate.svg",
                    "data/mauna-update-cantconnect.svg"]),
-                 ("/var/lib/polkit-1/localauthority/50-local.d/",
-                  ["data/mauna-update-group.pkla"])
+                 ("/usr/share/polkit-1/rules.d/",
+                  ["data/mauna-update-group.rules"])
              ] + create_mo_files()
 
 setup(

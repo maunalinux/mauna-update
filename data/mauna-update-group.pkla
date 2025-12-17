@@ -1,6 +1,0 @@
-[Mauna Software]
-Identity=unix-group:mauna-update
-Action=top.mauna.pkexec.mauna-update-sysaction
-ResultAny=yes
-ResultInactive=yes
-ResultActive=yes

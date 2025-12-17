@@ -1,0 +1,7 @@
+polkit.addRule(function(action, subject) {
+    if (subject.isInGroup("pardus-update")) {
+        if (action.id == "top.mauna.pkexec.mauna-update-sysaction") {
+            return polkit.Result.YES;
+        }
+    }
+});
