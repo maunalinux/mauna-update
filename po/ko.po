@@ -8,18 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-15 11:32-0300\n"
-"PO-Revision-Date: 2025-10-15 13:34-0300\n"
+"POT-Creation-Date: 2026-04-10 17:19-0300\n"
+"PO-Revision-Date: 2026-04-10 17:39-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 
 #: ui/MainWindow.glade:13 ui/MainWindow.glade:5156 src/MainWindow.py:95
-#: src/MainWindow.py:675 src/MainWindow.py:1929 src/MainWindow.py:2649
+#: src/MainWindow.py:675 src/MainWindow.py:1926 src/MainWindow.py:2649
 msgid "Mauna Update"
 msgstr "마우나 업데이트"
 
@@ -486,7 +486,7 @@ msgstr "그만두다"
 msgid "Last Check"
 msgstr "마지막 확인"
 
-#: src/MainWindow.py:703 src/MainWindow.py:1902
+#: src/MainWindow.py:703 src/MainWindow.py:1899
 msgid "System is Up to Date"
 msgstr "시스템이 최신 상태입니다"
 
@@ -507,7 +507,7 @@ msgid "Packages are removing. Please wait..."
 msgstr "패키지를 제거하는 중입니다. 기다리세요..."
 
 #: src/MainWindow.py:971 src/MainWindow.py:1069 src/MainWindow.py:1078
-#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2768
+#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2765
 msgid "Error"
 msgstr "오류"
 
@@ -527,7 +527,7 @@ msgstr "귀하의 시스템은 지원되지 않습니다."
 msgid "Disable Passwordless Usage"
 msgstr "비밀번호 없는 사용 비활성화"
 
-#: src/MainWindow.py:1535 src/MainWindow.py:2345
+#: src/MainWindow.py:1535 src/MainWindow.py:2339
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -559,40 +559,40 @@ msgstr "사용 가능한 {} 소프트웨어 업데이트가 있습니다."
 msgid "There is {} software update available."
 msgstr "사용 가능한 {} 소프트웨어 업데이트가 있습니다."
 
-#: src/MainWindow.py:1881
+#: src/MainWindow.py:1878
 msgid "Repository Connection Error"
 msgstr "저장소 연결 오류"
 
-#: src/MainWindow.py:1891
+#: src/MainWindow.py:1888
 msgid "You have removable residual packages."
 msgstr "제거 가능한 잔여 패키지가 있습니다."
 
-#: src/MainWindow.py:1905
+#: src/MainWindow.py:1902
 msgid "{} Updates Pending"
 msgstr "{} 업데이트 보류 중"
 
-#: src/MainWindow.py:1907
+#: src/MainWindow.py:1904
 msgid "{} Update Pending"
 msgstr "{} 업데이트 보류 중"
 
-#: src/MainWindow.py:1930
+#: src/MainWindow.py:1927
 msgid "Automatic upgrade started in the background."
 msgstr "백그라운드에서 자동 업그레이드가 시작되었습니다."
 
-#: src/MainWindow.py:1974
+#: src/MainWindow.py:1968
 msgid "Upgrade to {}"
 msgstr "{}로 업그레이드"
 
-#: src/MainWindow.py:2113
+#: src/MainWindow.py:2107
 msgid "Total Required Size"
 msgstr "총 필요한 크기"
 
-#: src/MainWindow.py:2284 src/MainWindow.py:2376 src/MainWindow.py:2452
-#: src/MainWindow.py:2544 src/MainWindow.py:2679
+#: src/MainWindow.py:2278 src/MainWindow.py:2376 src/MainWindow.py:2452
+#: src/MainWindow.py:2544 src/MainWindow.py:2676
 msgid "Copy selected text"
 msgstr "선택한 텍스트 복사"
 
-#: src/MainWindow.py:2341
+#: src/MainWindow.py:2335
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -602,9 +602,17 @@ msgstr ""
 "다른 응용 프로그램을 닫으십시오. '업데이트 관리자', '적성' 또는 '시냅틱'을 먼"
 "저 선택하세요."
 
-#: src/MainWindow.py:2350 src/MainWindow.py:2598
+#: src/MainWindow.py:2344
+msgid "Process could not be completed."
+msgstr "프로세스를 완료할 수 없습니다."
+
+#: src/MainWindow.py:2347 src/MainWindow.py:2598
 msgid "Process completed."
 msgstr "프로세스가 완료되었습니다."
+
+#: src/MainWindow.py:2350
+msgid "An error occurred during the process. Please check the output above."
+msgstr "처리 도중 오류가 발생했습니다. 위의 출력 내용을 확인해 주세요."
 
 #: src/MainWindow.py:2500
 msgid "The download is complete. You can continue."
@@ -622,11 +630,11 @@ msgstr "오류."
 msgid "Automatic upgrade completed."
 msgstr "자동 업그레이드가 완료되었습니다."
 
-#: src/MainWindow.py:2786
+#: src/MainWindow.py:2790
 msgid "Update"
 msgstr "업데이트"
 
-#: src/MainWindow.py:2787
+#: src/MainWindow.py:2791
 msgid "Close"
 msgstr "닫다"
 
@@ -634,38 +642,38 @@ msgstr "닫다"
 msgid "OK"
 msgstr "좋아요"
 
-#: src/SysActions.py:483 src/SysActions.py:525
+#: src/SysActions.py:485 src/SysActions.py:527
 msgid "Package Manager Cache is updating, please wait..."
 msgstr "패키지 관리자 캐시를 업데이트 중입니다. 잠시만 기다려 주세요."
 
-#: src/SysActions.py:488
+#: src/SysActions.py:490
 msgid "New Sources List"
 msgstr "새로운 소스 목록"
 
-#: src/SysActions.py:489
+#: src/SysActions.py:491
 msgid "Fix sources.list.d"
 msgstr "sources.list.d 수정"
 
-#: src/SysActions.py:491
+#: src/SysActions.py:493
 msgid "Sources List Dir Remove"
 msgstr "소스 목록 디렉토리 제거"
 
-#: src/SysActions.py:492
+#: src/SysActions.py:494
 msgid "DPKG Configure State"
 msgstr "DPKG 구성 상태"
 
-#: src/SysActions.py:493
+#: src/SysActions.py:495
 msgid "Fix Broken State"
 msgstr "깨진 상태 수정"
 
-#: src/SysActions.py:514
+#: src/SysActions.py:516
 msgid "sources.list.d fix skipped per user request."
 msgstr "사용자 요청에 따라 sources.list.d 수정이 건너뛰었습니다."
 
-#: src/SysActions.py:532
+#: src/SysActions.py:534
 msgid "dpkgconfigure skipped per user request."
 msgstr "사용자 요청에 따라 dpkgconfigure가 건너뛰었습니다."
 
-#: src/SysActions.py:537
+#: src/SysActions.py:539
 msgid "fixbroken skipped per user request."
 msgstr "사용자 요청에 따라 fixbroken이 건너뛰어졌습니다."

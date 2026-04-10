@@ -8,18 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-15 11:32-0300\n"
-"PO-Revision-Date: 2025-10-15 12:34-0300\n"
+"POT-Creation-Date: 2026-04-10 17:19-0300\n"
+"PO-Revision-Date: 2026-04-10 17:31-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 
 #: ui/MainWindow.glade:13 ui/MainWindow.glade:5156 src/MainWindow.py:95
-#: src/MainWindow.py:675 src/MainWindow.py:1929 src/MainWindow.py:2649
+#: src/MainWindow.py:675 src/MainWindow.py:1926 src/MainWindow.py:2649
 msgid "Mauna Update"
 msgstr "Mauna värskendus"
 
@@ -489,7 +489,7 @@ msgstr "Lõpeta"
 msgid "Last Check"
 msgstr "Viimane kontroll"
 
-#: src/MainWindow.py:703 src/MainWindow.py:1902
+#: src/MainWindow.py:703 src/MainWindow.py:1899
 msgid "System is Up to Date"
 msgstr "Süsteem on ajakohane"
 
@@ -510,7 +510,7 @@ msgid "Packages are removing. Please wait..."
 msgstr "Pakid eemaldatakse. Palun oota..."
 
 #: src/MainWindow.py:971 src/MainWindow.py:1069 src/MainWindow.py:1078
-#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2768
+#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2765
 msgid "Error"
 msgstr "Viga"
 
@@ -530,7 +530,7 @@ msgstr "Teie süsteemi ei toetata."
 msgid "Disable Passwordless Usage"
 msgstr "Keela paroolita kasutamine"
 
-#: src/MainWindow.py:1535 src/MainWindow.py:2345
+#: src/MainWindow.py:1535 src/MainWindow.py:2339
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -562,40 +562,40 @@ msgstr "Saadaval on {} tarkvaravärskendust."
 msgid "There is {} software update available."
 msgstr "Saadaval on {} tarkvaravärskendus."
 
-#: src/MainWindow.py:1881
+#: src/MainWindow.py:1878
 msgid "Repository Connection Error"
 msgstr "Varamu ühenduse tõrge"
 
-#: src/MainWindow.py:1891
+#: src/MainWindow.py:1888
 msgid "You have removable residual packages."
 msgstr "Teil on eemaldatavad jääkpakendid."
 
-#: src/MainWindow.py:1905
+#: src/MainWindow.py:1902
 msgid "{} Updates Pending"
 msgstr "{} Värskendused on ootel"
 
-#: src/MainWindow.py:1907
+#: src/MainWindow.py:1904
 msgid "{} Update Pending"
 msgstr "{} Värskendus on ootel"
 
-#: src/MainWindow.py:1930
+#: src/MainWindow.py:1927
 msgid "Automatic upgrade started in the background."
 msgstr "Automaatne uuendamine algas taustal."
 
-#: src/MainWindow.py:1974
+#: src/MainWindow.py:1968
 msgid "Upgrade to {}"
 msgstr "Minge üle versioonile {}"
 
-#: src/MainWindow.py:2113
+#: src/MainWindow.py:2107
 msgid "Total Required Size"
 msgstr "Nõutav suurus kokku"
 
-#: src/MainWindow.py:2284 src/MainWindow.py:2376 src/MainWindow.py:2452
-#: src/MainWindow.py:2544 src/MainWindow.py:2679
+#: src/MainWindow.py:2278 src/MainWindow.py:2376 src/MainWindow.py:2452
+#: src/MainWindow.py:2544 src/MainWindow.py:2676
 msgid "Copy selected text"
 msgstr "Kopeeri valitud tekst"
 
-#: src/MainWindow.py:2341
+#: src/MainWindow.py:2335
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -605,9 +605,17 @@ msgstr ""
 "Palun sulgege teine ​​rakendus nt. Esmalt 'Update Manager', 'aptitude' või "
 "'Synaptic'."
 
-#: src/MainWindow.py:2350 src/MainWindow.py:2598
+#: src/MainWindow.py:2344
+msgid "Process could not be completed."
+msgstr "Protsessi ei saanud lõpule viia."
+
+#: src/MainWindow.py:2347 src/MainWindow.py:2598
 msgid "Process completed."
 msgstr "Protsess lõpetatud."
+
+#: src/MainWindow.py:2350
+msgid "An error occurred during the process. Please check the output above."
+msgstr "Protsessi käigus ilmnes viga. Palun kontrollige ülaltoodud väljundit."
 
 #: src/MainWindow.py:2500
 msgid "The download is complete. You can continue."
@@ -625,11 +633,11 @@ msgstr "Viga."
 msgid "Automatic upgrade completed."
 msgstr "Automaatne uuendamine on lõpetatud."
 
-#: src/MainWindow.py:2786
+#: src/MainWindow.py:2790
 msgid "Update"
 msgstr "Värskenda"
 
-#: src/MainWindow.py:2787
+#: src/MainWindow.py:2791
 msgid "Close"
 msgstr "Sule"
 
@@ -637,38 +645,38 @@ msgstr "Sule"
 msgid "OK"
 msgstr "OK"
 
-#: src/SysActions.py:483 src/SysActions.py:525
+#: src/SysActions.py:485 src/SysActions.py:527
 msgid "Package Manager Cache is updating, please wait..."
 msgstr "Paketihalduri vahemälu värskendatakse, palun oodake..."
 
-#: src/SysActions.py:488
+#: src/SysActions.py:490
 msgid "New Sources List"
 msgstr "Uute allikate loend"
 
-#: src/SysActions.py:489
+#: src/SysActions.py:491
 msgid "Fix sources.list.d"
 msgstr "Parandage sources.list.d"
 
-#: src/SysActions.py:491
+#: src/SysActions.py:493
 msgid "Sources List Dir Remove"
 msgstr "Allikate loend Dir Eemalda"
 
-#: src/SysActions.py:492
+#: src/SysActions.py:494
 msgid "DPKG Configure State"
 msgstr "DPKG oleku seadistamine"
 
-#: src/SysActions.py:493
+#: src/SysActions.py:495
 msgid "Fix Broken State"
 msgstr "Parandage Broken State"
 
-#: src/SysActions.py:514
+#: src/SysActions.py:516
 msgid "sources.list.d fix skipped per user request."
 msgstr "parandus sources.list.d jäeti kasutaja taotluse alusel vahele."
 
-#: src/SysActions.py:532
+#: src/SysActions.py:534
 msgid "dpkgconfigure skipped per user request."
 msgstr "dpkgconfigure jäeti kasutaja taotluse alusel vahele."
 
-#: src/SysActions.py:537
+#: src/SysActions.py:539
 msgid "fixbroken skipped per user request."
 msgstr "fixbroken jäeti kasutaja taotluse alusel vahele."

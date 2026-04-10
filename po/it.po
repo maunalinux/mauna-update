@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-15 11:32-0300\n"
-"PO-Revision-Date: 2025-10-15 13:30-0300\n"
+"POT-Creation-Date: 2026-04-10 17:19-0300\n"
+"PO-Revision-Date: 2026-04-10 17:37-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 
 #: ui/MainWindow.glade:13 ui/MainWindow.glade:5156 src/MainWindow.py:95
-#: src/MainWindow.py:675 src/MainWindow.py:1929 src/MainWindow.py:2649
+#: src/MainWindow.py:675 src/MainWindow.py:1926 src/MainWindow.py:2649
 msgid "Mauna Update"
 msgstr "Aggiornamento Mauna"
 
@@ -499,7 +499,7 @@ msgstr "Esentato"
 msgid "Last Check"
 msgstr "Ultimo controllo"
 
-#: src/MainWindow.py:703 src/MainWindow.py:1902
+#: src/MainWindow.py:703 src/MainWindow.py:1899
 msgid "System is Up to Date"
 msgstr "Il sistema è aggiornato"
 
@@ -520,7 +520,7 @@ msgid "Packages are removing. Please wait..."
 msgstr "I pacchetti vengono rimossi. Attendere prego..."
 
 #: src/MainWindow.py:971 src/MainWindow.py:1069 src/MainWindow.py:1078
-#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2768
+#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2765
 msgid "Error"
 msgstr "Errore"
 
@@ -542,7 +542,7 @@ msgstr "Il tuo sistema non è supportato."
 msgid "Disable Passwordless Usage"
 msgstr "Disabilita l'utilizzo senza password"
 
-#: src/MainWindow.py:1535 src/MainWindow.py:2345
+#: src/MainWindow.py:1535 src/MainWindow.py:2339
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -574,40 +574,40 @@ msgstr "Sono disponibili {} aggiornamenti software."
 msgid "There is {} software update available."
 msgstr "È disponibile l'aggiornamento software {}."
 
-#: src/MainWindow.py:1881
+#: src/MainWindow.py:1878
 msgid "Repository Connection Error"
 msgstr "Errore di Connessione al Repository"
 
-#: src/MainWindow.py:1891
+#: src/MainWindow.py:1888
 msgid "You have removable residual packages."
 msgstr "Hai pacchetti residui rimovibili."
 
-#: src/MainWindow.py:1905
+#: src/MainWindow.py:1902
 msgid "{} Updates Pending"
 msgstr "{} Aggiornamenti in sospeso"
 
-#: src/MainWindow.py:1907
+#: src/MainWindow.py:1904
 msgid "{} Update Pending"
 msgstr "{} Aggiornamento in sospeso"
 
-#: src/MainWindow.py:1930
+#: src/MainWindow.py:1927
 msgid "Automatic upgrade started in the background."
 msgstr "L'aggiornamento automatico è iniziato in sfondo."
 
-#: src/MainWindow.py:1974
+#: src/MainWindow.py:1968
 msgid "Upgrade to {}"
 msgstr "L'aggiornamento a {}"
 
-#: src/MainWindow.py:2113
+#: src/MainWindow.py:2107
 msgid "Total Required Size"
 msgstr "Dimensione totale richiesta"
 
-#: src/MainWindow.py:2284 src/MainWindow.py:2376 src/MainWindow.py:2452
-#: src/MainWindow.py:2544 src/MainWindow.py:2679
+#: src/MainWindow.py:2278 src/MainWindow.py:2376 src/MainWindow.py:2452
+#: src/MainWindow.py:2544 src/MainWindow.py:2676
 msgid "Copy selected text"
 msgstr "Copia il testo selezionato"
 
-#: src/MainWindow.py:2341
+#: src/MainWindow.py:2335
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -618,9 +618,19 @@ msgstr ""
 "Chiudi l'altra applicazione, ad es. Prima \"Gestione aggiornamenti\", "
 "\"aptitude\" o \"Synaptic\"."
 
-#: src/MainWindow.py:2350 src/MainWindow.py:2598
+#: src/MainWindow.py:2344
+msgid "Process could not be completed."
+msgstr "Impossibile completare la procedura."
+
+#: src/MainWindow.py:2347 src/MainWindow.py:2598
 msgid "Process completed."
 msgstr "Processo completato."
+
+#: src/MainWindow.py:2350
+msgid "An error occurred during the process. Please check the output above."
+msgstr ""
+"Si è verificato un errore durante il processo. Si prega di controllare "
+"l'output qui sopra."
 
 #: src/MainWindow.py:2500
 msgid "The download is complete. You can continue."
@@ -638,11 +648,11 @@ msgstr "Errore."
 msgid "Automatic upgrade completed."
 msgstr "Aggiornamento automatico completato."
 
-#: src/MainWindow.py:2786
+#: src/MainWindow.py:2790
 msgid "Update"
 msgstr "Aggiornamento"
 
-#: src/MainWindow.py:2787
+#: src/MainWindow.py:2791
 msgid "Close"
 msgstr "Chiudere"
 
@@ -650,40 +660,40 @@ msgstr "Chiudere"
 msgid "OK"
 msgstr "OK"
 
-#: src/SysActions.py:483 src/SysActions.py:525
+#: src/SysActions.py:485 src/SysActions.py:527
 msgid "Package Manager Cache is updating, please wait..."
 msgstr "Aggiornamento della cache del gestore pacchetti in corso, attendere..."
 
-#: src/SysActions.py:488
+#: src/SysActions.py:490
 msgid "New Sources List"
 msgstr "Elenco delle nuove fonti"
 
-#: src/SysActions.py:489
+#: src/SysActions.py:491
 msgid "Fix sources.list.d"
 msgstr "Correggi sources.list.d"
 
-#: src/SysActions.py:491
+#: src/SysActions.py:493
 msgid "Sources List Dir Remove"
 msgstr "Elenco fonti Directory Rimuovi"
 
-#: src/SysActions.py:492
+#: src/SysActions.py:494
 msgid "DPKG Configure State"
 msgstr "Stato di configurazione DPKG"
 
-#: src/SysActions.py:493
+#: src/SysActions.py:495
 msgid "Fix Broken State"
 msgstr "Correggi stato non funzionante"
 
-#: src/SysActions.py:514
+#: src/SysActions.py:516
 msgid "sources.list.d fix skipped per user request."
 msgstr ""
 "sources.list.d corregge i problemi saltati in base alla richiesta "
 "dell'utente."
 
-#: src/SysActions.py:532
+#: src/SysActions.py:534
 msgid "dpkgconfigure skipped per user request."
 msgstr "dpkgconfigure ignorato su richiesta dell'utente."
 
-#: src/SysActions.py:537
+#: src/SysActions.py:539
 msgid "fixbroken skipped per user request."
 msgstr "fixbroken saltato su richiesta dell'utente."

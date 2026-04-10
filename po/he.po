@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-15 11:32-0300\n"
-"PO-Revision-Date: 2025-10-15 13:11-0300\n"
+"POT-Creation-Date: 2026-04-10 17:19-0300\n"
+"PO-Revision-Date: 2026-04-10 17:34-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 
 #: ui/MainWindow.glade:13 ui/MainWindow.glade:5156 src/MainWindow.py:95
-#: src/MainWindow.py:675 src/MainWindow.py:1929 src/MainWindow.py:2649
+#: src/MainWindow.py:675 src/MainWindow.py:1926 src/MainWindow.py:2649
 msgid "Mauna Update"
 msgstr "עדכון מאונה"
 
@@ -482,7 +482,7 @@ msgstr "לְהַפְסִיק"
 msgid "Last Check"
 msgstr "בדיקה אחרונה"
 
-#: src/MainWindow.py:703 src/MainWindow.py:1902
+#: src/MainWindow.py:703 src/MainWindow.py:1899
 msgid "System is Up to Date"
 msgstr "המערכת מעודכנת"
 
@@ -503,7 +503,7 @@ msgid "Packages are removing. Please wait..."
 msgstr "חבילות מוסרות. המתן בבקשה..."
 
 #: src/MainWindow.py:971 src/MainWindow.py:1069 src/MainWindow.py:1078
-#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2768
+#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2765
 msgid "Error"
 msgstr "שְׁגִיאָה"
 
@@ -523,7 +523,7 @@ msgstr "המערכת שלך לא נתמכת."
 msgid "Disable Passwordless Usage"
 msgstr "השבת את השימוש ללא סיסמה"
 
-#: src/MainWindow.py:1535 src/MainWindow.py:2345
+#: src/MainWindow.py:1535 src/MainWindow.py:2339
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -555,40 +555,40 @@ msgstr "ישנם {} עדכוני תוכנה זמינים."
 msgid "There is {} software update available."
 msgstr "יש {} עדכוני תוכנה זמינים."
 
-#: src/MainWindow.py:1881
+#: src/MainWindow.py:1878
 msgid "Repository Connection Error"
 msgstr "שגיאת חיבור למאגר"
 
-#: src/MainWindow.py:1891
+#: src/MainWindow.py:1888
 msgid "You have removable residual packages."
 msgstr "יש לך חבילות שאריות נשלפות."
 
-#: src/MainWindow.py:1905
+#: src/MainWindow.py:1902
 msgid "{} Updates Pending"
 msgstr "{} עדכונים בהמתנה"
 
-#: src/MainWindow.py:1907
+#: src/MainWindow.py:1904
 msgid "{} Update Pending"
 msgstr "{} עדכון בהמתנה"
 
-#: src/MainWindow.py:1930
+#: src/MainWindow.py:1927
 msgid "Automatic upgrade started in the background."
 msgstr "שדרוג אוטומטי התחיל ברקע."
 
-#: src/MainWindow.py:1974
+#: src/MainWindow.py:1968
 msgid "Upgrade to {}"
 msgstr "לשדרג ל {}"
 
-#: src/MainWindow.py:2113
+#: src/MainWindow.py:2107
 msgid "Total Required Size"
 msgstr "סה\"כ גודל נדרש"
 
-#: src/MainWindow.py:2284 src/MainWindow.py:2376 src/MainWindow.py:2452
-#: src/MainWindow.py:2544 src/MainWindow.py:2679
+#: src/MainWindow.py:2278 src/MainWindow.py:2376 src/MainWindow.py:2452
+#: src/MainWindow.py:2544 src/MainWindow.py:2676
 msgid "Copy selected text"
 msgstr "העתק את הטקסט שנבחר"
 
-#: src/MainWindow.py:2341
+#: src/MainWindow.py:2335
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -598,9 +598,17 @@ msgstr ""
 "אנא סגור את האפליקציה האחרת, למשל. תחילה 'מנהל העדכונים', 'aptitude' או "
 "'Synaptic'."
 
-#: src/MainWindow.py:2350 src/MainWindow.py:2598
+#: src/MainWindow.py:2344
+msgid "Process could not be completed."
+msgstr "לא ניתן היה להשלים את התהליך."
+
+#: src/MainWindow.py:2347 src/MainWindow.py:2598
 msgid "Process completed."
 msgstr "התהליך הושלם."
+
+#: src/MainWindow.py:2350
+msgid "An error occurred during the process. Please check the output above."
+msgstr "אירעה שגיאה במהלך התהליך. אנא בדוק את הפלט למעלה."
 
 #: src/MainWindow.py:2500
 msgid "The download is complete. You can continue."
@@ -618,11 +626,11 @@ msgstr "שְׁגִיאָה."
 msgid "Automatic upgrade completed."
 msgstr "התהליך הושלם.השדרוג האוטומטי הושלם."
 
-#: src/MainWindow.py:2786
+#: src/MainWindow.py:2790
 msgid "Update"
 msgstr "עדכון"
 
-#: src/MainWindow.py:2787
+#: src/MainWindow.py:2791
 msgid "Close"
 msgstr "סגור"
 
@@ -630,38 +638,38 @@ msgstr "סגור"
 msgid "OK"
 msgstr "בְּסֵדֶר"
 
-#: src/SysActions.py:483 src/SysActions.py:525
+#: src/SysActions.py:485 src/SysActions.py:527
 msgid "Package Manager Cache is updating, please wait..."
 msgstr "מטמון מנהל החבילות מתעדכן, אנא המתן..."
 
-#: src/SysActions.py:488
+#: src/SysActions.py:490
 msgid "New Sources List"
 msgstr "רשימת מקורות חדשה"
 
-#: src/SysActions.py:489
+#: src/SysActions.py:491
 msgid "Fix sources.list.d"
 msgstr "תקן sources.list.d"
 
-#: src/SysActions.py:491
+#: src/SysActions.py:493
 msgid "Sources List Dir Remove"
 msgstr "הסר ספריית רשימת מקורות"
 
-#: src/SysActions.py:492
+#: src/SysActions.py:494
 msgid "DPKG Configure State"
 msgstr "מצב תצורת DPKG"
 
-#: src/SysActions.py:493
+#: src/SysActions.py:495
 msgid "Fix Broken State"
 msgstr "תקן מצב שבור"
 
-#: src/SysActions.py:514
+#: src/SysActions.py:516
 msgid "sources.list.d fix skipped per user request."
 msgstr "תיקון sources.list.d דילג לפי בקשת משתמש."
 
-#: src/SysActions.py:532
+#: src/SysActions.py:534
 msgid "dpkgconfigure skipped per user request."
 msgstr "דילוג על dpkgconfigure לכל בקשת משתמש."
 
-#: src/SysActions.py:537
+#: src/SysActions.py:539
 msgid "fixbroken skipped per user request."
 msgstr "fixbroken דילגה לפי בקשת משתמש."

@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-15 11:32-0300\n"
-"PO-Revision-Date: 2025-10-15 11:45-0300\n"
+"POT-Creation-Date: 2026-04-10 17:19-0300\n"
+"PO-Revision-Date: 2026-04-10 17:26-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 
 #: ui/MainWindow.glade:13 ui/MainWindow.glade:5156 src/MainWindow.py:95
-#: src/MainWindow.py:675 src/MainWindow.py:1929 src/MainWindow.py:2649
+#: src/MainWindow.py:675 src/MainWindow.py:1926 src/MainWindow.py:2649
 msgid "Mauna Update"
 msgstr "تحديث ماونا"
 
@@ -487,7 +487,7 @@ msgstr "يترك"
 msgid "Last Check"
 msgstr "اخر فحص"
 
-#: src/MainWindow.py:703 src/MainWindow.py:1902
+#: src/MainWindow.py:703 src/MainWindow.py:1899
 msgid "System is Up to Date"
 msgstr "النظام محدث"
 
@@ -508,7 +508,7 @@ msgid "Packages are removing. Please wait..."
 msgstr "تتم إزالة الحزم. انتظر من فضلك..."
 
 #: src/MainWindow.py:971 src/MainWindow.py:1069 src/MainWindow.py:1078
-#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2768
+#: src/MainWindow.py:1098 src/MainWindow.py:1510 src/MainWindow.py:2765
 msgid "Error"
 msgstr "خطأ"
 
@@ -528,7 +528,7 @@ msgstr "نظامك غير مدعوم."
 msgid "Disable Passwordless Usage"
 msgstr "تعطيل الاستخدام بدون كلمة مرور"
 
-#: src/MainWindow.py:1535 src/MainWindow.py:2345
+#: src/MainWindow.py:1535 src/MainWindow.py:2339
 msgid ""
 "dpkg interrupt detected. Click the 'Fix' button or\n"
 "manually run 'sudo dpkg --configure -a' to fix the problem."
@@ -560,40 +560,40 @@ msgstr "هناك {} تحديثات متاحة للبرامج."
 msgid "There is {} software update available."
 msgstr "يتوفر تحديث برنامج {}."
 
-#: src/MainWindow.py:1881
+#: src/MainWindow.py:1878
 msgid "Repository Connection Error"
 msgstr "خطأ في الاتصال بالمستودع"
 
-#: src/MainWindow.py:1891
+#: src/MainWindow.py:1888
 msgid "You have removable residual packages."
 msgstr "لديك الحزم المتبقية القابلة للإزالة."
 
-#: src/MainWindow.py:1905
+#: src/MainWindow.py:1902
 msgid "{} Updates Pending"
 msgstr "{} التحديثات معلقة"
 
-#: src/MainWindow.py:1907
+#: src/MainWindow.py:1904
 msgid "{} Update Pending"
 msgstr "{} التحديث معلق"
 
-#: src/MainWindow.py:1930
+#: src/MainWindow.py:1927
 msgid "Automatic upgrade started in the background."
 msgstr "بدأت الترقية التلقائية في الخلفية."
 
-#: src/MainWindow.py:1974
+#: src/MainWindow.py:1968
 msgid "Upgrade to {}"
 msgstr "ترقية الى {}"
 
-#: src/MainWindow.py:2113
+#: src/MainWindow.py:2107
 msgid "Total Required Size"
 msgstr "إجمالي الحجم المطلوب"
 
-#: src/MainWindow.py:2284 src/MainWindow.py:2376 src/MainWindow.py:2452
-#: src/MainWindow.py:2544 src/MainWindow.py:2679
+#: src/MainWindow.py:2278 src/MainWindow.py:2376 src/MainWindow.py:2452
+#: src/MainWindow.py:2544 src/MainWindow.py:2676
 msgid "Copy selected text"
 msgstr "نسخ النص المحدد"
 
-#: src/MainWindow.py:2341
+#: src/MainWindow.py:2335
 msgid ""
 "Only one software management tool is allowed to run at the same time.\n"
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
@@ -603,9 +603,17 @@ msgstr ""
 "الرجاء إغلاق التطبيق الآخر على سبيل المثال. \"مدير التحديث\" أو \"aptitude\" "
 "أو \"Synaptic\" أولاً."
 
-#: src/MainWindow.py:2350 src/MainWindow.py:2598
+#: src/MainWindow.py:2344
+msgid "Process could not be completed."
+msgstr "لم تكتمل العملية."
+
+#: src/MainWindow.py:2347 src/MainWindow.py:2598
 msgid "Process completed."
 msgstr "اكتملت العملية."
+
+#: src/MainWindow.py:2350
+msgid "An error occurred during the process. Please check the output above."
+msgstr "حدث خطأ أثناء العملية. يرجى مراجعة المخرجات أعلاه."
 
 #: src/MainWindow.py:2500
 msgid "The download is complete. You can continue."
@@ -623,11 +631,11 @@ msgstr "خطأ."
 msgid "Automatic upgrade completed."
 msgstr "اكتملت الترقية التلقائية."
 
-#: src/MainWindow.py:2786
+#: src/MainWindow.py:2790
 msgid "Update"
 msgstr "تحديث"
 
-#: src/MainWindow.py:2787
+#: src/MainWindow.py:2791
 msgid "Close"
 msgstr "يغلق"
 
@@ -635,38 +643,38 @@ msgstr "يغلق"
 msgid "OK"
 msgstr "نعم"
 
-#: src/SysActions.py:483 src/SysActions.py:525
+#: src/SysActions.py:485 src/SysActions.py:527
 msgid "Package Manager Cache is updating, please wait..."
 msgstr "جاري تحديث ذاكرة التخزين المؤقتة لمدير الحزم، يرجى الانتظار..."
 
-#: src/SysActions.py:488
+#: src/SysActions.py:490
 msgid "New Sources List"
 msgstr "قائمة المصادر الجديدة"
 
-#: src/SysActions.py:489
+#: src/SysActions.py:491
 msgid "Fix sources.list.d"
 msgstr "إصلاح sources.list.d"
 
-#: src/SysActions.py:491
+#: src/SysActions.py:493
 msgid "Sources List Dir Remove"
 msgstr "قائمة المصادر إزالة الدليل"
 
-#: src/SysActions.py:492
+#: src/SysActions.py:494
 msgid "DPKG Configure State"
 msgstr "DPKG تكوين الحالة"
 
-#: src/SysActions.py:493
+#: src/SysActions.py:495
 msgid "Fix Broken State"
 msgstr "إصلاح الحالة المكسورة"
 
-#: src/SysActions.py:514
+#: src/SysActions.py:516
 msgid "sources.list.d fix skipped per user request."
 msgstr "تم تخطي إصلاح sources.list.d بناءً على طلب المستخدم."
 
-#: src/SysActions.py:532
+#: src/SysActions.py:534
 msgid "dpkgconfigure skipped per user request."
 msgstr "تم تخطي dpkgconfigure بناءً على طلب المستخدم."
 
-#: src/SysActions.py:537
+#: src/SysActions.py:539
 msgid "fixbroken skipped per user request."
 msgstr "تم تخطي الإصلاح بناءً على طلب المستخدم."
