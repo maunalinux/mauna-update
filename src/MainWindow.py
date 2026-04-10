@@ -121,8 +121,6 @@ class MainWindow(object):
 
         self.set_initial_hide_widgets()
 
-        self.define_last_variables()
-
         p1 = threading.Thread(target=self.worker)
         p1.daemon = True
         p1.start()
@@ -238,43 +236,6 @@ class MainWindow(object):
             print("not started timed update check")
             print("lu:{} inv:{} now:{}".format(lastupdate, interval, int(datetime.now().timestamp())))
             self.set_upgradable_page_and_notify()
-            return
-
-    def apt_upgrade(self, force=False):
-        """
-        auto upgrade control function
-        """
-        print("in apt_upgrade")
-
-        if self.SystemSettings.config_upgrade_enabled is None or self.SystemSettings.config_upgrade_interval is None:
-            return
-
-        enabled = self.SystemSettings.config_upgrade_enabled
-        if not enabled:
-            return
-
-        interval = self.SystemSettings.config_upgrade_interval
-
-        if self.SystemSettings.config_upgrade_lastupgrade is not None:
-            lastupgrade = self.SystemSettings.config_upgrade_lastupgrade
-        else:
-            lastupgrade = 0
-
-        if force:
-            self.start_aptupgrade()
-            return
-        if interval == -1:  # never auto upgrade
-            # self.set_upgradable_page_and_notify()
-            return
-        if lastupgrade + interval - 10 <= int(datetime.now().timestamp()):
-            print("started timed upgrade check")
-            print("lu:{} inv:{} now:{}".format(lastupgrade, interval, int(datetime.now().timestamp())))
-            self.start_aptupgrade()
-            return
-        else:
-            print("not started timed upgrade check")
-            print("lu:{} inv:{} now:{}".format(lastupgrade, interval, int(datetime.now().timestamp())))
-            # self.set_upgradable_page_and_notify()
             return
 
     def control_args(self):
@@ -501,12 +462,10 @@ class MainWindow(object):
             self.icon_error = "security-low-symbolic"
 
         self.autoupdate_glibid = None
-        self.autoupgrade_glibid = None
         self.autoupdate_monitoring_glibid = None
         self.monitoring_timeoutadd_sec = 60
         self.update_inprogress = False
         self.upgrade_inprogress = False
-        self.auto_upgrade_inprogress = False
         self.distup_download_inprogress = False
         self.laststack = None
         self.aptlist_directory = "/var/lib/apt/lists"
@@ -517,8 +476,6 @@ class MainWindow(object):
         self.dpkgconfiguring = False
 
         self.dist_upgradable = False
-
-        self.autoupgrade_enabled = False
 
         self.user_keep_list = []
         self.user_keep_list_depends = []
@@ -554,14 +511,6 @@ class MainWindow(object):
                                     self.user_default_sources_list = codename["sources"]
         except Exception as e:
             print("{}".format(e))
-
-    def define_last_variables(self):
-        self.auto_upgrade_init = False
-
-        if self.SystemSettings.config_upgrade_enabled is None or self.SystemSettings.config_upgrade_interval is None:
-            self.autoupgrade_enabled = False
-        else:
-            self.autoupgrade_enabled = self.SystemSettings.config_upgrade_enabled       
 
     def set_initial_hide_widgets(self):
         GLib.idle_add(self.ui_headerbar_messagebutton.set_visible, False)
@@ -641,20 +590,6 @@ class MainWindow(object):
             if self.SystemSettings.config_notifications is not None:
                 print("system: {} {}".format("config_notifications", self.SystemSettings.config_notifications))
 
-            if self.SystemSettings.config_upgrade_enabled is not None:
-                print("system: {} {}".format("config_upgrade_enabled",
-                                             self.SystemSettings.config_upgrade_enabled))
-            if self.SystemSettings.config_upgrade_interval is not None:
-                print("system: {} {}".format("config_upgrade_interval",
-                                             self.SystemSettings.config_upgrade_interval))
-            if self.SystemSettings.config_upgrade_lastupgrade is not None:
-                print("system: {} {}".format("config_upgrade_lastupgrade",
-                                             self.SystemSettings.config_upgrade_lastupgrade))
-            if self.SystemSettings.config_upgrade_fix is not None:
-                print("system: {} {}".format("config_upgrade_fix", self.SystemSettings.config_upgrade_fix))
-            if self.SystemSettings.config_upgrade_sources is not None:
-                print("system: {} {}".format("config_upgrade_sources",
-                                             self.SystemSettings.config_upgrade_sources))
         except Exception as e:
             print("system_settings exception: {}".format(e))
 
@@ -952,7 +887,7 @@ class MainWindow(object):
         self.ui_settings_vte_box.set_visible(False)
 
     def on_ui_settingsaptclear_button_clicked(self, button):
-        if not self.update_inprogress and not self.upgrade_inprogress and not self.auto_upgrade_inprogress:
+        if not self.update_inprogress and not self.upgrade_inprogress:
 
             GLib.idle_add(self.ui_settings_aptclear_ok_button.set_visible, False)
 
@@ -1053,7 +988,7 @@ class MainWindow(object):
         self.ui_sources_listbox.foreach(lambda child: self.ui_sources_listbox.remove(child))
 
     def on_source_switch_state_set(self, switch, state):
-        if not self.update_inprogress and not self.upgrade_inprogress and not self.auto_upgrade_inprogress:
+        if not self.update_inprogress and not self.upgrade_inprogress:
 
             self.source_switch_clicked = True
 
@@ -1074,7 +1009,7 @@ class MainWindow(object):
         self.ui_settingsapt_stack.set_visible_child_name("defaultsources")
 
     def on_ui_settings_default_sources_accept_button_clicked(self, button):
-        if not self.update_inprogress and not self.upgrade_inprogress and not self.auto_upgrade_inprogress:
+        if not self.update_inprogress and not self.upgrade_inprogress:
 
             if self.user_default_sources_list is None:
                 ErrorDialog(_("Error"), "{}\n{}\n{}\n{}".format(_("Your system is not supported."),
@@ -1607,9 +1542,9 @@ class MainWindow(object):
         self.dpkg_monitor.connect('changed', self.on_apt_changed)
 
     def on_apt_changed(self, file_monitor, file, other_file, event_type):
-        print("{} file changed, update_inprogress: {}, upgrade_inprogress: {}, auto_upgrade_inprogress {}".format(
-            file.get_path(), self.update_inprogress, self.upgrade_inprogress, self.auto_upgrade_inprogress))
-        if not self.update_inprogress and not self.upgrade_inprogress and not self.auto_upgrade_inprogress:
+        print("{} file changed, update_inprogress: {}, upgrade_inprogress: {}".format(
+            file.get_path(), self.update_inprogress, self.upgrade_inprogress))
+        if not self.update_inprogress and not self.upgrade_inprogress:
             print("Triggering control_upgradables from monitoring {}".format(file.get_path()))
             if self.autoupdate_monitoring_glibid:
                 GLib.source_remove(self.autoupdate_monitoring_glibid)
@@ -1835,13 +1770,6 @@ class MainWindow(object):
         if interval != -1:
             self.autoupdate_glibid = GLib.timeout_add_seconds(interval, self.apt_update)
 
-    def create_autoupgrade_glibid(self):
-        interval = self.SystemSettings.config_upgrade_interval
-        if interval != -1:
-            if self.autoupgrade_glibid:
-                GLib.source_remove(self.autoupgrade_glibid)
-            self.autoupgrade_glibid = GLib.timeout_add_seconds(interval, self.apt_upgrade)
-
     def set_upgradable_page_and_notify(self):
         if self.isbroken:
             self.ui_main_stack.set_visible_child_name("fix")
@@ -1879,9 +1807,6 @@ class MainWindow(object):
                 self.item_systemstatus.set_sensitive(False if not self.pargnome23 else True)
                 self.item_systemstatus.set_label(_("Repository Connection Error"))
 
-        if self.autoupgrade_enabled:
-            self.apt_upgrade()
-
     def control_update_residual_message_section(self):
         residual = self.Package.residual()
         autoremovable = self.Package.autoremovable()
@@ -1917,25 +1842,6 @@ class MainWindow(object):
         self.ui_distnewly_listbox.foreach(lambda child: self.ui_distnewly_listbox.remove(child))
         self.ui_distremovable_listbox.foreach(lambda child: self.ui_distremovable_listbox.remove(child))
         self.ui_distkept_listbox.foreach(lambda child: self.ui_distkept_listbox.remove(child))
-
-    def start_aptupgrade(self):
-        if not self.upgrade_inprogress:
-            GLib.idle_add(self.indicator.set_icon, self.icon_inprogress)
-            command = ["/usr/bin/pkexec", os.path.dirname(os.path.abspath(__file__)) + "/AutoAptUpgrade.py"]
-            self.startAptUpgradeProcess(command)
-            self.auto_upgrade_inprogress = True
-
-            notification = Notification(summary=_("Mauna Update"),
-                                    body=_("Automatic upgrade started in the background."),
-                                    icon=self.icon_inprogress, appid=self.Application.get_application_id(),
-                                    only_info=True)
-            GLib.timeout_add(300, self.delayed_notification_check, notification)
-
-        else:
-            print("auto_apt_upgrade: update_inprogress: {}, upgrade_inprogress: {}".format(self.update_inprogress,
-                                                                                      self.upgrade_inprogress))
-            if self.ui_main_stack.get_visible_child_name() == "spinner":
-                self.ui_main_stack.set_visible_child_name("ok")
 
     def startControlDistUpgradeProcess(self, params):
         pid, stdin, stdout, stderr = GLib.spawn_async(params, flags=GLib.SpawnFlags.DO_NOT_REAP_CHILD,
@@ -2604,56 +2510,6 @@ class MainWindow(object):
                 self.Package.updatecache()
 
         self.update_inprogress = False
-
-
-    def startAptUpgradeProcess(self, params):
-        pid, stdin, stdout, stderr = GLib.spawn_async(params, flags=GLib.SpawnFlags.DO_NOT_REAP_CHILD,
-                                                      standard_output=True, standard_error=True)
-        GLib.io_add_watch(GLib.IOChannel(stdout), GLib.IO_IN | GLib.IO_HUP, self.onAptUpgradeProcessStdout)
-        GLib.io_add_watch(GLib.IOChannel(stderr), GLib.IO_IN | GLib.IO_HUP, self.onAptUpgradeProcessStderr)
-        GLib.child_watch_add(GLib.PRIORITY_DEFAULT, pid, self.onAptUpgradeProcessExit)
-
-        return pid
-
-    def onAptUpgradeProcessStdout(self, source, condition):
-        if condition == GLib.IO_HUP:
-            return False
-        line = source.readline()
-        print("onAptUpgradeProcessStdout: {}".format(line))
-        return True
-
-    def onAptUpgradeProcessStderr(self, source, condition):
-        if condition == GLib.IO_HUP:
-            return False
-        line = source.readline()
-        print("onAptUpgradeProcessStderr: {}".format(line))
-        return True
-
-    def onAptUpgradeProcessExit(self, pid, status):
-        print("onAptUpgradeProcessExit: {}".format(status))
-        try:
-            timestamp = int(datetime.now().timestamp())
-        except Exception as e:
-            print("timestamp Error: {}".format(e))
-            timestamp = 0
-
-        command = ["/usr/bin/pkexec", os.path.dirname(os.path.abspath(__file__)) + "/SystemSettingsWrite.py",
-                   "write", "lastupgrade", "{}".format(timestamp)]
-        subprocess.run(command)
-        print("SystemSettings.config_upgrade_lastupgrade writed")
-
-        self.system_settings()
-        self.Package.updatecache()
-        self.create_autoupgrade_glibid()
-        self.set_upgradable_page_and_notify()
-
-        notification = Notification(summary=_("Mauna Update"),
-                                    body=_("Automatic upgrade completed."),
-                                    icon=self.icon_normal, appid=self.Application.get_application_id(),
-                                    only_info=True)
-        GLib.timeout_add(300, self.delayed_notification_check, notification)
-
-        self.auto_upgrade_inprogress = False
 
     def settings_vte_event(self, widget, event):
         if event.type == Gdk.EventType.BUTTON_PRESS:

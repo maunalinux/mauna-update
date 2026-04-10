@@ -26,17 +26,6 @@ def main():
         with open(configdir + configfile, "w") as cf:
             config.write(cf)
 
-    def write_lastupgrade(timestamp):
-        config.read(configdir + configfile)
-
-        if config.has_section("Upgrade"):
-            config.set("Upgrade", "lastupgrade", timestamp)
-        else:
-            config['Upgrade'] = {"lastupgrade": timestamp}
-
-        with open(configdir + configfile, "w") as cf:
-            config.write(cf)
-
     def validate_timestamp(value):
         try:
             ts = int(value)
@@ -50,8 +39,6 @@ def main():
         if sys.argv[1] == "write":
             if sys.argv[2] == "lastupdate":
                 write_lastupdate(validate_timestamp(sys.argv[3]))
-            if sys.argv[2] == "lastupgrade":
-                write_lastupgrade(validate_timestamp(sys.argv[3]))
         else:
             print("unknown argument error")
     else:
