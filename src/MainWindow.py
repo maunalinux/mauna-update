@@ -2341,10 +2341,15 @@ class MainWindow(object):
                 _("dpkg interrupt detected. Click the 'Fix' button or\n"
                   "manually run 'sudo dpkg --configure -a' to fix the problem.")))
             GLib.idle_add(self.ui_upgradeinfofixdpkg_button.set_visible, True)
-        else:
+        elif status == 25600: # Errors occurred during the process.
+            GLib.idle_add(self.ui_upgradeinfo_label.set_markup, "<span color='red'><b>{}</b></span>".format(
+                _("Process could not be completed.")))
+        elif status == 0: # Process completed successfully.
             self.Package.updatecache()
             GLib.idle_add(self.ui_upgradeinfo_label.set_markup, "<b>{}</b>".format(_("Process completed.")))
-
+        else: # apt returns 0 or 100 exit code. There's something strange here, so the user should check the output.
+            GLib.idle_add(self.ui_upgradeinfo_label.set_markup, "<span color='red'><b>{}</b></span>".format(
+                _("An error occurred during the process. Please check the output above.")))
         self.update_indicator_updates_labels(self.Package.upgradable())
 
         self.upgrade_inprogress = False
