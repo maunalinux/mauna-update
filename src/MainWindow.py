@@ -1325,7 +1325,7 @@ class MainWindow(object):
 
         if self.user_groups:
             self.ui_passwordless_button.set_visible(True)
-            if "pardus-update" in self.user_groups:
+            if "mauna-update" in self.user_groups:
                 self.ui_passwordless_button_label.set_label(_("Disable Passwordless Usage"))
             else:
                 self.ui_passwordless_button_label.set_label(_("Enable Passwordless Usage"))
@@ -1336,7 +1336,7 @@ class MainWindow(object):
     def on_ui_passwordless_button_clicked(self, button):
         self.grouperrormessage = ""
         self.ui_passwordless_button.set_sensitive(False)
-        if "pardus-update" in self.user_groups:
+        if "mauna-update" in self.user_groups:
             command = ["/usr/bin/pkexec", os.path.dirname(os.path.abspath(__file__)) + "/Group.py", "del",
                        self.UserSettings.user_name]
         else:
@@ -1867,10 +1867,7 @@ class MainWindow(object):
                                                 if len(upgradable) >= 1 else
                                                 _("There is {} software update available.").format(len(upgradable)),
                                                 icon=self.icon_available, appid=self.Application.get_application_id())
-                    notification_state = self.UserSettings.config_notifications
-                    if self.SystemSettings.config_notifications is not None:
-                        notification_state = self.SystemSettings.config_notifications
-                    GLib.idle_add(notification.show, notification_state)
+                    GLib.timeout_add(300, self.delayed_notification_check, notification)
                 else:
                     if self.ui_main_stack.get_visible_child_name() != "distupgrade":
                         self.ui_main_stack.set_visible_child_name("ok")
@@ -1932,10 +1929,7 @@ class MainWindow(object):
                                     body=_("Automatic upgrade started in the background."),
                                     icon=self.icon_inprogress, appid=self.Application.get_application_id(),
                                     only_info=True)
-            notification_state = self.UserSettings.config_notifications
-            if self.SystemSettings.config_notifications is not None:
-                notification_state = self.SystemSettings.config_notifications
-            GLib.idle_add(notification.show, notification_state)
+            GLib.timeout_add(300, self.delayed_notification_check, notification)
 
         else:
             print("auto_apt_upgrade: update_inprogress: {}, upgrade_inprogress: {}".format(self.update_inprogress,
@@ -2652,10 +2646,7 @@ class MainWindow(object):
                                     body=_("Automatic upgrade completed."),
                                     icon=self.icon_normal, appid=self.Application.get_application_id(),
                                     only_info=True)
-        notification_state = self.UserSettings.config_notifications
-        if self.SystemSettings.config_notifications is not None:
-            notification_state = self.SystemSettings.config_notifications
-        GLib.idle_add(notification.show, notification_state)
+        GLib.timeout_add(300, self.delayed_notification_check, notification)
 
         self.auto_upgrade_inprogress = False
 
@@ -2769,6 +2760,13 @@ class MainWindow(object):
             if self.grouperrormessage != "":
                 ErrorDialog(_("Error"), "{}".format(self.grouperrormessage))
 
+    def delayed_notification_check(self, notification):
+        notification_state = self.UserSettings.config_notifications
+        if self.SystemSettings.config_notifications is not None:
+            notification_state = self.SystemSettings.config_notifications
+        should_show = notification_state and not self.main_window.is_active()
+        notification.show(should_show)
+        return False
 
 class Notification(GObject.GObject):
     __gsignals__ = {
