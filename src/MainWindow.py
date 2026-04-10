@@ -1548,19 +1548,23 @@ class MainWindow(object):
             print("Triggering control_upgradables from monitoring {}".format(file.get_path()))
             if self.autoupdate_monitoring_glibid:
                 GLib.source_remove(self.autoupdate_monitoring_glibid)
+                self.autoupdate_monitoring_glibid = None
             self.autoupdate_monitoring_glibid = GLib.timeout_add_seconds(
                 self.monitoring_timeoutadd_sec, self.control_upgradables)
 
     def control_upgradables(self):
-        print("STARTING control_upgradables from monitoring")
+        print("STARTING control_upgradables from monitoring: update_inprogress: {}, upgrade_inprogress: {}".format(
+            self.update_inprogress, self.upgrade_inprogress))
         if self.autoupdate_monitoring_glibid:
             GLib.source_remove(self.autoupdate_monitoring_glibid)
-        if self.Package.updatecache():
-            self.isbroken = False
-        else:
-            self.isbroken = True
-        self.set_upgradable_page_and_notify()
+            self.autoupdate_monitoring_glibid = None
+        if self.update_inprogress or self.upgrade_inprogress:
+            return False
+        self.isbroken = not self.Package.updatecache()
+        print("control_upgradables: isbroken: {}".format(self.isbroken))
         self.control_update_residual_message_section()
+        self.set_upgradable_page_and_notify()
+        return False
 
     def clear_upgrade_listboxes(self):
         self.ui_upgradable_listbox.foreach(lambda child: self.ui_upgradable_listbox.remove(child))
